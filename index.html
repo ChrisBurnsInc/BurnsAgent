@@ -86,6 +86,17 @@
             animation: fadeInUp 1.2s ease-out;
         }
         
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-gold);
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-out 0.3s backwards;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -182,6 +193,15 @@
             color: var(--primary-gold);
             text-decoration: none;
             letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
         }
         
         .nav-links {
@@ -649,6 +669,20 @@
                 display: none;
             }
             
+            .logo {
+                font-size: 1.4rem;
+            }
+            
+            .logo-image {
+                height: 40px;
+            }
+            
+            .hero-image {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+            
             .about-content,
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -713,7 +747,10 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Christopher Burns</a>
+            <a href="#" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Christopher Burns Logo" class="logo-image">
+                Christopher Burns
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#why-choose">Why Choose Me</a></li>
@@ -727,6 +764,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
+            <img src="ChrisBurnsImage1.png" alt="Christopher Burns" class="hero-image">
             <div class="hero-subtitle">Century 21 Action Plus Realty</div>
             <h1>Christopher Burns</h1>
             <p class="hero-description">Your trusted real estate partner serving all of New Jersey with expertise, integrity, and personalized service</p>
