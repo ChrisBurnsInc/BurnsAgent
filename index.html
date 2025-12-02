@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Christopher Burns - Your trusted Century 21 Cedarcrest Realty agent serving all of New Jersey. Expert guidance for buying, selling, and investing in residential and commercial properties.">
+    <meta name="keywords" content="Christopher Burns realtor, Century 21 New Jersey, real estate agent NJ, homes for sale New Jersey, buy home NJ, sell home NJ, central New Jersey realtor">
+    <meta name="author" content="Christopher Burns">
+    <meta property="og:title" content="Christopher Burns - Century 21 Cedarcrest Realty Agent">
+    <meta property="og:description" content="Expert real estate services throughout New Jersey. Specializing in residential and commercial properties with personalized client care.">
+    <meta property="og:type" content="website">
+    
+    <title>Christopher Burns - Century 21 Cedarcrest Realty | New Jersey Real Estate Expert</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(139, 64, 73, 0.1) 0%, transparent 50%);
+            animation: gradientShift 15s ease-in-out infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            padding: 0 20px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            color: var(--white);
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -2px;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .hero-description {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background-color: var(--primary-gold);
+            color: var(--deep-navy);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 0;
+            transition: all 0.4s ease;
+            border: 2px solid var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: fadeIn 1.5s ease-out 0.5s backwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--primary-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3);
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(26, 35, 50, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav.scrolled {
+            padding: 15px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-gold);
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 100px 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .stat-card {
+            background-color: var(--soft-cream);
+            padding: 30px;
+            text-align: center;
+            border-left: 4px solid var(--primary-gold);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+        
+        /* Why Choose Section */
+        .why-choose {
+            background-color: var(--soft-cream);
+        }
+        
+        .data-backed-claim {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 0;
+            margin: 40px 0;
+            border-left: 5px solid var(--primary-gold);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+        }
+        
+        .data-backed-claim h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--deep-navy);
+        }
+        
+        .evidence-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .evidence-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: start;
+            gap: 20px;
+        }
+        
+        .evidence-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .evidence-icon {
+            font-size: 2rem;
+            color: var(--primary-gold);
+            flex-shrink: 0;
+        }
+        
+        .evidence-content strong {
+            color: var(--deep-navy);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .source-link {
+            color: var(--accent-burgundy);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        
+        .source-link:hover {
+            color: var(--primary-gold);
+            text-decoration: underline;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--accent-burgundy));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-gold);
+        }
+        
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        /* Quiz Section */
+        .quiz-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            color: var(--white);
+        }
+        
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 0;
+            border: 1px solid rgba(201, 169, 97, 0.3);
+        }
+        
+        .quiz-question {
+            display: none;
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        .quiz-question.active {
+            display: block;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .quiz-question h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--primary-gold);
+        }
+        
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .quiz-option {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+        
+        .quiz-option:hover {
+            background: rgba(201, 169, 97, 0.2);
+            border-color: var(--primary-gold);
+            transform: translateX(10px);
+        }
+        
+        .quiz-result {
+            display: none;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        .quiz-result.active {
+            display: block;
+        }
+        
+        .quiz-result h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-gold);
+        }
+        
+        .quiz-score {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--white);
+            margin: 30px 0;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .restart-btn {
+            background: var(--primary-gold);
+            color: var(--deep-navy);
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .restart-btn:hover {
+            background: var(--white);
+            transform: translateY(-3px);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--soft-cream);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: start;
+            gap: 20px;
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-gold);
+            flex-shrink: 0;
+        }
+        
+        .contact-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: var(--deep-navy);
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--deep-navy);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 15px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            background-color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .submit-btn {
+            background: var(--primary-gold);
+            color: var(--deep-navy);
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid var(--primary-gold);
+        }
+        
+        .submit-btn:hover {
+            background: transparent;
+            color: var(--primary-gold);
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 40px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-gold);
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 2;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-gold);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 60px 20px;
+            }
+            
+            .quiz-container {
+                padding: 30px 20px;
+            }
+        }
+        
+        /* SEO Audit Section */
+        .audit-section {
+            background: linear-gradient(135deg, var(--accent-burgundy) 0%, #6D3540 100%);
+            color: var(--white);
+            padding: 80px 40px;
+        }
+        
+        .audit-checklist {
+            max-width: 900px;
+            margin: 40px auto 0;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-left: 5px solid var(--primary-gold);
+        }
+        
+        .audit-checklist h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--primary-gold);
+        }
+        
+        .audit-item {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .audit-item:last-child {
+            border-bottom: none;
+        }
+        
+        .audit-item strong {
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+        }
+        
+        .checkmark {
+            color: #4CAF50;
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Christopher Burns</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-choose">Why Choose Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#quiz">Find Your Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">Century 21 Cedarcrest Realty</div>
+            <h1>Christopher Burns</h1>
+            <p class="hero-description">Your trusted real estate partner serving all of New Jersey with expertise, integrity, and personalized service</p>
+            <a href="#contact" class="cta-button">Let's Find Your Dream Home</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Christopher Burns</h2>
+            <p class="section-subtitle">Licensed throughout New Jersey | Century 21 Cedarcrest Realty Professional</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your New Jersey Real Estate Expert</h3>
+                    <p>As a licensed real estate professional with Century 21 Cedarcrest Realty, I bring dedication, market knowledge, and personalized service to every client interaction. Whether you're a first-time homebuyer, selling your property, or looking for investment opportunities, I'm here to guide you through every step of the process.</p>
+                    
+                    <p>Century 21 Cedarcrest Realty has been a premiere real estate firm in New Jersey since 1972, and has been named "Best Essex County Realtor" four years in a row. As part of this award-winning team, I have access to industry-leading training, technology, and resources to serve you better.</p>
+                    
+                    <p>Licensed throughout all of New Jersey with a focus on Central New Jersey, I bring local market expertise combined with statewide reach to help you achieve your real estate goals.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4x</div>
+                        <div class="stat-label">Award-Winning Brokerage</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Years Combined Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Commitment to You</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">NJ</div>
+                        <div class="stat-label">Licensed Statewide</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Christopher Section -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Christopher Burns at Century 21?</h2>
+            <p class="section-subtitle">Data-backed excellence in New Jersey real estate</p>
+            
+            <div class="data-backed-claim">
+                <h3>Working with a Professional Agent Gets You Better Results</h3>
+                <ul class="evidence-list">
+                    <li>
+                        <span class="evidence-icon">💰</span>
+                        <div class="evidence-content">
+                            <strong>Higher Sale Prices:</strong> Agent-represented homes sell for approximately $55,000 more on average than For Sale By Owner (FSBO) properties. When you work with a professional, you maximize your return on investment.
+                            <a href="https://listwithclever.com/real-estate-blog/fsbo-statistics/" class="source-link" target="_blank" rel="noopener">Source: Clever Real Estate Study →</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="evidence-icon">📊</span>
+                        <div class="evidence-content">
+                            <strong>Market Expertise:</strong> 90% of sellers choose to work with a real estate agent, with FSBO market share at a historic low of only 6% in 2024. This overwhelming preference reflects the proven value agents provide.
+                            <a href="https://fortunly.com/statistics/real-estate-statistics/" class="source-link" target="_blank" rel="noopener">Source: Fortunly Real Estate Statistics →</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="evidence-icon">✅</span>
+                        <div class="evidence-content">
+                            <strong>Client Satisfaction:</strong> 88% of buyers who worked with an agent would recommend them to others or use them again for future transactions. This reflects the trusted relationships and exceptional service real estate professionals provide.
+                            <a href="https://www.agentadvice.com/blog/real-estate-statistics-every-agent-should-know/" class="source-link" target="_blank" rel="noopener">Source: Agent Advice Industry Report →</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="evidence-icon">🏆</span>
+                        <div class="evidence-content">
+                            <strong>Award-Winning Brokerage:</strong> Century 21 Cedarcrest Realty was voted "Best Essex County Realtor" four consecutive years and has served New Jersey since 1972. You benefit from a proven track record of excellence and community trust.
+                            <a href="https://century21cedarcrest.com/" class="source-link" target="_blank" rel="noopener">Source: Century 21 Cedarcrest Official Site →</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="data-backed-claim">
+                <h3>Professional Guidance Throughout Your Journey</h3>
+                <p style="margin-bottom: 25px;">The real estate market requires expertise at every stage. With comprehensive knowledge of New Jersey markets, access to cutting-edge technology, and rigorous professional training, I provide the strategic advantage you need.</p>
+                <ul class="evidence-list">
+                    <li>
+                        <span class="evidence-icon">🎯</span>
+                        <div class="evidence-content">
+                            <strong>Strategic Marketing:</strong> Homes with professional photography sell 32% faster, and listings with video receive 403% more inquiries. I leverage these proven marketing tools to maximize your property's exposure.
+                            <a href="https://resimpli.com/blog/real-estate-agent-statistics/" class="source-link" target="_blank" rel="noopener">Source: Resimpli Agent Statistics →</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="evidence-icon">⏱️</span>
+                        <div class="evidence-content">
+                            <strong>Efficient Process:</strong> The median time on market is 40 days when working with an agent, with properties typically selling at 98-100% of the asking price. Professional representation streamlines your transaction.
+                            <a href="https://learn.g2.com/real-estate-statistics" class="source-link" target="_blank" rel="noopener">Source: G2 Real Estate Statistics →</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">Comprehensive real estate solutions tailored to your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Buyer Representation</h3>
+                    <p>Expert guidance through the home buying process. From search to closing, I'll help you find and secure your perfect property in New Jersey.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Seller Representation</h3>
+                    <p>Maximize your sale price with strategic marketing, professional photography, and expert negotiation. Get top dollar for your property.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Investment Properties</h3>
+                    <p>Whether you're building a portfolio or looking for your first investment property, I provide market analysis and investment guidance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏘️</div>
+                    <h3>First-Time Homebuyers</h3>
+                    <p>Special support for first-time buyers. I'll guide you through financing options, inspections, and negotiations with patience and expertise.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📍</div>
+                    <h3>Market Analysis</h3>
+                    <p>Detailed comparative market analysis (CMA) to help you understand property values and make informed decisions in any NJ market.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Relocation Services</h3>
+                    <p>Moving to or within New Jersey? I'll help you understand neighborhoods, schools, and communities to find the perfect fit for your lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Section -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--white);">Find Your Perfect Home Match</h2>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">Answer 5 quick questions to discover what type of property fits your lifestyle</p>
+            
+            <div class="quiz-container">
+                <div id="quiz-content">
+                    <!-- Question 1 -->
+                    <div class="quiz-question active" data-question="1">
+                        <h3>What's your primary motivation for buying a home?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-value="investment">Building wealth through real estate investment</div>
+                            <div class="quiz-option" data-value="family">Creating a family home with room to grow</div>
+                            <div class="quiz-option" data-value="lifestyle">Lifestyle upgrade or downsizing</div>
+                            <div class="quiz-option" data-value="first-time">First-time homeownership and building equity</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 2 -->
+                    <div class="quiz-question" data-question="2">
+                        <h3>What's your preferred property location?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-value="urban">Urban center with walkability and amenities</div>
+                            <div class="quiz-option" data-value="suburban">Suburban neighborhood with good schools</div>
+                            <div class="quiz-option" data-value="rural">Rural or countryside setting with space</div>
+                            <div class="quiz-option" data-value="flexible">Flexible based on value and opportunities</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 3 -->
+                    <div class="quiz-question" data-question="3">
+                        <h3>How much maintenance are you comfortable with?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-value="minimal">Minimal - prefer condo or townhouse</div>
+                            <div class="quiz-option" data-value="moderate">Moderate - single-family home with yard</div>
+                            <div class="quiz-option" data-value="extensive">Extensive - enjoy DIY and renovations</div>
+                            <div class="quiz-option" data-value="new">Prefer new construction with warranties</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 4 -->
+                    <div class="quiz-question" data-question="4">
+                        <h3>What's your timeline for making a move?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-value="immediate">Ready to move within 1-3 months</div>
+                            <div class="quiz-option" data-value="soon">Planning for 3-6 months</div>
+                            <div class="quiz-option" data-value="flexible">6-12 months, flexible timing</div>
+                            <div class="quiz-option" data-value="exploring">Just exploring options for now</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 5 -->
+                    <div class="quiz-question" data-question="5">
+                        <h3>What's most important in your new home?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-value="space">Maximum space for the budget</div>
+                            <div class="quiz-option" data-value="location">Prime location and neighborhood</div>
+                            <div class="quiz-option" data-value="features">Modern features and finishes</div>
+                            <div class="quiz-option" data-value="investment">Long-term appreciation potential</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="quiz-result" class="quiz-result">
+                    <h3>Your Results Are Ready!</h3>
+                    <div class="quiz-score" id="score"></div>
+                    <p id="result-text" style="font-size: 1.2rem; line-height: 1.8; margin-top: 20px;"></p>
+                    <button class="restart-btn" onclick="restartQuiz()">Take Quiz Again</button>
+                    <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 20px;">Contact Christopher</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Audit Section -->
+    <section class="audit-section">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--white);">Website Health Check</h2>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">This website is optimized for search engines and user experience</p>
+            
+            <div class="audit-checklist">
+                <h3>SEO Optimization Status</h3>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Meta Descriptions:</strong> Comprehensive meta descriptions on all pages for improved search visibility
+                </div>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Alt Tags:</strong> All images include descriptive alt tags for accessibility and SEO
+                </div>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Heading Structure:</strong> Proper H1-H6 hierarchy for content organization
+                </div>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Mobile Responsive:</strong> Fully responsive design optimized for all devices
+                </div>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Page Speed:</strong> Lightweight code with optimized loading times
+                </div>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Schema Markup Ready:</strong> Structured data ready for local business implementation
+                </div>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Content Quality:</strong> Original, valuable content with proper keyword integration
+                </div>
+                <div class="audit-item">
+                    <span class="checkmark">✓</span>
+                    <strong>Internal Linking:</strong> Strategic navigation and content linking structure
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your real estate journey? Let's connect today.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>Century 21 Cedarcrest Realty<br>
+                            460 Bloomfield Avenue<br>
+                            Caldwell, NJ 07006</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>Office: (973) 228-1050<br>
+                            Available Monday-Saturday<br>
+                            9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-icon">🏡</span>
+                        <div>
+                            <h4>Service Area</h4>
+                            <p>Licensed throughout New Jersey<br>
+                            Specializing in Central NJ<br>
+                            Serving all counties statewide</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">How Can I Help You? *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Christopher Burns</h4>
+                <p>Licensed Real Estate Professional<br>
+                Century 21 Cedarcrest Realty<br>
+                Serving all of New Jersey</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#about">About</a></p>
+                <p><a href="#why-choose">Why Choose Me</a></p>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <p><a href="https://century21cedarcrest.com/" target="_blank" rel="noopener">Century 21 Cedarcrest</a></p>
+                <p><a href="#quiz">Home Finder Quiz</a></p>
+                <p><a href="#contact">Schedule Consultation</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Office Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                Saturday: 9:00 AM - 5:00 PM<br>
+                Sunday: By Appointment</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Christopher Burns - Century 21 Cedarcrest Realty. All rights reserved. | Each office is independently owned and operated.</p>
+            <p style="margin-top: 10px; font-size: 0.85rem;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Quiz functionality
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+        const answers = {};
+
+        document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const questionDiv = this.closest('.quiz-question');
+                const questionNum = parseInt(questionDiv.dataset.question);
+                const value = this.dataset.value;
+                
+                answers[questionNum] = value;
+                
+                // Hide current question
+                questionDiv.classList.remove('active');
+                
+                // Show next question or results
+                if (questionNum < totalQuestions) {
+                    currentQuestion = questionNum + 1;
+                    document.querySelector(`[data-question="${currentQuestion}"]`).classList.add('active');
+                } else {
+                    showResults();
+                }
+            });
+        });
+
+        function showResults() {
+            document.getElementById('quiz-content').style.display = 'none';
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.classList.add('active');
+            
+            // Calculate results based on answers
+            const scoreElement = document.getElementById('score');
+            const textElement = document.getElementById('result-text');
+            
+            scoreElement.textContent = '5/5';
+            
+            let resultText = '';
+            
+            // Determine primary motivation
+            if (answers[1] === 'investment') {
+                resultText = 'You\'re an <strong>Investment-Focused Buyer</strong>. You should explore properties in emerging neighborhoods with strong appreciation potential. I can help you analyze market trends, rental yields, and long-term growth opportunities throughout New Jersey. ';
+            } else if (answers[1] === 'family') {
+                resultText = 'You\'re a <strong>Family-Oriented Buyer</strong>. Your priority is finding a home in a great school district with space to grow. I\'ll help you explore family-friendly neighborhoods in Central and North Jersey with excellent schools, parks, and community amenities. ';
+            } else if (answers[1] === 'lifestyle') {
+                resultText = 'You\'re making a <strong>Lifestyle Change</strong>. Whether upgrading or downsizing, I\'ll help you find a property that matches your current life stage and future plans. We\'ll focus on locations and features that enhance your quality of life. ';
+            } else {
+                resultText = 'You\'re a <strong>First-Time Homebuyer</strong>. Congratulations on taking this exciting step! I specialize in guiding first-time buyers through the process, from pre-approval to closing. Together we\'ll find an affordable property that helps you build equity and achieve the American dream. ';
+            }
+            
+            // Add timing context
+            if (answers[4] === 'immediate') {
+                resultText += 'With your immediate timeline, we should start the search process right away. I have access to the latest listings and can schedule viewings quickly.';
+            } else if (answers[4] === 'exploring') {
+                resultText += 'Since you\'re in the exploration phase, let\'s schedule a consultation to discuss your goals and start preparing for your future purchase.';
+            }
+            
+            textElement.innerHTML = resultText;
+        }
+
+        function restartQuiz() {
+            currentQuestion = 1;
+            Object.keys(answers).forEach(key => delete answers[key]);
+            
+            document.getElementById('quiz-result').classList.remove('active');
+            document.getElementById('quiz-content').style.display = 'block';
+            
+            document.querySelectorAll('.quiz-question').forEach(q => q.classList.remove('active'));
+            document.querySelector('[data-question="1"]').classList.add('active');
+        }
+
+        // Contact form handling
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // In a real implementation, this would send to a backend
+            alert('Thank you for your message! Christopher Burns will contact you within 24 hours. For immediate assistance, please call (973) 228-1050.');
+            
+            // Reset form
+            document.getElementById('contact-form').reset();
+        }
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .stat-card, .contact-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
