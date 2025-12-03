@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert seller representation services in New Jersey by Christopher Burns. Maximize your sale price with professional marketing, staging, photography, and expert negotiation. Century 21 Action Plus Realty.">
+    <meta name="keywords" content="seller agent NJ, seller representation New Jersey, home selling services, list home NJ, real estate seller agent, Christopher Burns, Monmouth County seller agent, sell home Ocean County">
+    <meta name="author" content="Christopher Burns">
+    <meta property="og:title" content="Seller Representation Services | Christopher Burns - Century 21 Action Plus">
+    <meta property="og:description" content="Professional seller representation throughout New Jersey. Expert marketing, staging, photography, and negotiation to maximize your home sale price.">
+    <meta property="og:type" content="website">
+    
+    <title>Seller Representation Services NJ | Christopher Burns - Century 21 Action Plus Realty</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav.scrolled {
+            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .logo:hover {
+            color: var(--primary-gold);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+        
+        .nav-links li {
+            margin: 0;
+        }
+        
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-gold);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(139, 64, 73, 0.1) 0%, transparent 50%);
+            animation: gradientShift 15s ease-in-out infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .page-header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .page-header .subtitle {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Main Content Section */
+        .content-section {
+            padding: 80px 20px;
+            background: var(--white);
+        }
+        
+        .intro-text {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        
+        .intro-text h2 {
+            font-size: 2.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 20px;
+        }
+        
+        .intro-text p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        /* Subcategories Grid */
+        .subcategories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
+            margin: 60px 0;
+        }
+        
+        .subcategory-card {
+            background: var(--white);
+            padding: 40px 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+        
+        .subcategory-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: var(--primary-gold);
+            transition: height 0.3s ease;
+            border-radius: 12px 0 0 12px;
+        }
+        
+        .subcategory-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+            border-color: var(--primary-gold);
+        }
+        
+        .subcategory-card:hover::before {
+            height: 100%;
+        }
+        
+        .subcategory-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .subcategory-card h3 {
+            color: var(--deep-navy);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .subcategory-card h3 a {
+            color: var(--deep-navy);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .subcategory-card h3 a:hover {
+            color: var(--primary-gold);
+        }
+        
+        .subcategory-card p {
+            color: var(--text-light);
+            margin-bottom: 25px;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        .subcategory-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-gold);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            gap: 8px;
+        }
+        
+        .subcategory-link:hover {
+            color: var(--accent-burgundy);
+            gap: 12px;
+        }
+        
+        .subcategory-link::after {
+            content: '→';
+            font-size: 1.2rem;
+        }
+        
+        /* Why Work With Me Section */
+        .why-section {
+            background: var(--soft-cream);
+            padding: 70px 40px;
+            border-radius: 12px;
+            margin: 60px 0;
+        }
+        
+        .why-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 50px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .benefit-item {
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-item h3 {
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .benefit-item p {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            margin: 70px 0 40px;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            color: var(--deep-navy);
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 35px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-burgundy);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 64, 73, 0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-gold);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+        
+        .footer-bottom p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .logo-image {
+                height: 40px;
+            }
+            
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .page-header .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .subcategories-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .intro-text h2 {
+                font-size: 2rem;
+            }
+            
+            .why-section h2 {
+                font-size: 2rem;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Christopher Burns Logo" class="logo-image">
+                Christopher Burns
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#quiz">Find Your Home</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Seller Representation</h1>
+            <p class="subtitle">Maximize your sale price with strategic marketing, professional photography, expert staging, and skilled negotiation. Get top dollar for your property with comprehensive seller representation throughout New Jersey.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="intro-text">
+                <h2>Sell Your Home for Maximum Value</h2>
+                <p>Selling your home is one of the most important financial decisions you'll make. With proven marketing strategies, professional staging and photography, competitive pricing analysis, and expert negotiation skills, I ensure you get the best possible price in the shortest time. Agent-represented homes sell for an average of $55,000 more than FSBO properties.</p>
+            </div>
+
+            <!-- Subcategories Grid -->
+            <div class="subcategories-grid">
+                <div class="subcategory-card">
+                    <div class="subcategory-icon">💰</div>
+                    <h3><a href="home-valuation-pricing.html">Home Valuation & Pricing Strategy</a></h3>
+                    <p>Get an accurate home valuation and strategic pricing recommendation. Free comparative market analysis (CMA) with detailed market trends, recent comparable sales, and optimal pricing strategy to attract qualified buyers and maximize your return.</p>
+                    <a href="home-valuation-pricing.html" class="subcategory-link">Request Free Valuation</a>
+                </div>
+
+                <div class="subcategory-card">
+                    <div class="subcategory-icon">✨</div>
+                    <h3><a href="professional-staging.html">Professional Home Staging</a></h3>
+                    <p>Staged homes sell 32% faster and for higher prices. Expert staging consultation to showcase your home's best features, declutter effectively, and create an inviting atmosphere that helps buyers envision themselves living there.</p>
+                    <a href="professional-staging.html" class="subcategory-link">Learn About Staging</a>
+                </div>
+
+                <div class="subcategory-card">
+                    <div class="subcategory-icon">📸</div>
+                    <h3><a href="photography-marketing.html">Professional Photography & Marketing</a></h3>
+                    <p>Comprehensive marketing package with professional photography, aerial drone shots, 3D virtual tours, and social media promotion. Listings with professional photos receive 403% more inquiries and sell significantly faster.</p>
+                    <a href="photography-marketing.html" class="subcategory-link">View Marketing Package</a>
+                </div>
+
+                <div class="subcategory-card">
+                    <div class="subcategory-icon">🔧</div>
+                    <h3><a href="pre-sale-preparation.html">Pre-Sale Home Preparation</a></h3>
+                    <p>Maximize your home's value with strategic pre-sale improvements. Guidance on cost-effective upgrades with highest ROI, essential repairs, curb appeal enhancements, and pre-listing inspection recommendations to avoid surprises.</p>
+                    <a href="pre-sale-preparation.html" class="subcategory-link">Download Prep Checklist</a>
+                </div>
+
+                <div class="subcategory-card">
+                    <div class="subcategory-icon">🤝</div>
+                    <h3><a href="negotiation-closing.html">Negotiation & Closing Support</a></h3>
+                    <p>Expert negotiation to secure the best terms and highest price. Skilled handling of multiple offers, inspection negotiations, appraisal issues, and contract contingencies. Full support through closing to ensure smooth transaction.</p>
+                    <a href="negotiation-closing.html" class="subcategory-link">Maximize Sale Price</a>
+                </div>
+            </div>
+
+            <!-- Why Work With Me Section -->
+            <div class="why-section">
+                <h2>The Agent Advantage</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💵</div>
+                        <h3>Higher Sale Price</h3>
+                        <p>Agent-represented homes sell for approximately $55,000 more on average than FSBO properties. Professional pricing, marketing, and negotiation maximize your net proceeds.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Sell Faster</h3>
+                        <p>Homes with professional photography and staging sell 32% faster. Strategic pricing and comprehensive marketing attract qualified buyers quickly.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📢</div>
+                        <h3>Maximum Exposure</h3>
+                        <p>MLS distribution, social media marketing, professional photography, virtual tours, and extensive network reach thousands of potential buyers online and offline.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Expert Protection</h3>
+                        <p>Navigate complex contracts, disclosures, inspections, and negotiations with confidence. I protect your interests and handle all legal requirements properly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>Ready to Sell Your Home?</h2>
+                <p>Get started with a free home valuation and personalized selling strategy.</p>
+                <a href="index.html#contact" class="cta-button">Get Free Home Valuation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Christopher Burns</h4>
+                <p>Licensed Real Estate Professional<br>
+                Century 21 Action Plus Realty<br>
+                Serving all of New Jersey</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="index.html#about">About</a></p>
+                <p><a href="index.html#why-choose">Why Choose Me</a></p>
+                <p><a href="index.html#services">Services</a></p>
+                <p><a href="index.html#contact">Contact</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <p><a href="https://www.actionplusrealty.com/" target="_blank" rel="noopener">Century 21 Action Plus</a></p>
+                <p><a href="index.html#quiz">Home Finder Quiz</a></p>
+                <p><a href="index.html#contact">Schedule Consultation</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Office Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                Saturday: By Appointment<br>
+                Sunday: By Appointment</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Christopher Burns - Century 21 Action Plus Realty. All rights reserved. | Each office is independently owned and operated.</p>
+            <p style="margin-top: 10px; font-size: 0.85rem;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.subcategory-card, .benefit-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
