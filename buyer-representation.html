@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert buyer representation services in New Jersey by Christopher Burns. Find your perfect home with professional guidance from Century 21 Action Plus Realty. Single-family homes, condos, waterfront properties, luxury estates, and new construction.">
-    <meta name="keywords" content="buyer agent NJ, buyer representation New Jersey, home buying services, real estate buyer agent, Christopher Burns, Monmouth County buyer agent, Ocean County homes, New Jersey real estate">
-    <meta name="author" content="Christopher Burns">
-    <meta property="og:title" content="Buyer Representation Services | Christopher Burns - Century 21 Action Plus">
-    <meta property="og:description" content="Professional buyer representation throughout New Jersey. Expert guidance for single-family homes, condos, waterfront properties, luxury estates, and new construction.">
-    <meta property="og:type" content="website">
-    
-    <title>Buyer Representation Services NJ | Christopher Burns - Century 21 Action Plus Realty</title>
+    <meta name="description" content="Expert buyer representation in Monmouth County, NJ with Chris Burns Realtor. Professional guidance for finding houses for sale near you including single-family homes, condos, townhomes, waterfront properties, and luxury estates throughout New Jersey.">
+    <meta name="keywords" content="buyer representation Monmouth County, homes for sale near me, houses for sale, real estate buyer agent NJ, Chris Burns realtor, Zillow homes for sale, condos for sale near me, luxury homes NJ">
+    <title>Buyer Representation - Monmouth County, NJ | Chris Burns Realtor</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Buyer Representation",
+          "description": "Professional buyer representation services for finding and purchasing homes in Monmouth County, NJ"
+        }
+      }
+    }
+    </script>
     
     <style>
         :root {
@@ -28,34 +43,21 @@
             --white: #FFFFFF;
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--text-dark);
-            line-height: 1.7;
+            line-height: 1.8;
             background-color: var(--white);
-            overflow-x: hidden;
         }
         
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Cormorant Garamond', serif;
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
             font-weight: 600;
-            line-height: 1.2;
+            color: var(--deep-navy);
         }
         
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -63,11 +65,6 @@
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        
-        nav.scrolled {
-            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
         }
         
         .nav-container {
@@ -81,295 +78,161 @@
         
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--deep-navy);
             text-decoration: none;
-            transition: color 0.3s ease;
             display: flex;
             align-items: center;
             gap: 15px;
         }
         
-        .logo-image {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-        }
+        .logo-image { height: 50px; width: auto; }
         
-        .logo:hover {
-            color: var(--primary-gold);
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 35px;
-        }
-        
-        .nav-links li {
-            margin: 0;
-        }
-        
-        .nav-links a {
-            color: var(--text-dark);
-            text-decoration: none;
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
             font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
+            transition: color 0.3s;
         }
+        .nav-links a:hover { color: var(--primary-gold); }
         
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-gold);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        
-        /* Page Header */
-        .page-header {
+        .hero {
             background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
             padding: 150px 20px 80px;
             text-align: center;
             color: var(--white);
-            position: relative;
-            overflow: hidden;
         }
         
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(139, 64, 73, 0.1) 0%, transparent 50%);
-            animation: gradientShift 15s ease-in-out infinite;
-        }
-        
-        @keyframes gradientShift {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-        
-        .page-header-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .page-header h1 {
+        .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
             color: var(--white);
-            animation: fadeInUp 0.8s ease-out;
         }
         
-        .page-header .subtitle {
-            font-size: 1.3rem;
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
             color: rgba(255,255,255,0.9);
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-            animation: fadeInUp 0.8s ease-out 0.2s backwards;
         }
         
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
         
-        /* Main Content Section */
-        .content-section {
-            padding: 80px 20px;
-            background: var(--white);
-        }
-        
-        .intro-text {
+        .section-intro {
             max-width: 900px;
             margin: 0 auto 60px;
             text-align: center;
         }
         
-        .intro-text h2 {
+        .section-intro h2 {
             font-size: 2.5rem;
-            color: var(--deep-navy);
             margin-bottom: 20px;
+            color: var(--deep-navy);
         }
         
-        .intro-text p {
+        .section-intro p {
             font-size: 1.15rem;
             color: var(--text-light);
             line-height: 1.8;
         }
         
-        /* Subcategories Grid */
-        .subcategories-grid {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 35px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
             margin: 60px 0;
         }
         
-        .subcategory-card {
+        .service-card {
             background: var(--white);
-            padding: 40px 35px;
+            padding: 35px 30px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            position: relative;
+            transition: all 0.3s;
+            border-left: 4px solid var(--primary-gold);
         }
         
-        .subcategory-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 0;
-            background: var(--primary-gold);
-            transition: height 0.3s ease;
-            border-radius: 12px 0 0 12px;
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
         }
         
-        .subcategory-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
-            border-color: var(--primary-gold);
-        }
-        
-        .subcategory-card:hover::before {
-            height: 100%;
-        }
-        
-        .subcategory-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .subcategory-card h3 {
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
             color: var(--deep-navy);
-            font-size: 1.8rem;
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
             margin-bottom: 15px;
         }
         
-        .subcategory-card h3 a {
-            color: var(--deep-navy);
+        .service-link {
+            color: var(--primary-gold);
             text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .subcategory-card h3 a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .subcategory-card p {
-            color: var(--text-light);
-            margin-bottom: 25px;
-            line-height: 1.7;
-            font-size: 1.05rem;
-        }
-        
-        .subcategory-link {
-            display: inline-flex;
-            align-items: center;
-            color: var(--primary-gold);
             font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            gap: 8px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
         }
         
-        .subcategory-link:hover {
-            color: var(--accent-burgundy);
-            gap: 12px;
-        }
+        .service-link:hover { color: var(--accent-burgundy); }
         
-        .subcategory-link::after {
-            content: '→';
-            font-size: 1.2rem;
-        }
-        
-        /* Why Work With Me Section */
-        .why-section {
+        .why-choose {
             background: var(--soft-cream);
-            padding: 70px 40px;
-            border-radius: 12px;
-            margin: 60px 0;
+            padding: 80px 20px;
         }
         
-        .why-section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--deep-navy);
-            margin-bottom: 50px;
-        }
-        
-        .benefits-grid {
+        .why-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 35px;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
-        .benefit-item {
+        .why-item {
             text-align: center;
+            padding: 30px 20px;
         }
         
-        .benefit-icon {
+        .why-icon {
             font-size: 3.5rem;
+            color: var(--primary-gold);
             margin-bottom: 20px;
         }
         
-        .benefit-item h3 {
-            color: var(--primary-gold);
-            margin-bottom: 15px;
+        .why-item h3 {
             font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
         }
         
-        .benefit-item p {
+        .why-item p {
             color: var(--text-light);
             line-height: 1.7;
-            font-size: 1.05rem;
         }
         
-        /* CTA Section */
         .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
             text-align: center;
-            margin: 70px 0 40px;
+            color: var(--white);
         }
         
         .cta-section h2 {
-            font-size: 2.5rem;
-            color: var(--deep-navy);
+            font-size: 2.8rem;
             margin-bottom: 20px;
+            color: var(--white);
         }
         
         .cta-section p {
             font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 35px;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
         }
         
         .cta-button {
@@ -381,17 +244,51 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+            transition: all 0.3s;
         }
         
         .cta-button:hover {
             background: var(--accent-burgundy);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 64, 73, 0.4);
         }
         
-        /* Footer */
+        .testimonials {
+            background: var(--white);
+            padding: 80px 20px;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-cream);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+        
+        .testimonial-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
         footer {
             background: var(--deep-navy);
             color: var(--white);
@@ -422,12 +319,10 @@
         .footer-section a {
             color: rgba(255,255,255,0.8);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
         
-        .footer-section a:hover {
-            color: var(--primary-gold);
-        }
+        .footer-section a:hover { color: var(--primary-gold); }
         
         .footer-bottom {
             max-width: 1200px;
@@ -435,248 +330,197 @@
             padding-top: 30px;
             border-top: 1px solid rgba(255,255,255,0.1);
             text-align: center;
-        }
-        
-        .footer-bottom p {
             color: rgba(255,255,255,0.6);
             font-size: 0.9rem;
-            line-height: 1.6;
         }
         
-        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .logo-image {
-                height: 40px;
-            }
-            
-            .page-header h1 {
-                font-size: 2.5rem;
-            }
-            
-            .page-header .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .subcategories-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-            
-            .intro-text h2 {
-                font-size: 2rem;
-            }
-            
-            .why-section h2 {
-                font-size: 2rem;
-            }
-            
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .cta-section h2 {
-                font-size: 2rem;
-            }
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .logo { font-size: 1.2rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
+    <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="ChrisBurnsLogo.png" alt="Christopher Burns Logo" class="logo-image">
-                Christopher Burns
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
             </a>
             <ul class="nav-links">
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#why-choose">Why Choose Me</a></li>
                 <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#quiz">Find Your Home</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-content">
-            <h1>Buyer Representation</h1>
-            <p class="subtitle">Expert guidance through every step of the home buying process. From initial search to final closing, I'll help you find and secure your perfect property in New Jersey with confidence and expert negotiation.</p>
-        </div>
+    <section class="hero">
+        <h1>Buyer Representation in Monmouth County, NJ</h1>
+        <p class="subtitle">Expert guidance to find your perfect home with confidence</p>
     </section>
 
-    <!-- Main Content -->
-    <section class="content-section">
+    <div class="container">
+        <div class="section-intro">
+            <h2>Your Trusted Buyer's Agent in Monmouth County</h2>
+            <p>Finding the right home is one of the biggest decisions you'll make. As your dedicated buyer's agent serving Monmouth County, Ocean County, and Middlesex County, I provide expert representation to help you find houses for sale near you and navigate the entire home buying process. From your first search on Zillow to closing day, I'll protect your interests, negotiate the best price, and make sure you find the perfect home in communities like Marlboro, Manalapan, Freehold, Holmdel, or anywhere throughout New Jersey.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">Complete Buyer Representation Services</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🔍 Home Search Assistance</h3>
+                <p>Personalized home search based on your needs and budget in Monmouth County. I'll help you find houses for sale near you including single-family homes, condos for sale, townhomes, and luxury properties throughout New Jersey communities.</p>
+                <a href="home-buying.html" class="service-link">Start Your Home Search →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🏘️ Neighborhood Expertise</h3>
+                <p>In-depth knowledge of Monmouth County neighborhoods including Marlboro, Manalapan, Holmdel, Freehold, Colts Neck, and Red Bank. School districts, commute times, amenities, and market trends to help you choose the right New Jersey community.</p>
+                <a href="real-estate-market-analysis.html" class="service-link">Explore Neighborhoods →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>💰 Price Negotiation</h3>
+                <p>Expert negotiation to get you the best price on homes for sale in Monmouth County. I analyze comparable sales, market conditions, and property values to negotiate confidently on your behalf throughout New Jersey.</p>
+                <a href="price-negotiation.html" class="service-link">Learn About Negotiation →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🔧 Property Inspection Coordination</h3>
+                <p>Professional home inspection services in Monmouth County to protect your investment. I coordinate inspections, review reports with you, and negotiate repairs if needed for houses for sale throughout New Jersey.</p>
+                <a href="home-inspection-guide.html" class="service-link">Inspection Process →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📊 Market Analysis</h3>
+                <p>Comprehensive market analysis for properties in Monmouth County, Ocean County, and Middlesex County. Recent sales data, pricing trends, and property valuations to ensure you make an informed offer on homes for sale in NJ.</p>
+                <a href="real-estate-market-analysis.html" class="service-link">Get Market Analysis →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📅 Closing Coordination</h3>
+                <p>Full support through closing day for your home purchase in New Jersey. Attorney coordination, title work, final walkthrough, and closing document review. Smooth transaction from offer to keys in Monmouth County.</p>
+                <a href="closing-coordination.html" class="service-link">Understand Closing →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🏡 Property Types</h3>
+                <p>Expert representation for all property types in Monmouth County: single-family homes, condos for sale near you, townhomes, waterfront properties, luxury estates, new construction, and investment properties throughout New Jersey.</p>
+                <a href="single-family-homes.html" class="service-link">View Property Types →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🎓 First-Time Buyer Support</h3>
+                <p>Special guidance for first-time homebuyers in New Jersey. Down payment assistance programs, financing options, and step-by-step support throughout the home buying process in Monmouth County.</p>
+                <a href="first-time-homebuyer-assistance.html" class="service-link">First-Time Buyer Help →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📱 Virtual Tours & Showings</h3>
+                <p>Flexible showing schedule including virtual tours for houses for sale in Monmouth County. In-person showings, video walkthroughs, and FaceTime tours to accommodate your schedule when viewing homes in New Jersey.</p>
+                <a href="virtual-home-tours.html" class="service-link">Schedule Showings →</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="why-choose">
         <div class="container">
-            <div class="intro-text">
-                <h2>Find Your Perfect Home in New Jersey</h2>
-                <p>Whether you're searching for a single-family home, luxury estate, waterfront property, low-maintenance condo, or brand new construction, I provide expert buyer representation to help you navigate the New Jersey real estate market. With access to MLS listings, off-market properties, and deep local knowledge, I'm your trusted partner in finding the right home at the right price.</p>
-            </div>
-
-            <!-- Subcategories Grid -->
-            <div class="subcategories-grid">
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🏡</div>
-                    <h3><a href="single-family-homes.html">Single-Family Homes</a></h3>
-                    <p>Discover beautiful single-family homes throughout New Jersey. From starter homes to established neighborhoods, find properties with space, privacy, and long-term value. Perfect for families seeking room to grow with yards, garages, and quiet communities.</p>
-                    <a href="single-family-homes.html" class="subcategory-link">Explore Single-Family Homes</a>
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.8rem;">Why Choose Chris Burns as Your Buyer's Agent</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🎯</div>
+                    <h3>Your Advocate</h3>
+                    <p>I represent YOUR interests exclusively when buying homes for sale in Monmouth County. Strong negotiation, thorough due diligence, and protection of your rights throughout the entire home buying process in New Jersey.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🏘️</div>
-                    <h3><a href="condos-townhomes.html">Condos & Townhomes</a></h3>
-                    <p>Low-maintenance living with community amenities and modern features. Perfect for first-time buyers, busy professionals, and those seeking hassle-free homeownership. Enjoy pools, fitness centers, and maintained grounds without the upkeep.</p>
-                    <a href="condos-townhomes.html" class="subcategory-link">View Condos & Townhomes</a>
+                <div class="why-item">
+                    <div class="why-icon">🏆</div>
+                    <h3>Local Market Expert</h3>
+                    <p>Deep knowledge of Monmouth County, Ocean County, and Middlesex County real estate markets. I know what houses for sale near you are truly worth and which neighborhoods offer the best value in New Jersey.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🌊</div>
-                    <h3><a href="waterfront-shore-properties.html">Waterfront & Shore Properties</a></h3>
-                    <p>Experience waterfront living on the Jersey Shore. Beach houses, bay-front estates, and lakefront properties with stunning water views, private beach access, and resort-style living. Your dream shore home awaits.</p>
-                    <a href="waterfront-shore-properties.html" class="subcategory-link">See Waterfront Properties</a>
+                <div class="why-item">
+                    <div class="why-icon">🔍</div>
+                    <h3>Off-Market Access</h3>
+                    <p>Access to homes for sale before they hit Zillow or other listing sites. My network throughout Monmouth County gives you first look at properties, including pocket listings and coming soon homes in NJ.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">💎</div>
-                    <h3><a href="luxury-executive-homes.html">Luxury & Executive Homes</a></h3>
-                    <p>Premium properties in New Jersey's most exclusive communities. High-end amenities, custom features, smart home technology, and sophisticated living spaces for discerning buyers seeking the finest in residential real estate.</p>
-                    <a href="luxury-executive-homes.html" class="subcategory-link">View Luxury Portfolio</a>
+                <div class="why-item">
+                    <div class="why-icon">⏱️</div>
+                    <h3>Full-Time Availability</h3>
+                    <p>Quick response times and flexible schedule for viewing houses for sale in Monmouth County. My phone is always on for my buyer clients throughout New Jersey who need immediate answers or showings.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🏗️</div>
-                    <h3><a href="new-construction-homes.html">New Construction Homes</a></h3>
-                    <p>Brand new homes with modern features, builder warranties, and energy-efficient designs. Customize your dream home with the latest finishes, smart technology, and move-in-ready perfection in new communities throughout NJ.</p>
-                    <a href="new-construction-homes.html" class="subcategory-link">Explore New Construction</a>
-                </div>
-            </div>
-
-            <!-- Why Work With Me Section -->
-            <div class="why-section">
-                <h2>Why Work With a Buyer's Agent?</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">💰</div>
-                        <h3>Better Negotiation</h3>
-                        <p>Agent-represented buyers save an average of $55,000 compared to going solo. Professional negotiation ensures you get the best price and favorable terms on your purchase.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🔍</div>
-                        <h3>Access to More Properties</h3>
-                        <p>Full MLS access, off-market listings, and coming-soon properties before they hit the public market. See homes first and gain a competitive advantage.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">📋</div>
-                        <h3>Expert Guidance</h3>
-                        <p>Navigate complex contracts, inspections, appraisals, and closing documents with confidence. I handle all paperwork and protect your interests every step of the way.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🤝</div>
-                        <h3>Your Advocate</h3>
-                        <p>I work solely for you, not the seller. Your goals are my priority, ensuring a smooth transaction from initial search to final closing and beyond.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="cta-section">
-                <h2>Ready to Find Your Perfect Home?</h2>
-                <p>Let's start your home buying journey with expert guidance and personalized service.</p>
-                <a href="index.html#contact" class="cta-button">Get Started Today</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.8rem;">What Homebuyers Say About Chris Burns</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 50px; font-size: 1.15rem;">Real experiences from buyers in Monmouth County, NJ</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris helped us find our dream home in Marlboro. He showed us houses that perfectly matched what we wanted, negotiated $15,000 off the asking price, and made the whole process so smooth. Best buyer's agent we could have asked for!"</p>
+                    <p class="testimonial-author">— John & Maria S.</p>
+                    <p class="testimonial-location">Homebuyers, Marlboro, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We were relocating from out of state and Chris made it so easy. He sent us virtual tours, knew all the best neighborhoods in Monmouth County, and found us the perfect house in Holmdel. We closed without ever feeling stressed!"</p>
+                    <p class="testimonial-author">— Amanda T.</p>
+                    <p class="testimonial-location">Homebuyer, Holmdel, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris found us a house that wasn't even on Zillow yet! His connections in Freehold got us first look at an off-market property that was exactly what we wanted. We beat out other buyers and got our dream home. Thank you Chris!"</p>
+                    <p class="testimonial-author">— Steve & Rachel M.</p>
+                    <p class="testimonial-location">Homebuyers, Freehold, NJ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Find Your Dream Home in Monmouth County?</h2>
+        <p>Let's start your home search today. Expert buyer representation with your best interests as my priority.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Free Consultation</a>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Christopher Burns</h4>
-                <p>Licensed Real Estate Professional<br>
-                Century 21 Action Plus Realty<br>
-                Serving all of New Jersey</p>
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
             </div>
-            
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <p><a href="index.html#about">About</a></p>
-                <p><a href="index.html#why-choose">Why Choose Me</a></p>
                 <p><a href="index.html#services">Services</a></p>
                 <p><a href="index.html#contact">Contact</a></p>
             </div>
-            
             <div class="footer-section">
-                <h4>Resources</h4>
-                <p><a href="https://www.actionplusrealty.com/" target="_blank" rel="noopener">Century 21 Action Plus</a></p>
-                <p><a href="index.html#quiz">Home Finder Quiz</a></p>
-                <p><a href="index.html#contact">Schedule Consultation</a></p>
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+                <p><a href="investment-property-sales.html">Investment Properties</a></p>
             </div>
-            
             <div class="footer-section">
-                <h4>Office Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                Saturday: By Appointment<br>
-                Sunday: By Appointment</p>
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>&copy; 2024 Christopher Burns - Century 21 Action Plus Realty. All rights reserved. | Each office is independently owned and operated.</p>
-            <p style="margin-top: 10px; font-size: 0.85rem;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+            <p style="margin-top: 10px;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
         </div>
     </footer>
-
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.subcategory-card, .benefit-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
 </body>
 </html>
