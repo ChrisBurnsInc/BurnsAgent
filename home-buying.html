@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home buying guide in Monmouth County, NJ with Chris Burns Realtor. Step-by-step process for buying houses for sale near you. Expert guidance from search to closing in Marlboro, Manalapan, Freehold, Holmdel throughout New Jersey.">
+    <meta name="keywords" content="home buying Monmouth County, buying a house NJ, houses for sale near me, homes for sale, home buying process, Chris Burns realtor, Zillow homes, New Jersey real estate">
+    <title>Home Buying Process - Monmouth County, NJ | Chris Burns Realtor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image { height: 50px; width: auto; }
+        
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary-gold); }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        
+        .section-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+            text-align: center;
+        }
+        
+        .section-intro p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        .steps-container {
+            max-width: 900px;
+            margin: 60px auto;
+        }
+        
+        .step {
+            background: var(--white);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 6px solid var(--primary-gold);
+        }
+        
+        .step h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .step p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .step ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        
+        .step li {
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-burgundy);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover { color: var(--primary-gold); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .logo { font-size: 1.2rem; }
+            .step { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Home Buying Process in Monmouth County, NJ</h1>
+        <p class="subtitle">Step-by-step guide to buying your dream home with confidence</p>
+    </section>
+
+    <div class="container">
+        <div class="section-intro">
+            <h2>Your Complete Guide to Buying a Home in Monmouth County</h2>
+            <p>Buying a home in Monmouth County, NJ is an exciting journey, but it can feel overwhelming if you don't know the process. As your trusted real estate professional serving Monmouth County, Ocean County, and Middlesex County, I'll guide you through every step of buying houses for sale near you. From searching homes on Zillow to closing day, here's what to expect when buying a home in New Jersey communities like Marlboro, Manalapan, Freehold, or Holmdel.</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>Get Pre-Approved for a Mortgage</h3>
+                <p>Before searching for houses for sale in Monmouth County, get pre-approved for a mortgage. This tells you exactly how much you can afford and shows sellers you're a serious buyer.</p>
+                <ul>
+                    <li><strong>Gather Documents:</strong> Pay stubs, tax returns, bank statements, employment verification</li>
+                    <li><strong>Check Your Credit:</strong> Review credit report and address any issues before applying</li>
+                    <li><strong>Compare Lenders:</strong> Shop around for the best rates from multiple New Jersey lenders</li>
+                    <li><strong>Get Pre-Approval Letter:</strong> Receive written confirmation of loan approval amount</li>
+                    <li><strong>Timeline:</strong> 1-3 days for pre-approval in New Jersey</li>
+                </ul>
+                <p><strong>Why This Matters:</strong> Sellers in Monmouth County won't consider offers without pre-approval. You'll also avoid wasting time looking at homes outside your budget.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>Find Your Real Estate Agent</h3>
+                <p>Partner with an experienced buyer's agent who knows Monmouth County inside and out. I provide expert guidance, neighborhood knowledge, and access to homes for sale before they hit Zillow.</p>
+                <ul>
+                    <li><strong>Local Expertise:</strong> Deep knowledge of Monmouth County neighborhoods and schools</li>
+                    <li><strong>Access to Listings:</strong> MLS access and off-market properties in New Jersey</li>
+                    <li><strong>Negotiation Skills:</strong> Experienced negotiator working for YOUR best interests</li>
+                    <li><strong>No Cost to You:</strong> Buyer's agents are paid by the seller in NJ</li>
+                </ul>
+                <p><strong>What I Do For You:</strong> Schedule showings, provide market analysis, negotiate offers, coordinate inspections, and guide you through closing.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>Search for Houses for Sale</h3>
+                <p>Now the fun part begins! We'll search for houses for sale near you in Monmouth County that match your criteria, budget, and lifestyle needs.</p>
+                <ul>
+                    <li><strong>Define Your Criteria:</strong> Location, bedrooms, bathrooms, square footage, amenities</li>
+                    <li><strong>MLS Access:</strong> View all available homes including new listings in Monmouth County</li>
+                    <li><strong>Schedule Showings:</strong> Tour homes that meet your requirements in New Jersey</li>
+                    <li><strong>Attend Open Houses:</strong> Visit properties on your own time in Marlboro, Freehold, Holmdel</li>
+                    <li><strong>Timeline:</strong> 2-8 weeks average in Monmouth County (varies by buyer)</li>
+                </ul>
+                <p><strong>Pro Tip:</strong> Don't limit your search to Zillow. I have access to homes that aren't publicly listed yet in New Jersey.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <h3>Make an Offer</h3>
+                <p>Found the perfect home in Monmouth County? Time to make an offer! I'll help you determine the right price and terms based on market analysis.</p>
+                <ul>
+                    <li><strong>Comparative Market Analysis:</strong> Review recent sales of similar homes in the area</li>
+                    <li><strong>Offer Strategy:</strong> Determine competitive offer price for Monmouth County market</li>
+                    <li><strong>Contract Terms:</strong> Contingencies, closing date, earnest money deposit</li>
+                    <li><strong>Submit Offer:</strong> Present offer to seller through their agent</li>
+                    <li><strong>Negotiation:</strong> Counter-offers and final agreement in New Jersey</li>
+                </ul>
+                <p><strong>What Goes Into Your Offer:</strong> Purchase price, earnest money deposit (typically 1-3% in NJ), inspection contingency, financing contingency, appraisal contingency, and closing date.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">5</span>
+                <h3>Home Inspection</h3>
+                <p>Once your offer is accepted on a house in Monmouth County, schedule a professional home inspection within 7-10 days. This protects you from unexpected repairs.</p>
+                <ul>
+                    <li><strong>Hire Inspector:</strong> Professional inspector examines the entire property</li>
+                    <li><strong>Attend Inspection:</strong> Be present to ask questions and see issues firsthand</li>
+                    <li><strong>Review Report:</strong> Detailed report of property condition and any problems</li>
+                    <li><strong>Negotiate Repairs:</strong> Request seller repairs or credits based on findings</li>
+                    <li><strong>Cost:</strong> $400-$600 in Monmouth County, New Jersey</li>
+                </ul>
+                <p><strong>What Gets Inspected:</strong> Foundation, roof, HVAC, plumbing, electrical, structure, and major systems throughout the Monmouth County property.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">6</span>
+                <h3>Secure Financing</h3>
+                <p>Work with your lender to finalize your mortgage for the Monmouth County home. Your lender will order an appraisal and complete underwriting.</p>
+                <ul>
+                    <li><strong>Appraisal:</strong> Lender orders appraisal to verify home value in New Jersey</li>
+                    <li><strong>Final Documents:</strong> Submit any additional documents lender requests</li>
+                    <li><strong>Underwriting:</strong> Lender reviews and approves your loan application</li>
+                    <li><strong>Loan Commitment:</strong> Receive final approval from lender</li>
+                    <li><strong>Timeline:</strong> 21-30 days for final approval in New Jersey</li>
+                </ul>
+                <p><strong>Stay Responsive:</strong> Answer lender questions quickly and provide documents promptly to avoid delays in your Monmouth County home purchase.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">7</span>
+                <h3>Final Walkthrough</h3>
+                <p>24-48 hours before closing on your Monmouth County home, conduct a final walkthrough to ensure the property is in agreed-upon condition.</p>
+                <ul>
+                    <li><strong>Verify Repairs:</strong> Confirm all negotiated repairs were completed properly</li>
+                    <li><strong>Check Condition:</strong> Ensure home is in same condition as when you made offer</li>
+                    <li><strong>Test Systems:</strong> Turn on appliances, HVAC, lights, and plumbing</li>
+                    <li><strong>Review Included Items:</strong> Verify all items in contract remain with house</li>
+                </ul>
+                <p><strong>What to Look For:</strong> No new damage, agreed repairs completed, seller's belongings removed from the New Jersey property, and all systems functioning properly.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">8</span>
+                <h3>Closing Day</h3>
+                <p>The final step! Sign documents, pay closing costs, and receive keys to your new Monmouth County home. Congratulations, you're a homeowner!</p>
+                <ul>
+                    <li><strong>Review Closing Disclosure:</strong> Final accounting of all costs at least 3 days before closing</li>
+                    <li><strong>Wire Funds:</strong> Send closing costs and down payment to title company</li>
+                    <li><strong>Sign Documents:</strong> Sign mortgage documents and transfer papers at closing</li>
+                    <li><strong>Receive Keys:</strong> Get keys to your new home in New Jersey!</li>
+                    <li><strong>Typical Costs:</strong> 2-5% of purchase price in closing costs in Monmouth County</li>
+                </ul>
+                <p><strong>Closing Day Timeline:</strong> Typically 1-2 hours to sign all documents at the title company or attorney's office in New Jersey. I'll be there with you!</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Ready to Start Your Home Buying Journey in Monmouth County?</h2>
+        <p>Let's find your dream home together. Expert guidance through every step of the process in New Jersey.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Free Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="index.html#about">About</a></p>
+                <p><a href="index.html#services">Services</a></p>
+                <p><a href="index.html#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
