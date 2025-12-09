@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Property valuation services in Monmouth County, NJ with Chris Burns Realtor. Free home valuation, CMA reports, and accurate property appraisals. Know what your house is worth in Marlboro, Manalapan, Freehold, Holmdel throughout New Jersey.">
+    <meta name="keywords" content="property valuation Monmouth County, home value NJ, CMA report, house appraisal, what is my home worth, Chris Burns realtor, property assessment New Jersey">
+    <title>Property Valuation Services - Monmouth County, NJ | Chris Burns Realtor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image { height: 50px; width: auto; }
+        
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary-gold); }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        
+        .section-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        
+        .section-intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
+        .section-intro p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        .value-factors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .factor-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            border-top: 4px solid var(--primary-gold);
+        }
+        
+        .factor-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .factor-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .factor-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        .process-section {
+            background: var(--soft-cream);
+            padding: 80px 20px;
+            margin: 60px 0;
+        }
+        
+        .process-steps {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+        
+        .process-step {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 6px solid var(--primary-gold);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .step-number {
+            background: var(--primary-gold);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .step-content h4 {
+            color: var(--deep-navy);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .step-content p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        .comparison-table {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 40px 0;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            color: var(--text-dark);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .check { color: #4CAF50; font-weight: 700; }
+        .cross { color: #f44336; font-weight: 700; }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-burgundy);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover { color: var(--primary-gold); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .logo { font-size: 1.2rem; }
+            .comparison-table { overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Property Valuation Services - Monmouth County, NJ</h1>
+        <p class="subtitle">Know exactly what your home is worth with accurate professional valuation</p>
+    </section>
+
+    <div class="container">
+        <div class="section-intro">
+            <h2>Professional Property Valuation in Monmouth County</h2>
+            <p>Whether you're selling your home, refinancing, or just curious about your property's value in Monmouth County, NJ, I provide accurate, complimentary property valuations based on comprehensive market analysis. As your local real estate expert serving Monmouth County, Ocean County, and Middlesex County, I use current sales data, market trends, and my deep knowledge of New Jersey neighborhoods like Marlboro, Manalapan, Freehold, and Holmdel to determine your home's true market value.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">Factors That Affect Your Home Value in Monmouth County</h2>
+        
+        <div class="value-factors">
+            <div class="factor-card">
+                <div class="factor-icon">📍</div>
+                <h3>Location</h3>
+                <p>Neighborhood desirability, school district quality, proximity to amenities, and commute times to NYC significantly impact property values throughout Monmouth County, NJ.</p>
+            </div>
+
+            <div class="factor-card">
+                <div class="factor-icon">📏</div>
+                <h3>Size & Layout</h3>
+                <p>Square footage, number of bedrooms and bathrooms, lot size, and floor plan functionality all affect your home's value in New Jersey's competitive market.</p>
+            </div>
+
+            <div class="factor-card">
+                <div class="factor-icon">🔨</div>
+                <h3>Condition & Age</h3>
+                <p>Overall condition, necessary repairs, recent updates, and age of major systems (roof, HVAC, appliances) impact valuation in Monmouth County properties.</p>
+            </div>
+
+            <div class="factor-card">
+                <div class="factor-icon">✨</div>
+                <h3>Upgrades & Features</h3>
+                <p>Kitchen and bathroom remodels, finished basements, hardwood floors, and premium features like pools or outdoor living spaces add value in NJ.</p>
+            </div>
+
+            <div class="factor-card">
+                <div class="factor-icon">📊</div>
+                <h3>Market Conditions</h3>
+                <p>Current supply and demand, buyer competition, interest rates, and seasonal factors affect what buyers will pay for homes in Monmouth County right now.</p>
+            </div>
+
+            <div class="factor-card">
+                <div class="factor-icon">🏘️</div>
+                <h3>Comparable Sales</h3>
+                <p>Recent sales of similar homes in your Monmouth County neighborhood provide the most reliable indicator of your property's current market value in New Jersey.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="process-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.5rem;">How I Value Your Monmouth County Property</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 50px; font-size: 1.15rem;">Professional CMA process for accurate home valuation in New Jersey</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Property Details Review</h4>
+                        <p>I gather comprehensive information about your Monmouth County home including size, bedrooms, bathrooms, lot size, age, condition, and recent updates to understand your property's unique characteristics in New Jersey.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Comparable Sales Analysis</h4>
+                        <p>Research recently sold properties (last 3-6 months) in your neighborhood that are similar in size, age, and features. These "comps" provide the foundation for accurate valuation in Monmouth County real estate.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Active Competition Review</h4>
+                        <p>Analyze currently listed homes for sale in your Monmouth County area to understand your competition and how your property compares to what buyers can choose from today in New Jersey.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Market Trends Assessment</h4>
+                        <p>Evaluate current Monmouth County market conditions including inventory levels, days on market, sale-to-list ratios, and price trends to determine optimal value in today's NJ market.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Adjustments & Calculations</h4>
+                        <p>Make value adjustments based on differences between your home and comparables (upgrades, condition, location) to arrive at accurate market value for your Monmouth County property.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Detailed CMA Report</h4>
+                        <p>Provide comprehensive Comparative Market Analysis report showing your home's estimated value, supporting data, comparable sales, and recommendations for maximizing value in New Jersey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">CMA vs Online Estimates: Why Accuracy Matters</h2>
+        
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Chris Burns CMA</th>
+                        <th>Zillow Estimate</th>
+                        <th>Realtor.com Estimate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Local Market Expertise</strong></td>
+                        <td><span class="check">✓</span> Expert knowledge of Monmouth County</td>
+                        <td><span class="cross">✗</span> Algorithm only</td>
+                        <td><span class="cross">✗</span> Algorithm only</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Property Inspection</strong></td>
+                        <td><span class="check">✓</span> In-person evaluation</td>
+                        <td><span class="cross">✗</span> No property viewing</td>
+                        <td><span class="cross">✗</span> No property viewing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Comparable Selection</strong></td>
+                        <td><span class="check">✓</span> Hand-picked similar sales</td>
+                        <td><span class="cross">✗</span> Automated selection</td>
+                        <td><span class="cross">✗</span> Automated selection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Condition Assessment</strong></td>
+                        <td><span class="check">✓</span> Accounts for updates/repairs</td>
+                        <td><span class="cross">✗</span> Cannot assess condition</td>
+                        <td><span class="cross">✗</span> Cannot assess condition</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Market Timing</strong></td>
+                        <td><span class="check">✓</span> Current market conditions</td>
+                        <td><span class="cross">✗</span> Historical data lag</td>
+                        <td><span class="cross">✗</span> Historical data lag</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Accuracy</strong></td>
+                        <td><span class="check">✓</span> 95-98% accurate in Monmouth County</td>
+                        <td><span class="cross">✗</span> Margin of error 10-20%</td>
+                        <td><span class="cross">✗</span> Margin of error 10-20%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Personalized Report</strong></td>
+                        <td><span class="check">✓</span> Detailed written analysis</td>
+                        <td><span class="cross">✗</span> Single number estimate</td>
+                        <td><span class="cross">✗</span> Single number estimate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cost</strong></td>
+                        <td><span class="check">✓</span> FREE - No obligation</td>
+                        <td><span class="check">✓</span> Free online</td>
+                        <td><span class="check">✓</span> Free online</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="max-width: 800px; margin: 40px auto; padding: 30px; background: #FFF9E6; border-left: 4px solid var(--primary-gold); border-radius: 8px;">
+            <h4 style="color: var(--deep-navy); margin-bottom: 15px;">💡 Why Online Estimates Miss the Mark in Monmouth County:</h4>
+            <p style="color: var(--text-light); line-height: 1.7;">Zillow's own data shows their "Zestimates" are off by $50,000-$100,000+ for individual properties. They can't see your renovated kitchen, new roof, or finished basement. They don't know your Monmouth County neighborhood's micro-market trends. For accurate valuation in New Jersey, you need local expertise and in-person assessment.</p>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Get Your FREE Property Valuation in Monmouth County</h2>
+        <p>Accurate, professional home valuation with detailed CMA report. No obligation, no pressure - just honest market data for your New Jersey property.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Free Home Valuation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="index.html#about">About</a></p>
+                <p><a href="index.html#services">Services</a></p>
+                <p><a href="index.html#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
