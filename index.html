@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Christopher Burns - Your trusted Century 21 Action Plus Realty agent serving all of New Jersey. Expert guidance for buying, selling, and investing in residential and commercial properties.">
-    <meta name="keywords" content="Christopher Burns realtor, Century 21 New Jersey, real estate agent NJ, homes for sale New Jersey, buy home NJ, sell home NJ, central New Jersey realtor">
-    <meta name="author" content="Christopher Burns">
-    <meta property="og:title" content="Christopher Burns - Century 21 Action Plus Realty Agent">
-    <meta property="og:description" content="Expert real estate services throughout New Jersey. Specializing in residential and commercial properties with personalized client care.">
-    <meta property="og:type" content="website">
-    
-    <title>Christopher Burns - Century 21 Action Plus Realty | New Jersey Real Estate Expert</title>
+    <meta name="description" content="Chris Burns Realtor serving Monmouth County, NJ. Expert real estate consultant specializing in buyer representation, seller representation, first-time homebuyer assistance, investment properties, and foreclosure assistance. Houses for sale near me in Monmouth County.">
+    <meta name="keywords" content="Chris Burns realtor, Monmouth County realtor, homes for sale Monmouth County NJ, houses for sale near me, real estate agent Monmouth County, buyer representation, seller representation, first-time homebuyer, investment property, Zillow homes for sale, condos for sale near me, luxury homes for sale NJ">
+    <title>Chris Burns Realtor - Monmouth County, NJ | Homes For Sale Near Me | Real Estate Consultant</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+
+      "areaServed": ["Monmouth County", "Ocean County", "Middlesex County"]
+    }
+    </script>
     
     <style>
         :root {
@@ -28,159 +36,32 @@
             --white: #FFFFFF;
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--text-dark);
             line-height: 1.7;
-            background-color: var(--white);
-            overflow-x: hidden;
         }
         
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 600;
-            line-height: 1.2;
-        }
+        h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
         
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 100vh;
-            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(139, 64, 73, 0.1) 0%, transparent 50%);
-            animation: gradientShift 15s ease-in-out infinite;
-        }
-        
-        @keyframes gradientShift {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            max-width: 900px;
-            padding: 0 20px;
-            animation: fadeInUp 1.2s ease-out;
-        }
-        
-        .hero-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid var(--primary-gold);
-            margin-bottom: 30px;
-            animation: fadeIn 1.5s ease-out 0.3s backwards;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .hero h1 {
-            font-size: clamp(3rem, 8vw, 6rem);
-            color: var(--white);
-            margin-bottom: 20px;
-            font-weight: 700;
-            letter-spacing: -2px;
-        }
-        
-        .hero-subtitle {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            color: var(--primary-gold);
-            margin-bottom: 15px;
-            font-weight: 300;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        
-        .hero-description {
-            font-size: clamp(1rem, 2vw, 1.2rem);
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 40px;
-            font-weight: 300;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            padding: 18px 45px;
-            background-color: var(--primary-gold);
-            color: var(--deep-navy);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            border-radius: 0;
-            transition: all 0.4s ease;
-            border: 2px solid var(--primary-gold);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: fadeIn 1.5s ease-out 0.5s backwards;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .cta-button:hover {
-            background-color: transparent;
-            color: var(--primary-gold);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3);
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
         /* Navigation */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: rgba(26, 35, 50, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 20px 0;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        
-        nav.scrolled {
-            padding: 15px 0;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
         
         .nav-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 40px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -190,55 +71,61 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--primary-gold);
+            color: var(--deep-navy);
             text-decoration: none;
-            letter-spacing: 1px;
             display: flex;
             align-items: center;
             gap: 15px;
         }
         
-        .logo-image {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-        }
+        .logo-image { height: 50px; width: auto; }
         
-        .nav-links {
-            display: flex;
-            gap: 35px;
-            list-style: none;
-        }
+        .nav-links { display: flex; list-style: none; gap: 35px; }
         
         .nav-links a {
-            color: var(--white);
+            color: var(--text-dark);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            transition: color 0.3s;
         }
         
-        .nav-links a:hover {
-            color: var(--primary-gold);
+        .nav-links a:hover { color: var(--primary-gold); }
+        
+        /* Hero */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
         }
         
-        /* Section Styling */
-        section {
-            padding: 100px 40px;
+        .hero h1 { font-size: 4rem; margin-bottom: 20px; }
+        .hero .subtitle { font-size: 1.5rem; margin-bottom: 15px; }
+        .hero .location { font-size: 1.2rem; color: var(--primary-gold); margin-bottom: 40px; }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .cta-button:hover { background: var(--accent-burgundy); }
+        
+        /* Sections */
+        section { padding: 80px 20px; }
         
         .section-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: 3rem;
             text-align: center;
-            margin-bottom: 20px;
-            color: var(--deep-navy);
+            margin-bottom: 15px;
         }
         
         .section-subtitle {
@@ -246,166 +133,40 @@
             font-size: 1.2rem;
             color: var(--text-light);
             margin-bottom: 60px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
         }
         
-        /* About Section */
+        #about { background: var(--soft-cream); }
+        
         .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        
-        .about-text h3 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: var(--deep-navy);
-        }
-        
-        .about-text p {
-            margin-bottom: 20px;
-            line-height: 1.8;
-            color: var(--text-dark);
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .stat-card {
-            background-color: var(--soft-cream);
-            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
             text-align: center;
-            border-left: 4px solid var(--primary-gold);
-            transition: transform 0.3s ease;
         }
         
-        .stat-card:hover {
-            transform: translateY(-5px);
+        .about-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
         }
         
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-gold);
-            font-family: 'Cormorant Garamond', serif;
-        }
-        
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 10px;
-        }
-        
-        /* Why Choose Section */
-        .why-choose {
-            background-color: var(--soft-cream);
-        }
-        
-        .data-backed-claim {
-            background: var(--white);
-            padding: 50px;
-            border-radius: 0;
-            margin: 40px 0;
-            border-left: 5px solid var(--primary-gold);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-        }
-        
-        .data-backed-claim h3 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: var(--deep-navy);
-        }
-        
-        .evidence-list {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .evidence-list li {
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: start;
-            gap: 20px;
-        }
-        
-        .evidence-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .evidence-icon {
-            font-size: 2rem;
-            color: var(--primary-gold);
-            flex-shrink: 0;
-        }
-        
-        .evidence-content strong {
-            color: var(--deep-navy);
-            display: block;
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-        }
-        
-        .source-link {
-            color: var(--accent-burgundy);
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin-top: 10px;
-            display: inline-block;
-            transition: color 0.3s ease;
-        }
-        
-        .source-link:hover {
-            color: var(--primary-gold);
-            text-decoration: underline;
-        }
-        
-        /* Services Grid */
+        /* Services */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
         }
         
         .service-card {
             background: var(--white);
-            padding: 40px;
-            text-align: center;
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary-gold), var(--accent-burgundy));
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-        
-        .service-card:hover::before {
-            transform: scaleX(1);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
         }
         
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
         }
         
         .service-icon {
@@ -417,7 +178,6 @@
         .service-card h3 {
             font-size: 1.8rem;
             margin-bottom: 15px;
-            color: var(--deep-navy);
         }
         
         .service-link-btn {
@@ -426,228 +186,148 @@
             color: var(--primary-gold);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            position: relative;
         }
         
-        .service-link-btn:hover {
-            color: var(--accent-burgundy);
-            padding-left: 5px;
+        /* Why Choose */
+        #why-choose { background: var(--soft-cream); }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
         }
         
-        /* Quiz Section */
-        .quiz-section {
+        .why-item { text-align: center; }
+        
+        .why-icon {
+            font-size: 4rem;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+        
+        /* Contact */
+        #contact {
             background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
             color: var(--white);
         }
         
-        .quiz-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 50px;
-            border-radius: 0;
-            border: 1px solid rgba(201, 169, 97, 0.3);
-        }
-        
-        .quiz-question {
-            display: none;
-            animation: slideIn 0.5s ease-out;
-        }
-        
-        .quiz-question.active {
-            display: block;
-        }
-        
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        .quiz-question h3 {
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            color: var(--primary-gold);
-        }
-        
-        .quiz-options {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .quiz-option {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border: 2px solid transparent;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border-radius: 0;
-        }
-        
-        .quiz-option:hover {
-            background: rgba(201, 169, 97, 0.2);
-            border-color: var(--primary-gold);
-            transform: translateX(10px);
-        }
-        
-        .quiz-result {
-            display: none;
-            text-align: center;
-            animation: fadeIn 0.8s ease-out;
-        }
-        
-        .quiz-result.active {
-            display: block;
-        }
-        
-        .quiz-result h3 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--primary-gold);
-        }
-        
-        .quiz-score {
-            font-size: 4rem;
-            font-weight: 700;
-            color: var(--white);
-            margin: 30px 0;
-            font-family: 'Cormorant Garamond', serif;
-        }
-        
-        .restart-btn {
-            background: var(--primary-gold);
-            color: var(--deep-navy);
-            border: none;
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 30px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .restart-btn:hover {
-            background: var(--white);
-            transform: translateY(-3px);
-        }
-        
-        /* Contact Section */
-        .contact-section {
-            background-color: var(--soft-cream);
-        }
-        
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: start;
-            gap: 20px;
-        }
-        
-        .contact-icon {
-            font-size: 2rem;
-            color: var(--primary-gold);
-            flex-shrink: 0;
-        }
-        
-        .contact-item h4 {
-            font-size: 1.3rem;
-            margin-bottom: 8px;
-            color: var(--deep-navy);
+        .contact-form-container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
         
         .contact-form {
-            display: flex;
-            flex-direction: column;
+            width: 100%;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 20px;
+            margin-bottom: 20px;
         }
         
         .form-group {
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 20px;
         }
         
         .form-group label {
+            display: block;
             margin-bottom: 8px;
-            font-weight: 600;
             color: var(--deep-navy);
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
+            font-weight: 600;
+            font-size: 0.95rem;
         }
         
         .form-group input,
+        .form-group select,
         .form-group textarea {
-            padding: 15px;
-            border: 2px solid rgba(0, 0, 0, 0.1);
-            background-color: var(--white);
-            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
             font-size: 1rem;
-            transition: border-color 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+            background: var(--white);
+            color: var(--text-dark);
         }
         
         .form-group input:focus,
+        .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: var(--primary-gold);
+            box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.1);
         }
         
         .form-group textarea {
             resize: vertical;
-            min-height: 150px;
+            min-height: 120px;
         }
         
-        .submit-btn {
-            background: var(--primary-gold);
-            color: var(--deep-navy);
-            border: none;
-            padding: 18px 40px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: 2px solid var(--primary-gold);
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #999;
         }
         
-        .submit-btn:hover {
-            background: transparent;
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .contact-item {
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        
+        .contact-item h3 {
             color: var(--primary-gold);
-            transform: translateY(-3px);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .contact-item p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            color: var(--primary-gold);
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form-container {
+                padding: 25px;
+            }
         }
         
         /* Footer */
         footer {
-            background-color: var(--deep-navy);
+            background: var(--deep-navy);
             color: var(--white);
-            padding: 60px 40px 30px;
+            padding: 60px 20px 30px;
         }
         
         .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
@@ -655,601 +335,235 @@
         }
         
         .footer-section h4 {
-            font-size: 1.5rem;
+            color: var(--primary-gold);
             margin-bottom: 20px;
-            color: var(--primary-gold);
         }
         
-        .footer-section p,
         .footer-section a {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255,255,255,0.8);
             text-decoration: none;
-            line-height: 2;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-section a:hover {
-            color: var(--primary-gold);
         }
         
         .footer-bottom {
-            text-align: center;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.6);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
         }
         
-        /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .logo {
-                font-size: 1.4rem;
-            }
-            
-            .logo-image {
-                height: 40px;
-            }
-            
-            .hero-image {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 20px;
-            }
-            
-            .about-content,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            section {
-                padding: 60px 20px;
-            }
-            
-            .quiz-container {
-                padding: 30px 20px;
-            }
-        }
-        
-        /* SEO Audit Section */
-        .audit-section {
-            background: linear-gradient(135deg, var(--accent-burgundy) 0%, #6D3540 100%);
-            color: var(--white);
-            padding: 80px 40px;
-        }
-        
-        .audit-checklist {
-            max-width: 900px;
-            margin: 40px auto 0;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 40px;
-            border-left: 5px solid var(--primary-gold);
-        }
-        
-        .audit-checklist h3 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: var(--primary-gold);
-        }
-        
-        .audit-item {
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .audit-item:last-child {
-            border-bottom: none;
-        }
-        
-        .audit-item strong {
-            color: var(--primary-gold);
-            font-size: 1.1rem;
-        }
-        
-        .checkmark {
-            color: #4CAF50;
-            margin-right: 10px;
-            font-size: 1.3rem;
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
+    <nav>
         <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="ChrisBurnsLogo.png" alt="Christopher Burns Logo" class="logo-image">
-                Christopher Burns
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#why-choose">Why Choose Me</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#quiz">Find Your Home</a></li>
+                <li><a href="#why-choose">Why Choose Me</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <img src="ChrisBurnsImage1.png" alt="Christopher Burns" class="hero-image">
-            <div class="hero-subtitle">Century 21 Action Plus Realty</div>
-            <h1>Christopher Burns</h1>
-            <p class="hero-description">Your trusted real estate partner serving all of New Jersey with expertise, integrity, and personalized service</p>
-            <a href="#contact" class="cta-button">Let's Find Your Dream Home</a>
+        <div>
+            <h1>Chris Burns Realtor</h1>
+            <p class="subtitle">Your Trusted Real Estate Consultant</p>
+            <p class="location">📍 Serving Monmouth County, Ocean County & Middlesex County, NJ</p>
+            <a href="#contact" class="cta-button">Find Your Dream Home</a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="section-title">About Christopher Burns</h2>
-            <p class="section-subtitle">Licensed throughout New Jersey | Century 21 Action Plus Realty Professional</p>
-            
+            <h2 class="section-title">About Chris Burns</h2>
+            <p class="section-subtitle">Monmouth County's Trusted Real Estate Professional</p>
             <div class="about-content">
-                <div class="about-text">
-                    <h3>Your New Jersey Real Estate Expert</h3>
-                    <p>As a licensed real estate professional with Century 21 Action Plus Realty, I bring dedication, market knowledge, and personalized service to every client interaction. Whether you're a first-time homebuyer, selling your property, or looking for investment opportunities, I'm here to guide you through every step of the process.</p>
-                    
-                    <p>Century 21 Action Plus Realty has been building success one satisfied customer at a time since 1990 through integrity, professionalism, and commitment to quality service. As the #1 Century 21 company in New Jersey, we serve clients throughout Monmouth, Ocean, Middlesex, Mercer, and Atlantic Counties with strategic office locations that increase exposure and market position.</p>
-                    
-                    <p>Licensed throughout all of New Jersey with access to industry-leading training, technology, and resources, I bring local market expertise combined with statewide reach to help you achieve your real estate goals.</p>
-                </div>
-                
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">#1</div>
-                        <div class="stat-label">Century 21 in NJ</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">35+</div>
-                        <div class="stat-label">Years of Excellence</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Commitment to You</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">NJ</div>
-                        <div class="stat-label">Licensed Statewide</div>
-                    </div>
-                </div>
+                <p>Welcome! I'm Chris Burns, a dedicated real estate consultant serving Monmouth County, Ocean County, and Middlesex County, New Jersey. With years of experience helping families find homes for sale near them, I provide personalized service whether you're buying your first home, selling your current property, or building an investment portfolio.</p>
+                <p>I specialize in communities throughout Monmouth County including Marlboro, Manalapan, Freehold, Holmdel, Colts Neck, Red Bank, and the Jersey Shore towns. My local expertise means I know these neighborhoods inside and out - from the best schools to hidden gems that make each area special.</p>
+                <p>I'm always available to help you with your real estate needs. Whether you're searching for luxury homes for sale, condos for sale near you, or investment properties, I'm here to guide you every step of the way. Call me at (800) 299-2129 to get started.</p>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Christopher Section -->
-    <section id="why-choose" class="why-choose">
-        <div class="container">
-            <h2 class="section-title">Why Christopher Burns at Century 21?</h2>
-            <p class="section-subtitle">Data-backed excellence in New Jersey real estate</p>
-            
-            <div class="data-backed-claim">
-                <h3>Working with a Professional Agent Gets You Better Results</h3>
-                <ul class="evidence-list">
-                    <li>
-                        <span class="evidence-icon">💰</span>
-                        <div class="evidence-content">
-                            <strong>Higher Sale Prices:</strong> Agent-represented homes sell for approximately $55,000 more on average than For Sale By Owner (FSBO) properties. When you work with a professional, you maximize your return on investment.
-                            <a href="https://listwithclever.com/real-estate-blog/fsbo-statistics/" class="source-link" target="_blank" rel="noopener">Source: Clever Real Estate Study →</a>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="evidence-icon">📊</span>
-                        <div class="evidence-content">
-                            <strong>Market Expertise:</strong> 90% of sellers choose to work with a real estate agent, with FSBO market share at a historic low of only 6% in 2024. This overwhelming preference reflects the proven value agents provide.
-                            <a href="https://fortunly.com/statistics/real-estate-statistics/" class="source-link" target="_blank" rel="noopener">Source: Fortunly Real Estate Statistics →</a>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="evidence-icon">✅</span>
-                        <div class="evidence-content">
-                            <strong>Client Satisfaction:</strong> 88% of buyers who worked with an agent would recommend them to others or use them again for future transactions. This reflects the trusted relationships and exceptional service real estate professionals provide.
-                            <a href="https://www.agentadvice.com/blog/real-estate-statistics-every-agent-should-know/" class="source-link" target="_blank" rel="noopener">Source: Agent Advice Industry Report →</a>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="evidence-icon">🏆</span>
-                        <div class="evidence-content">
-                            <strong>#1 Century 21 in New Jersey:</strong> Century 21 Action Plus Realty is recognized as the top Century 21 company in New Jersey, with strategic office locations across Monmouth, Ocean, Middlesex, Mercer, and Atlantic Counties. Founded in 1990, we've built our success through integrity and exceptional service.
-                            <a href="https://www.actionplusrealty.com/" class="source-link" target="_blank" rel="noopener">Source: Century 21 Action Plus Official Site →</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="data-backed-claim">
-                <h3>Professional Guidance Throughout Your Journey</h3>
-                <p style="margin-bottom: 25px;">The real estate market requires expertise at every stage. With comprehensive knowledge of New Jersey markets, access to cutting-edge technology, and rigorous professional training, I provide the strategic advantage you need.</p>
-                <ul class="evidence-list">
-                    <li>
-                        <span class="evidence-icon">🎯</span>
-                        <div class="evidence-content">
-                            <strong>Strategic Marketing:</strong> Homes with professional photography sell 32% faster, and listings with video receive 403% more inquiries. I leverage these proven marketing tools to maximize your property's exposure.
-                            <a href="https://resimpli.com/blog/real-estate-agent-statistics/" class="source-link" target="_blank" rel="noopener">Source: Resimpli Agent Statistics →</a>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="evidence-icon">⏱️</span>
-                        <div class="evidence-content">
-                            <strong>Efficient Process:</strong> The median time on market is 40 days when working with an agent, with properties typically selling at 98-100% of the asking price. Professional representation streamlines your transaction.
-                            <a href="https://learn.g2.com/real-estate-statistics" class="source-link" target="_blank" rel="noopener">Source: G2 Real Estate Statistics →</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
     <section id="services">
         <div class="container">
-            <h2 class="section-title">Services</h2>
-            <p class="section-subtitle">Comprehensive real estate solutions tailored to your needs</p>
-            
+            <h2 class="section-title">Real Estate Services in Monmouth County, NJ</h2>
+            <p class="section-subtitle">Comprehensive real estate solutions for homes for sale throughout New Jersey</p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🏠</div>
                     <h3>Buyer Representation</h3>
-                    <p>Expert guidance through the home buying process. From search to closing, I'll help you find and secure your perfect property in New Jersey.</p>
-                    <a href="buyer-representation.html" class="service-link-btn">Learn More →</a>
+                    <p>Expert guidance for finding houses for sale near you in Monmouth County. From first showing to closing, I help you find and secure your perfect home.</p>
+                    <a href="buyer-representation.html" class="service-link-btn">Explore Homes For Sale →</a>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">💼</div>
                     <h3>Seller Representation</h3>
-                    <p>Maximize your sale price with strategic marketing, professional photography, and expert negotiation. Get top dollar for your property.</p>
-                    <a href="seller-representation.html" class="service-link-btn">Learn More →</a>
+                    <p>Maximize your home sale price with professional marketing, staging consultation, and expert negotiation. I'll help you sell your house fast in Monmouth County.</p>
+                    <a href="seller-representation.html" class="service-link-btn">Sell Your Home →</a>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Investment Properties</h3>
-                    <p>Whether you're building a portfolio or looking for your first investment property, I provide market analysis and investment guidance.</p>
-                    <a href="investment-properties.html" class="service-link-btn">Learn More →</a>
-                </div>
-                
                 <div class="service-card">
                     <div class="service-icon">🏘️</div>
-                    <h3>First-Time Homebuyers</h3>
-                    <p>Special support for first-time buyers. I'll guide you through financing options, inspections, and negotiations with patience and expertise.</p>
-                    <a href="first-time-homebuyers.html" class="service-link-btn">Learn More →</a>
+                    <h3>First-Time Homebuyer Assistance</h3>
+                    <p>Special support for first-time buyers. I'll guide you through financing options, down payment assistance programs, inspections, and closing with patience and expertise.</p>
+                    <a href="first-time-homebuyer-assistance.html" class="service-link-btn">Start Your Journey →</a>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">📍</div>
-                    <h3>Market Analysis</h3>
-                    <p>Detailed comparative market analysis (CMA) to help you understand property values and make informed decisions in any NJ market.</p>
-                    <a href="market-analysis.html" class="service-link-btn">Learn More →</a>
+                    <div class="service-icon">📊</div>
+                    <h3>Investment Property Sales</h3>
+                    <p>Build wealth through real estate investing in New Jersey. Expert analysis of rental income properties, fix and flip opportunities, and multi-family homes.</p>
+                    <a href="investment-property-sales.html" class="service-link-btn">Invest in Real Estate →</a>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">🤝</div>
-                    <h3>Relocation Services</h3>
-                    <p>Moving to or within New Jersey? I'll help you understand neighborhoods, schools, and communities to find the perfect fit for your lifestyle.</p>
-                    <a href="relocation-services.html" class="service-link-btn">Learn More →</a>
+                    <div class="service-icon">📈</div>
+                    <h3>Real Estate Consulting</h3>
+                    <p>Professional real estate consulting services including market analysis, property valuation, investment strategy, and portfolio management.</p>
+                    <a href="real-estate-consulting.html" class="service-link-btn">Get Expert Advice →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏚️</div>
+                    <h3>Foreclosure Assistance</h3>
+                    <p>Compassionate guidance for foreclosure situations. Whether you're facing foreclosure or looking to purchase foreclosure properties and distressed homes.</p>
+                    <a href="foreclosure-assistance.html" class="service-link-btn">Get Help Now →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Quiz Section -->
-    <section id="quiz" class="quiz-section">
+    <section id="why-choose">
         <div class="container">
-            <h2 class="section-title" style="color: var(--white);">Find Your Perfect Home Match</h2>
-            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.8);">Answer 5 quick questions to discover what type of property fits your lifestyle</p>
-            
-            <div class="quiz-container">
-                <div id="quiz-content">
-                    <!-- Question 1 -->
-                    <div class="quiz-question active" data-question="1">
-                        <h3>What's your primary motivation for buying a home?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-value="investment">Building wealth through real estate investment</div>
-                            <div class="quiz-option" data-value="family">Creating a family home with room to grow</div>
-                            <div class="quiz-option" data-value="lifestyle">Lifestyle upgrade or downsizing</div>
-                            <div class="quiz-option" data-value="first-time">First-time homeownership and building equity</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Question 2 -->
-                    <div class="quiz-question" data-question="2">
-                        <h3>What's your preferred property location?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-value="urban">Urban center with walkability and amenities</div>
-                            <div class="quiz-option" data-value="suburban">Suburban neighborhood with good schools</div>
-                            <div class="quiz-option" data-value="rural">Rural or countryside setting with space</div>
-                            <div class="quiz-option" data-value="flexible">Flexible based on value and opportunities</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Question 3 -->
-                    <div class="quiz-question" data-question="3">
-                        <h3>How much maintenance are you comfortable with?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-value="minimal">Minimal - prefer condo or townhouse</div>
-                            <div class="quiz-option" data-value="moderate">Moderate - single-family home with yard</div>
-                            <div class="quiz-option" data-value="extensive">Extensive - enjoy DIY and renovations</div>
-                            <div class="quiz-option" data-value="new">Prefer new construction with warranties</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Question 4 -->
-                    <div class="quiz-question" data-question="4">
-                        <h3>What's your timeline for making a move?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-value="immediate">Ready to move within 1-3 months</div>
-                            <div class="quiz-option" data-value="soon">Planning for 3-6 months</div>
-                            <div class="quiz-option" data-value="flexible">6-12 months, flexible timing</div>
-                            <div class="quiz-option" data-value="exploring">Just exploring options for now</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Question 5 -->
-                    <div class="quiz-question" data-question="5">
-                        <h3>What's most important in your new home?</h3>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-value="space">Maximum space for the budget</div>
-                            <div class="quiz-option" data-value="location">Prime location and neighborhood</div>
-                            <div class="quiz-option" data-value="features">Modern features and finishes</div>
-                            <div class="quiz-option" data-value="investment">Long-term appreciation potential</div>
-                        </div>
-                    </div>
+            <h2 class="section-title">Why Choose Chris Burns Realtor</h2>
+            <p class="section-subtitle">Your Monmouth County Real Estate Expert</p>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🏆</div>
+                    <h3>Local Market Expertise</h3>
+                    <p>Deep knowledge of Monmouth County, Ocean County, and Middlesex County neighborhoods, schools, and market trends.</p>
                 </div>
-                
-                <div id="quiz-result" class="quiz-result">
-                    <h3>Your Results Are Ready!</h3>
-                    <div class="quiz-score" id="score"></div>
-                    <p id="result-text" style="font-size: 1.2rem; line-height: 1.8; margin-top: 20px;"></p>
-                    <button class="restart-btn" onclick="restartQuiz()">Take Quiz Again</button>
-                    <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 20px;">Contact Christopher</a>
+                <div class="why-item">
+                    <div class="why-icon">💪</div>
+                    <h3>Proven Negotiation Skills</h3>
+                    <p>Strong negotiation experience that saves buyers thousands and gets sellers top dollar.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">📱</div>
+                    <h3>Always Available</h3>
+                    <p>Responsive communication when you need it. My phone is always on for my clients.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🎯</div>
+                    <h3>Personalized Service</h3>
+                    <p>I take time to understand your unique needs and goals, then create a customized strategy.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Ready to start your real estate journey? Let's connect today.</p>
+    <section id="contact">
+        <div class="container" style="max-width: 1000px;">
+            <h2 class="section-title" style="color: white; text-align: center;">Contact Chris Burns</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8); text-align: center;">Ready to buy or sell? Let's talk about your real estate goals in Monmouth County</p>
             
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <div>
-                            <h4>Office Location</h4>
-                            <p>Century 21 Action Plus Realty<br>
-                            1600 Perrineville Rd Unit 22<br>
-                            Monroe Township, NJ 08831</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <span class="contact-icon">📞</span>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>Office: (800) 299-2129<br>
-                            Available Monday-Friday<br>
-                            9:00 AM - 5:00 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <span class="contact-icon">🏡</span>
-                        <div>
-                            <h4>Service Area</h4>
-                            <p>Licensed throughout New Jersey<br>
-                            Serving Monmouth, Ocean, Middlesex,<br>
-                            Mercer, and Atlantic Counties</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form id="contact-form" onsubmit="handleSubmit(event)">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
                         </div>
-                        
                         <div class="form-group">
                             <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
                         </div>
-                        
+                    </div>
+                    
+                    <div class="form-row">
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(732) 555-1234">
                         </div>
-                        
                         <div class="form-group">
-                            <label for="message">How Can I Help You? *</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <label for="service">I'm Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="buying">Buying a Home</option>
+                                <option value="selling">Selling a Home</option>
+                                <option value="first-time">First-Time Homebuyer</option>
+                                <option value="investment">Investment Property</option>
+                                <option value="consultation">Real Estate Consultation</option>
+                                <option value="foreclosure">Foreclosure Assistance</option>
+                            </select>
                         </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Preferred Location/Area</label>
+                        <input type="text" id="location" name="location" placeholder="e.g., Marlboro, Manalapan, Freehold">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell Me About Your Real Estate Goals *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Share details about what you're looking for..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 10px;">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info" style="margin-top: 50px;">
+                <div class="contact-item">
+                    <h3>📞 Call or Text</h3>
+                    <p><a href="tel:+18002992129" style="font-size: 1.3rem; font-weight: 600;">(800) 299-2129</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>⏰ Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday & Sunday: By Appointment</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-content container">
             <div class="footer-section">
-                <h4>Christopher Burns</h4>
-                <p>Licensed Real Estate Professional<br>
-                Century 21 Action Plus Realty<br>
-                Serving all of New Jersey</p>
+                <h4>Chris Burns Realtor</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties</p>
             </div>
-            
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <p><a href="#about">About</a></p>
-                <p><a href="#why-choose">Why Choose Me</a></p>
                 <p><a href="#services">Services</a></p>
                 <p><a href="#contact">Contact</a></p>
             </div>
-            
             <div class="footer-section">
-                <h4>Resources</h4>
-                <p><a href="https://www.actionplusrealty.com/" target="_blank" rel="noopener">Century 21 Action Plus</a></p>
-                <p><a href="#quiz">Home Finder Quiz</a></p>
-                <p><a href="#contact">Schedule Consultation</a></p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Office Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                Saturday: By Appointment<br>
-                Sunday: By Appointment</p>
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM</p>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Christopher Burns - Century 21 Action Plus Realty. All rights reserved. | Each office is independently owned and operated.</p>
-            <p style="margin-top: 10px; font-size: 0.85rem;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
-        });
-
-        // Quiz functionality
-        let currentQuestion = 1;
-        const totalQuestions = 5;
-        const answers = {};
-
-        document.querySelectorAll('.quiz-option').forEach(option => {
-            option.addEventListener('click', function() {
-                const questionDiv = this.closest('.quiz-question');
-                const questionNum = parseInt(questionDiv.dataset.question);
-                const value = this.dataset.value;
-                
-                answers[questionNum] = value;
-                
-                // Hide current question
-                questionDiv.classList.remove('active');
-                
-                // Show next question or results
-                if (questionNum < totalQuestions) {
-                    currentQuestion = questionNum + 1;
-                    document.querySelector(`[data-question="${currentQuestion}"]`).classList.add('active');
-                } else {
-                    showResults();
-                }
-            });
-        });
-
-        function showResults() {
-            document.getElementById('quiz-content').style.display = 'none';
-            const resultDiv = document.getElementById('quiz-result');
-            resultDiv.classList.add('active');
-            
-            // Calculate results based on answers
-            const scoreElement = document.getElementById('score');
-            const textElement = document.getElementById('result-text');
-            
-            scoreElement.textContent = '5/5';
-            
-            let resultText = '';
-            
-            // Determine primary motivation
-            if (answers[1] === 'investment') {
-                resultText = 'You\'re an <strong>Investment-Focused Buyer</strong>. You should explore properties in emerging neighborhoods with strong appreciation potential. I can help you analyze market trends, rental yields, and long-term growth opportunities throughout New Jersey. ';
-            } else if (answers[1] === 'family') {
-                resultText = 'You\'re a <strong>Family-Oriented Buyer</strong>. Your priority is finding a home in a great school district with space to grow. I\'ll help you explore family-friendly neighborhoods in Central and North Jersey with excellent schools, parks, and community amenities. ';
-            } else if (answers[1] === 'lifestyle') {
-                resultText = 'You\'re making a <strong>Lifestyle Change</strong>. Whether upgrading or downsizing, I\'ll help you find a property that matches your current life stage and future plans. We\'ll focus on locations and features that enhance your quality of life. ';
-            } else {
-                resultText = 'You\'re a <strong>First-Time Homebuyer</strong>. Congratulations on taking this exciting step! I specialize in guiding first-time buyers through the process, from pre-approval to closing. Together we\'ll find an affordable property that helps you build equity and achieve the American dream. ';
-            }
-            
-            // Add timing context
-            if (answers[4] === 'immediate') {
-                resultText += 'With your immediate timeline, we should start the search process right away. I have access to the latest listings and can schedule viewings quickly.';
-            } else if (answers[4] === 'exploring') {
-                resultText += 'Since you\'re in the exploration phase, let\'s schedule a consultation to discuss your goals and start preparing for your future purchase.';
-            }
-            
-            textElement.innerHTML = resultText;
-        }
-
-        function restartQuiz() {
-            currentQuestion = 1;
-            Object.keys(answers).forEach(key => delete answers[key]);
-            
-            document.getElementById('quiz-result').classList.remove('active');
-            document.getElementById('quiz-content').style.display = 'block';
-            
-            document.querySelectorAll('.quiz-question').forEach(q => q.classList.remove('active'));
-            document.querySelector('[data-question="1"]').classList.add('active');
-        }
-
-        // Contact form handling
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            // In a real implementation, this would send to a backend
-            alert('Thank you for your message! Christopher Burns will contact you within 24 hours. For immediate assistance, please call (800) 299-2129.');
-            
-            // Reset form
-            document.getElementById('contact-form').reset();
-        }
-
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.service-card, .stat-card, .contact-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
         });
     </script>
 </body>
