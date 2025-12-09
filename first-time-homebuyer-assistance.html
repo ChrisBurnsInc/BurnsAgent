@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="First-time homebuyer assistance in Monmouth County, NJ with Chris Burns Realtor. Expert guidance for buying your first home, down payment assistance programs, FHA loans, and mortgage pre-approval help. Houses for sale near me in Marlboro, Manalapan, Freehold, Holmdel.">
+    <meta name="keywords" content="first-time homebuyer Monmouth County, first home NJ, down payment assistance New Jersey, FHA loans, first-time buyer programs, mortgage help, homes for sale near me, houses for sale, Chris Burns realtor, Zillow homes">
+    <title>First-Time Homebuyer Assistance - Monmouth County, NJ | Chris Burns Realtor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "First-Time Homebuyer Assistance",
+          "description": "Expert guidance for first-time homebuyers in Monmouth County, NJ including financing assistance, down payment programs, and home search services"
+        }
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image { height: 50px; width: auto; }
+        
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary-gold); }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        /* Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        
+        /* Section Styles */
+        .section-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        
+        .section-intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
+        .section-intro p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 35px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .service-link {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        
+        .service-link:hover { color: var(--accent-burgundy); }
+        
+        /* Why Choose Section */
+        .why-choose {
+            background: var(--soft-cream);
+            padding: 80px 20px;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .why-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .why-icon {
+            font-size: 3.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+        
+        .why-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .why-item p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-burgundy);
+            transform: translateY(-2px);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: var(--white);
+            padding: 80px 20px;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-cream);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+        
+        .testimonial-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover { color: var(--primary-gold); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .logo { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>First-Time Homebuyer Assistance in Monmouth County, NJ</h1>
+        <p class="subtitle">Expert guidance to help you buy your first home with confidence</p>
+    </section>
+
+    <div class="container">
+        <div class="section-intro">
+            <h2>Your Partner for Buying Your First Home in Monmouth County</h2>
+            <p>Buying your first home is exciting but can feel overwhelming. As a dedicated real estate consultant serving Monmouth County, Ocean County, and Middlesex County, I provide personalized support to help first-time buyers find houses for sale near them and navigate every step of the home buying process. From understanding financing options to finding the perfect home in communities like Marlboro, Manalapan, Freehold, or Holmdel, I'm here to make your first home purchase smooth and successful.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">Comprehensive First-Time Homebuyer Services in Monmouth County</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🏠 Home Buying Process</h3>
+                <p>Step-by-step guidance through the entire home buying journey in Monmouth County, NJ. I'll explain each stage, answer your questions, and help you understand what to expect from pre-approval to closing day. Find houses for sale near you in great neighborhoods.</p>
+                <a href="home-buying.html" class="service-link">Learn About Home Buying →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>💰 Down Payment Assistance Programs</h3>
+                <p>Access to New Jersey first-time homebuyer programs including NJHMFA assistance, down payment grants, and closing cost help in Monmouth County. Many programs offer $10,000+ in assistance for qualified buyers purchasing homes for sale in NJ.</p>
+                <a href="buyer-programs-grants.html" class="service-link">Explore Assistance Programs →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📋 Mortgage Pre-Approval Help</h3>
+                <p>Guidance on getting pre-approved for a mortgage in Monmouth County, understanding loan types (FHA, conventional, VA), and connecting you with trusted lenders who work with first-time buyers throughout New Jersey.</p>
+                <a href="mortgage-preapproval.html" class="service-link">Get Pre-Approval Guidance →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🔍 Finding Houses for Sale Near You</h3>
+                <p>Personalized home search in Monmouth County communities including Marlboro, Manalapan, Holmdel, and Freehold that match your budget and lifestyle. I'll help you find condos for sale near you, townhomes, or single-family homes in great neighborhoods.</p>
+                <a href="home-buying.html" class="service-link">Start Your Home Search →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🏘️ Neighborhood & School District Guidance</h3>
+                <p>Detailed information about Monmouth County neighborhoods including Marlboro, Manalapan, Holmdel, Freehold, Colts Neck, and Red Bank. Learn about schools, commute times to NYC, amenities, and what makes each New Jersey community special.</p>
+                <a href="real-estate-market-analysis.html" class="service-link">Explore Neighborhoods →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🔧 Home Inspection Coordination</h3>
+                <p>Professional home inspection services in Monmouth County to protect your investment. I'll recommend experienced inspectors and help you understand inspection results and negotiate repairs if needed for houses for sale.</p>
+                <a href="home-inspection-guide.html" class="service-link">Learn About Inspections →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>💵 Closing Cost Budget Planning</h3>
+                <p>Clear explanation of closing costs in New Jersey (typically 2-5% of purchase price) and help budgeting for all expenses involved in buying your first home in Monmouth County, Ocean County, or Middlesex County.</p>
+                <a href="closing-costs-budget.html" class="service-link">Understand Closing Costs →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📊 Market Analysis & Price Negotiation</h3>
+                <p>Expert guidance on making competitive offers in today's Monmouth County real estate market. I'll provide data on comparable homes for sale and negotiate on your behalf to get the best possible price and terms.</p>
+                <a href="price-negotiation.html" class="service-link">Learn About Negotiation →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📅 Timeline Planning</h3>
+                <p>Realistic timeline for your first home purchase in New Jersey (typically 30-45 days from offer to closing). I'll keep you on track and coordinate with lenders, inspectors, and attorneys throughout the process.</p>
+                <a href="buying-timeline-process.html" class="service-link">See The Timeline →</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.8rem;">Why Choose Chris Burns for Your First Home Purchase in Monmouth County</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🎓</div>
+                    <h3>Patient Education</h3>
+                    <p>I take time to explain everything clearly about buying homes for sale in Monmouth County. No question is too small. You'll understand every step of the process and feel confident in your decisions.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🏆</div>
+                    <h3>Local Monmouth County Expert</h3>
+                    <p>Deep knowledge of Monmouth County neighborhoods, schools, and market trends. I'll help you find houses for sale near you in the perfect New Jersey community for your lifestyle and budget.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💰</div>
+                    <h3>Maximize Your Budget</h3>
+                    <p>Expert guidance on down payment assistance programs, closing cost credits, and negotiation strategies to get more home for your money when buying houses for sale in Monmouth County.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">📱</div>
+                    <h3>Always Available</h3>
+                    <p>Quick responses to your questions and concerns about homes for sale. My phone is always on for my first-time buyer clients who need extra support throughout the process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.8rem;">What First-Time Buyers Say About Chris Burns Realtor</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 50px; font-size: 1.15rem;">Real experiences from first-time homebuyers in Monmouth County, NJ</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris made buying our first home so much easier than we expected. He explained everything clearly, helped us get $12,000 in down payment assistance, and found us the perfect home in Manalapan. We couldn't have done it without him!"</p>
+                    <p class="testimonial-author">— Sarah & Mike T.</p>
+                    <p class="testimonial-location">First-Time Buyers, Manalapan, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As a first-time buyer, I had so many questions. Chris was incredibly patient and never made me feel rushed. He walked me through every step and helped me find an amazing condo in Freehold within my budget."</p>
+                    <p class="testimonial-author">— Jennifer L.</p>
+                    <p class="testimonial-location">First-Time Buyer, Freehold, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We didn't think we could afford to buy in Monmouth County, but Chris showed us the first-time buyer programs available and helped us find a great house in Howell. He fought for us during negotiations and got the seller to pay $5,000 in closing costs!"</p>
+                    <p class="testimonial-author">— David & Lisa M.</p>
+                    <p class="testimonial-location">First-Time Buyers, Howell, NJ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Buy Your First Home in Monmouth County?</h2>
+        <p>Let's start your journey to homeownership in New Jersey. I'll guide you through every step with patience and expertise.</p>
+        <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="index.html#about">About</a></p>
+                <p><a href="index.html#services">Services</a></p>
+                <p><a href="index.html#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+                <p><a href="investment-property-sales.html">Investment Properties</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+            <p style="margin-top: 10px;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+        </div>
+    </footer>
+</body>
+</html>
