@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real estate consulting services in Monmouth County, NJ with Chris Burns Realtor. Expert market analysis, property valuation, investment strategy, and portfolio management. Professional real estate consulting for buyers, sellers, and investors throughout New Jersey.">
+    <meta name="keywords" content="real estate consulting Monmouth County, property valuation NJ, market analysis, investment strategy, real estate consultant, Chris Burns realtor, homes for sale, property consulting New Jersey">
+    <title>Real Estate Consulting - Monmouth County, NJ | Chris Burns Realtor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Real Estate Consulting",
+          "description": "Professional real estate consulting services including market analysis, property valuation, investment strategy, and portfolio management in Monmouth County, NJ"
+        }
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image { height: 50px; width: auto; }
+        
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary-gold); }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        
+        .section-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        
+        .section-intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
+        .section-intro p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 35px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .service-link {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        
+        .service-link:hover { color: var(--accent-burgundy); }
+        
+        .why-choose {
+            background: var(--soft-cream);
+            padding: 80px 20px;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .why-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .why-icon {
+            font-size: 3.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+        
+        .why-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .why-item p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-burgundy);
+            transform: translateY(-2px);
+        }
+        
+        .testimonials {
+            background: var(--white);
+            padding: 80px 20px;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-cream);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+        
+        .testimonial-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover { color: var(--primary-gold); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .logo { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Real Estate Consulting in Monmouth County, NJ</h1>
+        <p class="subtitle">Expert guidance and data-driven insights for all your real estate decisions</p>
+    </section>
+
+    <div class="container">
+        <div class="section-intro">
+            <h2>Professional Real Estate Consulting Services in Monmouth County</h2>
+            <p>Making smart real estate decisions requires accurate data, market expertise, and professional guidance. As an experienced real estate consultant serving Monmouth County, Ocean County, and Middlesex County, I provide comprehensive consulting services for buyers, sellers, investors, and property owners throughout New Jersey. From market analysis and property valuation to investment strategy and portfolio management, I deliver the insights and expertise you need to make informed real estate decisions in communities like Marlboro, Freehold, Holmdel, and beyond.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">Comprehensive Real Estate Consulting Services</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>📊 Real Estate Market Analysis</h3>
+                <p>In-depth market analysis for Monmouth County, Ocean County, and Middlesex County real estate. Current market trends, pricing data, inventory levels, and sales statistics. Understand market conditions before buying or selling property in New Jersey.</p>
+                <a href="real-estate-market-analysis.html" class="service-link">Get Market Analysis →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>💰 Property Valuation</h3>
+                <p>Accurate property valuation services for homes and investment properties in Monmouth County. Comparative market analysis (CMA), recent sales data, and property condition assessment. Know what your property is truly worth in today's New Jersey market.</p>
+                <a href="property-valuation.html" class="service-link">Get Property Valuation →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📈 Investment Strategy</h3>
+                <p>Strategic real estate investment planning for building wealth in New Jersey. Portfolio diversification, market timing, property selection criteria, and risk assessment. Expert guidance for investors at every experience level in Monmouth County.</p>
+                <a href="investment-property-analysis.html" class="service-link">Develop Investment Strategy →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🏘️ Neighborhood Reports</h3>
+                <p>Detailed neighborhood analysis for communities throughout Monmouth County including Marlboro, Manalapan, Holmdel, Freehold, and Colts Neck. School ratings, demographics, amenities, crime statistics, and market trends for each area in New Jersey.</p>
+                <a href="neighborhood-reports.html" class="service-link">View Neighborhood Reports →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📋 Comparative Market Analysis</h3>
+                <p>Professional CMA reports for properties throughout New Jersey. Recent comparable sales, active listings, pending sales, and market absorption rates. Data-driven pricing recommendations for homes for sale in Monmouth County.</p>
+                <a href="comparative-market-analysis.html" class="service-link">Request CMA →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🎓 School District Rankings</h3>
+                <p>Comprehensive school district analysis for Monmouth County, Ocean County, and Middlesex County. Test scores, ratings, student-teacher ratios, and school quality indicators. Understanding how school districts impact property values in New Jersey.</p>
+                <a href="school-district-rankings.html" class="service-link">View School Rankings →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📉 Market Trends & Forecasts</h3>
+                <p>Real estate market forecasting for Monmouth County and surrounding areas. Price trend analysis, inventory projections, and economic indicators. Stay ahead of market changes with expert insights on New Jersey real estate trends.</p>
+                <a href="market-trends-forecasts.html" class="service-link">See Market Forecasts →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>💼 Portfolio Management</h3>
+                <p>Investment property portfolio management and optimization for New Jersey real estate investors. Performance analysis, rebalancing recommendations, and growth strategy. Maximize returns across your entire real estate portfolio in Monmouth County.</p>
+                <a href="investment-property-analysis.html" class="service-link">Optimize Portfolio →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🔍 Due Diligence Support</h3>
+                <p>Comprehensive due diligence services for property purchases in Monmouth County. Title research, property history, zoning verification, and market validation. Protect your investment with thorough property research throughout New Jersey.</p>
+                <a href="index.html#contact" class="service-link">Get Due Diligence Help →</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.8rem;">Why Choose Chris Burns for Real Estate Consulting in Monmouth County</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">📊</div>
+                    <h3>Data-Driven Insights</h3>
+                    <p>Professional real estate consulting based on comprehensive market data and analysis. No guesswork – just accurate information and expert interpretation to guide your decisions in New Jersey.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🏆</div>
+                    <h3>Local Market Expert</h3>
+                    <p>Deep knowledge of Monmouth County, Ocean County, and Middlesex County real estate markets. I understand the nuances of each neighborhood and what drives property values in New Jersey communities.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🎯</div>
+                    <h3>Objective Advice</h3>
+                    <p>Unbiased consulting focused on your best interests. Whether you're buying, selling, or investing, you get honest guidance based on facts and market realities in Monmouth County.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">⏱️</div>
+                    <h3>Responsive Service</h3>
+                    <p>Quick turnaround on consulting requests and market analysis. When you need information to make time-sensitive decisions about New Jersey real estate, I'm available to help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.8rem;">What Clients Say About Chris Burns Real Estate Consulting</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 50px; font-size: 1.15rem;">Real experiences from consulting clients in Monmouth County, NJ</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris provided an excellent market analysis before we listed our home in Holmdel. His data showed us exactly what similar homes were selling for and helped us price our house right. We got multiple offers and sold for over asking price!"</p>
+                    <p class="testimonial-author">— Thomas & Karen W.</p>
+                    <p class="testimonial-location">Sellers, Holmdel, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I was considering investing in rental property but wasn't sure where to start. Chris's consulting services helped me understand the Monmouth County rental market, calculate potential returns, and develop a solid investment strategy. Just closed on my first rental property!"</p>
+                    <p class="testimonial-author">— Brian M.</p>
+                    <p class="testimonial-location">Real Estate Investor, Freehold, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris's neighborhood reports were invaluable when we were deciding where to buy in Monmouth County. He provided detailed information about schools, commute times, and market trends for each area. Made our decision so much easier!"</p>
+                    <p class="testimonial-author">— Angela R.</p>
+                    <p class="testimonial-location">Homebuyer, Marlboro, NJ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Need Expert Real Estate Consulting in Monmouth County?</h2>
+        <p>Get the data, insights, and professional guidance you need to make smart real estate decisions in New Jersey.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Free Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="index.html#about">About</a></p>
+                <p><a href="index.html#services">Services</a></p>
+                <p><a href="index.html#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+                <p><a href="investment-property-sales.html">Investment Properties</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+            <p style="margin-top: 10px;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+        </div>
+    </footer>
+</body>
+</html>
