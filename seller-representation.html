@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert seller representation services in New Jersey by Christopher Burns. Maximize your sale price with professional marketing, staging, photography, and expert negotiation. Century 21 Action Plus Realty.">
-    <meta name="keywords" content="seller agent NJ, seller representation New Jersey, home selling services, list home NJ, real estate seller agent, Christopher Burns, Monmouth County seller agent, sell home Ocean County">
-    <meta name="author" content="Christopher Burns">
-    <meta property="og:title" content="Seller Representation Services | Christopher Burns - Century 21 Action Plus">
-    <meta property="og:description" content="Professional seller representation throughout New Jersey. Expert marketing, staging, photography, and negotiation to maximize your home sale price.">
-    <meta property="og:type" content="website">
-    
-    <title>Seller Representation Services NJ | Christopher Burns - Century 21 Action Plus Realty</title>
+    <meta name="description" content="Expert seller representation in Monmouth County, NJ with Chris Burns Realtor. Sell your house fast for top dollar with professional marketing, staging, and negotiation services. Get maximum sale price for your home throughout New Jersey.">
+    <meta name="keywords" content="sell my house Monmouth County, seller representation NJ, sell house fast, home selling services, Chris Burns realtor, list my house, real estate agent NJ, sell home for top dollar">
+    <title>Seller Representation - Monmouth County, NJ | Chris Burns Realtor</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Seller Representation",
+          "description": "Professional seller representation services to maximize home sale price in Monmouth County, NJ"
+        }
+      }
+    }
+    </script>
     
     <style>
         :root {
@@ -28,34 +43,21 @@
             --white: #FFFFFF;
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--text-dark);
-            line-height: 1.7;
+            line-height: 1.8;
             background-color: var(--white);
-            overflow-x: hidden;
         }
         
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Cormorant Garamond', serif;
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
             font-weight: 600;
-            line-height: 1.2;
+            color: var(--deep-navy);
         }
         
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -63,11 +65,6 @@
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        
-        nav.scrolled {
-            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
         }
         
         .nav-container {
@@ -81,295 +78,161 @@
         
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--deep-navy);
             text-decoration: none;
-            transition: color 0.3s ease;
             display: flex;
             align-items: center;
             gap: 15px;
         }
         
-        .logo-image {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-        }
+        .logo-image { height: 50px; width: auto; }
         
-        .logo:hover {
-            color: var(--primary-gold);
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 35px;
-        }
-        
-        .nav-links li {
-            margin: 0;
-        }
-        
-        .nav-links a {
-            color: var(--text-dark);
-            text-decoration: none;
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
             font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
+            transition: color 0.3s;
         }
+        .nav-links a:hover { color: var(--primary-gold); }
         
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-gold);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        
-        /* Page Header */
-        .page-header {
+        .hero {
             background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
             padding: 150px 20px 80px;
             text-align: center;
             color: var(--white);
-            position: relative;
-            overflow: hidden;
         }
         
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(139, 64, 73, 0.1) 0%, transparent 50%);
-            animation: gradientShift 15s ease-in-out infinite;
-        }
-        
-        @keyframes gradientShift {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-        
-        .page-header-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .page-header h1 {
+        .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
             color: var(--white);
-            animation: fadeInUp 0.8s ease-out;
         }
         
-        .page-header .subtitle {
-            font-size: 1.3rem;
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
             color: rgba(255,255,255,0.9);
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-            animation: fadeInUp 0.8s ease-out 0.2s backwards;
         }
         
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
         
-        /* Main Content Section */
-        .content-section {
-            padding: 80px 20px;
-            background: var(--white);
-        }
-        
-        .intro-text {
+        .section-intro {
             max-width: 900px;
             margin: 0 auto 60px;
             text-align: center;
         }
         
-        .intro-text h2 {
+        .section-intro h2 {
             font-size: 2.5rem;
-            color: var(--deep-navy);
             margin-bottom: 20px;
+            color: var(--deep-navy);
         }
         
-        .intro-text p {
+        .section-intro p {
             font-size: 1.15rem;
             color: var(--text-light);
             line-height: 1.8;
         }
         
-        /* Subcategories Grid */
-        .subcategories-grid {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 35px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
             margin: 60px 0;
         }
         
-        .subcategory-card {
+        .service-card {
             background: var(--white);
-            padding: 40px 35px;
+            padding: 35px 30px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            position: relative;
+            transition: all 0.3s;
+            border-left: 4px solid var(--primary-gold);
         }
         
-        .subcategory-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 0;
-            background: var(--primary-gold);
-            transition: height 0.3s ease;
-            border-radius: 12px 0 0 12px;
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
         }
         
-        .subcategory-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
-            border-color: var(--primary-gold);
-        }
-        
-        .subcategory-card:hover::before {
-            height: 100%;
-        }
-        
-        .subcategory-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .subcategory-card h3 {
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
             color: var(--deep-navy);
-            font-size: 1.8rem;
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
             margin-bottom: 15px;
         }
         
-        .subcategory-card h3 a {
-            color: var(--deep-navy);
+        .service-link {
+            color: var(--primary-gold);
             text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .subcategory-card h3 a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .subcategory-card p {
-            color: var(--text-light);
-            margin-bottom: 25px;
-            line-height: 1.7;
-            font-size: 1.05rem;
-        }
-        
-        .subcategory-link {
-            display: inline-flex;
-            align-items: center;
-            color: var(--primary-gold);
             font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            gap: 8px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
         }
         
-        .subcategory-link:hover {
-            color: var(--accent-burgundy);
-            gap: 12px;
-        }
+        .service-link:hover { color: var(--accent-burgundy); }
         
-        .subcategory-link::after {
-            content: '→';
-            font-size: 1.2rem;
-        }
-        
-        /* Why Work With Me Section */
-        .why-section {
+        .why-choose {
             background: var(--soft-cream);
-            padding: 70px 40px;
-            border-radius: 12px;
-            margin: 60px 0;
+            padding: 80px 20px;
         }
         
-        .why-section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--deep-navy);
-            margin-bottom: 50px;
-        }
-        
-        .benefits-grid {
+        .why-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 35px;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
-        .benefit-item {
+        .why-item {
             text-align: center;
+            padding: 30px 20px;
         }
         
-        .benefit-icon {
+        .why-icon {
             font-size: 3.5rem;
+            color: var(--primary-gold);
             margin-bottom: 20px;
         }
         
-        .benefit-item h3 {
-            color: var(--primary-gold);
-            margin-bottom: 15px;
+        .why-item h3 {
             font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
         }
         
-        .benefit-item p {
+        .why-item p {
             color: var(--text-light);
             line-height: 1.7;
-            font-size: 1.05rem;
         }
         
-        /* CTA Section */
         .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
             text-align: center;
-            margin: 70px 0 40px;
+            color: var(--white);
         }
         
         .cta-section h2 {
-            font-size: 2.5rem;
-            color: var(--deep-navy);
+            font-size: 2.8rem;
             margin-bottom: 20px;
+            color: var(--white);
         }
         
         .cta-section p {
             font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 35px;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
         }
         
         .cta-button {
@@ -381,17 +244,51 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+            transition: all 0.3s;
         }
         
         .cta-button:hover {
             background: var(--accent-burgundy);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 64, 73, 0.4);
         }
         
-        /* Footer */
+        .testimonials {
+            background: var(--white);
+            padding: 80px 20px;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-cream);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+        
+        .testimonial-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
         footer {
             background: var(--deep-navy);
             color: var(--white);
@@ -422,12 +319,10 @@
         .footer-section a {
             color: rgba(255,255,255,0.8);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
         
-        .footer-section a:hover {
-            color: var(--primary-gold);
-        }
+        .footer-section a:hover { color: var(--primary-gold); }
         
         .footer-bottom {
             max-width: 1200px;
@@ -435,248 +330,197 @@
             padding-top: 30px;
             border-top: 1px solid rgba(255,255,255,0.1);
             text-align: center;
-        }
-        
-        .footer-bottom p {
             color: rgba(255,255,255,0.6);
             font-size: 0.9rem;
-            line-height: 1.6;
         }
         
-        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .logo-image {
-                height: 40px;
-            }
-            
-            .page-header h1 {
-                font-size: 2.5rem;
-            }
-            
-            .page-header .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .subcategories-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-            
-            .intro-text h2 {
-                font-size: 2rem;
-            }
-            
-            .why-section h2 {
-                font-size: 2rem;
-            }
-            
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .cta-section h2 {
-                font-size: 2rem;
-            }
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .logo { font-size: 1.2rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
+    <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="ChrisBurnsLogo.png" alt="Christopher Burns Logo" class="logo-image">
-                Christopher Burns
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
             </a>
             <ul class="nav-links">
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#why-choose">Why Choose Me</a></li>
                 <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#quiz">Find Your Home</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-content">
-            <h1>Seller Representation</h1>
-            <p class="subtitle">Maximize your sale price with strategic marketing, professional photography, expert staging, and skilled negotiation. Get top dollar for your property with comprehensive seller representation throughout New Jersey.</p>
-        </div>
+    <section class="hero">
+        <h1>Seller Representation in Monmouth County, NJ</h1>
+        <p class="subtitle">Sell your house fast for maximum price with expert representation</p>
     </section>
 
-    <!-- Main Content -->
-    <section class="content-section">
+    <div class="container">
+        <div class="section-intro">
+            <h2>Maximize Your Home Sale Price in Monmouth County</h2>
+            <p>Selling your home is a major financial decision. As your dedicated seller's agent serving Monmouth County, Ocean County, and Middlesex County, I provide comprehensive representation to help you sell your house fast for the highest possible price. From professional marketing and staging to expert negotiation, I'll handle every detail to ensure your home stands out in the New Jersey market and attracts serious buyers in communities like Marlboro, Manalapan, Freehold, Holmdel, and throughout the region.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">Complete Seller Representation Services</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>💰 Strategic Pricing</h3>
+                <p>Expert pricing strategy based on comprehensive market analysis in Monmouth County. I'll analyze recent sales, current competition, and market conditions to price your home competitively to attract buyers and maximize your sale price in New Jersey.</p>
+                <a href="property-valuation.html" class="service-link">Get Home Valuation →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📸 Professional Marketing</h3>
+                <p>High-quality marketing to showcase your Monmouth County home. Professional photography, virtual tours, drone footage, and premium listings on Zillow, Realtor.com, and all major real estate sites throughout New Jersey.</p>
+                <a href="professional-marketing.html" class="service-link">View Marketing Strategy →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🏠 Home Staging Consultation</h3>
+                <p>Professional staging advice to make your house shine in Monmouth County. I'll recommend improvements, decluttering strategies, and staging techniques that help homes sell faster and for higher prices throughout New Jersey.</p>
+                <a href="home-staging.html" class="service-link">Staging Tips →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🎯 Target Marketing</h3>
+                <p>Strategic marketing to reach qualified buyers for your Monmouth County home. Social media advertising, email campaigns, open houses, and agent networking to maximize exposure for your property throughout New Jersey.</p>
+                <a href="target-marketing.html" class="service-link">Learn About Marketing →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📅 Open House Services</h3>
+                <p>Professional open house events to showcase your home in Monmouth County. I host engaging open houses, pre-qualify attendees, and follow up with interested buyers to generate offers for your New Jersey property.</p>
+                <a href="open-house-services.html" class="service-link">Open House Strategy →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>💪 Expert Negotiation</h3>
+                <p>Strong negotiation on your behalf in Monmouth County. I'll evaluate all offers, negotiate price and terms, handle buyer requests, and protect your interests throughout the sale process in New Jersey.</p>
+                <a href="price-negotiation.html" class="service-link">Negotiation Approach →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📋 Transaction Management</h3>
+                <p>Complete transaction coordination for your Monmouth County home sale. Attorney coordination, inspection management, appraisal coordination, and timeline management to ensure smooth closing in New Jersey.</p>
+                <a href="closing-coordination.html" class="service-link">Transaction Process →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>🔍 Buyer Screening</h3>
+                <p>Thorough buyer qualification for your Monmouth County property. I verify buyer financing, review pre-approval letters, and assess buyer readiness to ensure serious offers for your New Jersey home.</p>
+                <a href="buyer-screening.html" class="service-link">Learn About Screening →</a>
+            </div>
+
+            <div class="service-card">
+                <h3>📊 Market Updates</h3>
+                <p>Regular market feedback and updates throughout your home sale in Monmouth County. Weekly reports on showing activity, buyer feedback, and market changes to keep you informed in New Jersey.</p>
+                <a href="real-estate-market-analysis.html" class="service-link">Market Reports →</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="why-choose">
         <div class="container">
-            <div class="intro-text">
-                <h2>Sell Your Home for Maximum Value</h2>
-                <p>Selling your home is one of the most important financial decisions you'll make. With proven marketing strategies, professional staging and photography, competitive pricing analysis, and expert negotiation skills, I ensure you get the best possible price in the shortest time. Agent-represented homes sell for an average of $55,000 more than FSBO properties.</p>
-            </div>
-
-            <!-- Subcategories Grid -->
-            <div class="subcategories-grid">
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">💰</div>
-                    <h3><a href="home-valuation-pricing.html">Home Valuation & Pricing Strategy</a></h3>
-                    <p>Get an accurate home valuation and strategic pricing recommendation. Free comparative market analysis (CMA) with detailed market trends, recent comparable sales, and optimal pricing strategy to attract qualified buyers and maximize your return.</p>
-                    <a href="home-valuation-pricing.html" class="subcategory-link">Request Free Valuation</a>
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.8rem;">Why Choose Chris Burns to Sell Your Monmouth County Home</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">💵</div>
+                    <h3>Higher Sale Prices</h3>
+                    <p>Strategic pricing, professional marketing, and expert negotiation consistently result in higher sale prices for homes in Monmouth County. My sellers average above list price throughout New Jersey.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">✨</div>
-                    <h3><a href="professional-staging.html">Professional Home Staging</a></h3>
-                    <p>Staged homes sell 32% faster and for higher prices. Expert staging consultation to showcase your home's best features, declutter effectively, and create an inviting atmosphere that helps buyers envision themselves living there.</p>
-                    <a href="professional-staging.html" class="subcategory-link">Learn About Staging</a>
+                <div class="why-item">
+                    <div class="why-icon">⚡</div>
+                    <h3>Faster Sales</h3>
+                    <p>Homes I list in Monmouth County sell faster than average thanks to aggressive marketing, competitive pricing, and wide buyer network exposure throughout New Jersey real estate markets.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">📸</div>
-                    <h3><a href="photography-marketing.html">Professional Photography & Marketing</a></h3>
-                    <p>Comprehensive marketing package with professional photography, aerial drone shots, 3D virtual tours, and social media promotion. Listings with professional photos receive 403% more inquiries and sell significantly faster.</p>
-                    <a href="photography-marketing.html" class="subcategory-link">View Marketing Package</a>
+                <div class="why-item">
+                    <div class="why-icon">📣</div>
+                    <h3>Maximum Exposure</h3>
+                    <p>Your Monmouth County home gets premium placement on Zillow, Realtor.com, and all major sites, plus social media marketing, email campaigns, and agent networking throughout New Jersey.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🔧</div>
-                    <h3><a href="pre-sale-preparation.html">Pre-Sale Home Preparation</a></h3>
-                    <p>Maximize your home's value with strategic pre-sale improvements. Guidance on cost-effective upgrades with highest ROI, essential repairs, curb appeal enhancements, and pre-listing inspection recommendations to avoid surprises.</p>
-                    <a href="pre-sale-preparation.html" class="subcategory-link">Download Prep Checklist</a>
+                <div class="why-item">
+                    <div class="why-icon">🤝</div>
+                    <h3>Stress-Free Process</h3>
+                    <p>I handle all the details of selling your home in Monmouth County. From first consultation to closing, you'll have expert guidance and support throughout the entire New Jersey home sale process.</p>
                 </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🤝</div>
-                    <h3><a href="negotiation-closing.html">Negotiation & Closing Support</a></h3>
-                    <p>Expert negotiation to secure the best terms and highest price. Skilled handling of multiple offers, inspection negotiations, appraisal issues, and contract contingencies. Full support through closing to ensure smooth transaction.</p>
-                    <a href="negotiation-closing.html" class="subcategory-link">Maximize Sale Price</a>
-                </div>
-            </div>
-
-            <!-- Why Work With Me Section -->
-            <div class="why-section">
-                <h2>The Agent Advantage</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">💵</div>
-                        <h3>Higher Sale Price</h3>
-                        <p>Agent-represented homes sell for approximately $55,000 more on average than FSBO properties. Professional pricing, marketing, and negotiation maximize your net proceeds.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">⚡</div>
-                        <h3>Sell Faster</h3>
-                        <p>Homes with professional photography and staging sell 32% faster. Strategic pricing and comprehensive marketing attract qualified buyers quickly.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">📢</div>
-                        <h3>Maximum Exposure</h3>
-                        <p>MLS distribution, social media marketing, professional photography, virtual tours, and extensive network reach thousands of potential buyers online and offline.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🛡️</div>
-                        <h3>Expert Protection</h3>
-                        <p>Navigate complex contracts, disclosures, inspections, and negotiations with confidence. I protect your interests and handle all legal requirements properly.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="cta-section">
-                <h2>Ready to Sell Your Home?</h2>
-                <p>Get started with a free home valuation and personalized selling strategy.</p>
-                <a href="index.html#contact" class="cta-button">Get Free Home Valuation</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.8rem;">What Home Sellers Say About Chris Burns</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 50px; font-size: 1.15rem;">Real experiences from sellers in Monmouth County, NJ</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris sold our home in Manalapan for $25,000 over asking price! His marketing was incredible - professional photos, virtual tour, and we had 3 offers in the first week. He negotiated expertly and made the whole process smooth."</p>
+                    <p class="testimonial-author">— Paul & Elizabeth R.</p>
+                    <p class="testimonial-location">Home Sellers, Manalapan, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We needed to sell quickly for a job relocation. Chris priced our Freehold home perfectly, marketed it aggressively, and we had an accepted offer in 10 days. Closed in 30 days. Couldn't have asked for better representation!"</p>
+                    <p class="testimonial-author">— Michael D.</p>
+                    <p class="testimonial-location">Home Seller, Freehold, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris's staging advice made such a difference! He helped us prepare our Holmdel house, and the open house was packed. We got multiple offers above asking price. His negotiation skills got us the best terms. Highly recommend!"</p>
+                    <p class="testimonial-author">— Karen & Tom S.</p>
+                    <p class="testimonial-location">Home Sellers, Holmdel, NJ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Sell Your Home in Monmouth County?</h2>
+        <p>Let's discuss your home sale goals and create a strategy to get you top dollar. Free home valuation and consultation.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Free Home Valuation</a>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Christopher Burns</h4>
-                <p>Licensed Real Estate Professional<br>
-                Century 21 Action Plus Realty<br>
-                Serving all of New Jersey</p>
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
             </div>
-            
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <p><a href="index.html#about">About</a></p>
-                <p><a href="index.html#why-choose">Why Choose Me</a></p>
                 <p><a href="index.html#services">Services</a></p>
                 <p><a href="index.html#contact">Contact</a></p>
             </div>
-            
             <div class="footer-section">
-                <h4>Resources</h4>
-                <p><a href="https://www.actionplusrealty.com/" target="_blank" rel="noopener">Century 21 Action Plus</a></p>
-                <p><a href="index.html#quiz">Home Finder Quiz</a></p>
-                <p><a href="index.html#contact">Schedule Consultation</a></p>
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+                <p><a href="investment-property-sales.html">Investment Properties</a></p>
             </div>
-            
             <div class="footer-section">
-                <h4>Office Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                Saturday: By Appointment<br>
-                Sunday: By Appointment</p>
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>&copy; 2024 Christopher Burns - Century 21 Action Plus Realty. All rights reserved. | Each office is independently owned and operated.</p>
-            <p style="margin-top: 10px; font-size: 0.85rem;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+            <p style="margin-top: 10px;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
         </div>
     </footer>
-
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.subcategory-card, .benefit-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
 </body>
 </html>
