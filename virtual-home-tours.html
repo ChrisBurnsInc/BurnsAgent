@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtual home tours in Monmouth County, NJ with Chris Burns Realtor. 3D Matterport tours, video walkthroughs, and FaceTime showings for homes for sale. Remote viewing for buyers throughout New Jersey in Marlboro, Manalapan, Freehold, Holmdel.">
+    <meta name="keywords" content="virtual home tour Monmouth County, 3D home tour NJ, video walkthrough, virtual showing, Matterport tour, Chris Burns realtor, remote home viewing New Jersey">
+    <title>Virtual Home Tours - Monmouth County, NJ | Chris Burns Realtor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image { height: 50px; width: auto; }
+        
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary-gold); }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        
+        .section-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        
+        .section-intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
+        .section-intro p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        .tour-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .tour-card {
+            background: var(--white);
+            padding: 35px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .tour-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .tour-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .tour-card ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        
+        .tour-card li {
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+        
+        .benefits-section {
+            background: var(--soft-cream);
+            padding: 80px 20px;
+            margin: 60px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .benefit-icon {
+            font-size: 3.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-item h4 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .benefit-item p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-burgundy);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover { color: var(--primary-gold); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .logo { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Virtual Home Tours - Monmouth County, NJ</h1>
+        <p class="subtitle">Tour homes for sale remotely with professional 3D tours and live video showings</p>
+    </section>
+
+    <div class="container">
+        <div class="section-intro">
+            <h2>Virtual Home Tour Services in Monmouth County</h2>
+            <p>Can't visit in person? No problem! As your tech-savvy real estate professional serving Monmouth County, Ocean County, and Middlesex County, I offer comprehensive virtual tour options for buyers and sellers throughout New Jersey. View houses for sale near you from anywhere with 3D Matterport tours, professional video walkthroughs, or live FaceTime showings. Perfect for out-of-state buyers, busy schedules, or initial home screening in communities like Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">Virtual Tour Options for Monmouth County Properties</h2>
+        
+        <div class="tour-types">
+            <div class="tour-card">
+                <h3>🏠 3D Matterport Tours</h3>
+                <p>Immersive 3D virtual tours that let you "walk through" Monmouth County homes at your own pace. Navigate room-to-room, measure spaces, and explore every detail of properties for sale in New Jersey.</p>
+                <ul>
+                    <li><strong>360° Views:</strong> See entire rooms from all angles</li>
+                    <li><strong>Floor Plans:</strong> Interactive 2D and 3D floor plans included</li>
+                    <li><strong>Measurement Tool:</strong> Measure rooms and features</li>
+                    <li><strong>24/7 Access:</strong> Tour anytime from any device</li>
+                    <li><strong>Dollhouse View:</strong> See entire home layout at once</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Best For:</strong> Out-of-state buyers, initial home screening, detailed property exploration in Monmouth County</p>
+            </div>
+
+            <div class="tour-card">
+                <h3>🎥 Professional Video Tours</h3>
+                <p>Cinematic video walkthroughs with professional narration highlighting key features of houses for sale in Monmouth County. High-quality production showcasing your New Jersey home's best attributes.</p>
+                <ul>
+                    <li><strong>Professional Filming:</strong> 4K video quality</li>
+                    <li><strong>Narration:</strong> I walk through and highlight features</li>
+                    <li><strong>Neighborhood Footage:</strong> Show surrounding area</li>
+                    <li><strong>Music & Editing:</strong> Polished final product</li>
+                    <li><strong>Social Media Ready:</strong> Share on all platforms</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Best For:</strong> Marketing properties, social media promotion, quick home overviews in New Jersey</p>
+            </div>
+
+            <div class="tour-card">
+                <h3>📱 Live FaceTime/Zoom Showings</h3>
+                <p>Real-time virtual showings where I tour Monmouth County homes for you via video call. Ask questions, request close-ups, and direct the showing as if you're there in person in New Jersey.</p>
+                <ul>
+                    <li><strong>Live Interaction:</strong> Ask questions in real-time</li>
+                    <li><strong>Flexible Schedule:</strong> Book showing times that work for you</li>
+                    <li><strong>Custom Focus:</strong> Direct me to specific areas or features</li>
+                    <li><strong>Multiple Viewers:</strong> Family/friends can join the call</li>
+                    <li><strong>Recording Available:</strong> Review tour later if needed</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Best For:</strong> Out-of-town buyers, serious interest properties, final decision-making in Monmouth County</p>
+            </div>
+
+            <div class="tour-card">
+                <h3>📸 Photo Galleries</h3>
+                <p>Professional photography with 50-100+ high-resolution photos of every room and feature in houses for sale throughout Monmouth County, New Jersey.</p>
+                <ul>
+                    <li><strong>High Resolution:</strong> Professional photographer</li>
+                    <li><strong>Comprehensive Coverage:</strong> Every room and angle</li>
+                    <li><strong>HDR Processing:</strong> Bright, inviting images</li>
+                    <li><strong>Exterior Shots:</strong> Curb appeal and lot photos</li>
+                    <li><strong>Download Available:</strong> Save for comparison</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Best For:</strong> Initial browsing, quick property comparison, sharing with family in NJ</p>
+            </div>
+
+            <div class="tour-card">
+                <h3>🚁 Drone/Aerial Tours</h3>
+                <p>Aerial photography and video showcasing properties, lot size, neighborhood, and surrounding areas in Monmouth County from a unique bird's-eye perspective in New Jersey.</p>
+                <ul>
+                    <li><strong>Property Overview:</strong> See entire lot and home</li>
+                    <li><strong>Neighborhood Context:</strong> Show proximity to amenities</li>
+                    <li><strong>Lot Features:</strong> Showcase yards, pools, landscaping</li>
+                    <li><strong>Unique Perspective:</strong> Stand out from competition</li>
+                    <li><strong>4K Video:</strong> Cinematic quality footage</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Best For:</strong> Large properties, waterfront homes, luxury estates in Monmouth County</p>
+            </div>
+
+            <div class="tour-card">
+                <h3>💻 Hybrid Tours</h3>
+                <p>Combination of 3D tour, video, photos, and drone footage providing the most comprehensive virtual experience for houses for sale in Monmouth County, New Jersey.</p>
+                <ul>
+                    <li><strong>Complete Package:</strong> All tour types combined</li>
+                    <li><strong>Maximum Exposure:</strong> Appeal to all buyer types</li>
+                    <li><strong>Premium Presentation:</strong> Showcase home completely</li>
+                    <li><strong>Competitive Advantage:</strong> Stand out in NJ market</li>
+                    <li><strong>Higher Engagement:</strong> More showings generated</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Best For:</strong> Luxury properties, competitive markets, maximum marketing impact in Monmouth County</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">Benefits of Virtual Tours in Monmouth County</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌍</div>
+                    <h4>Reach Remote Buyers</h4>
+                    <p>Attract out-of-state and international buyers to your Monmouth County property. Virtual tours expand your buyer pool beyond local New Jersey market.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏰</div>
+                    <h4>24/7 Availability</h4>
+                    <p>Buyers can tour houses for sale in Monmouth County anytime, day or night, from any device. No scheduling conflicts or time zone issues in NJ.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <h4>Pre-Qualified Showings</h4>
+                    <p>Virtual tours filter serious buyers before in-person visits. Only interested parties schedule physical showings of your Monmouth County home.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🏆</div>
+                    <h4>Competitive Advantage</h4>
+                    <p>Stand out from competition in New Jersey with premium virtual tours. Properties with 3D tours get 87% more views in Monmouth County market.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Higher Engagement</h4>
+                    <p>Buyers spend 5-10x longer viewing homes with virtual tours. Increased engagement leads to more offers on Monmouth County properties.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔒</div>
+                    <h4>Safety & Convenience</h4>
+                    <p>Tour multiple houses for sale in Monmouth County without leaving home. Safe, convenient, and efficient home shopping in New Jersey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div style="max-width: 900px; margin: 60px auto; padding: 40px; background: var(--soft-cream); border-radius: 12px;">
+            <h3 style="color: var(--deep-navy); margin-bottom: 25px; font-size: 2rem; text-align: center;">Virtual Tour Success in Monmouth County</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; margin-top: 30px;">
+                <div>
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--primary-gold); font-family: 'Cormorant Garamond', serif;">87%</div>
+                    <div style="color: var(--text-dark); margin-top: 10px;">More online views with virtual tours in NJ</div>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--primary-gold); font-family: 'Cormorant Garamond', serif;">31%</div>
+                    <div style="color: var(--text-dark); margin-top: 10px;">Faster sale time in Monmouth County market</div>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--primary-gold); font-family: 'Cormorant Garamond', serif;">49%</div>
+                    <div style="color: var(--text-dark); margin-top: 10px;">More out-of-state buyers reached in New Jersey</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Ready for Virtual Tours of Monmouth County Homes?</h2>
+        <p>Schedule a virtual showing or request 3D tour for any property. Convenient, comprehensive, and available anytime in New Jersey.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Virtual Tour</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="index.html#about">About</a></p>
+                <p><a href="index.html#services">Services</a></p>
+                <p><a href="index.html#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
