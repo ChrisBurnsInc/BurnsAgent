@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real estate market analysis in Monmouth County, NJ with Chris Burns Realtor. Expert market data, pricing trends, neighborhood analysis, and property valuations. Current market conditions for homes for sale throughout New Jersey.">
+    <meta name="keywords" content="market analysis Monmouth County, real estate market trends NJ, home values, property valuation, market report, Chris Burns realtor, Monmouth County housing market">
+    <title>Real Estate Market Analysis - Monmouth County, NJ | Chris Burns Realtor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-gold: #C9A961;
+            --deep-navy: #1A2332;
+            --soft-cream: #F8F6F1;
+            --accent-burgundy: #8B4049;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+            --white: #FFFFFF;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-image { height: 50px; width: auto; }
+        
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary-gold); }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 150px 20px 80px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        
+        .section-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+        
+        .section-intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
+        .section-intro p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .analysis-card {
+            background: var(--white);
+            padding: 35px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .analysis-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .analysis-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        .stat-box {
+            background: var(--soft-cream);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-top: 10px;
+        }
+        
+        .market-section {
+            background: var(--soft-cream);
+            padding: 80px 20px;
+            margin: 60px 0;
+        }
+        
+        .neighborhoods-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .neighborhood-item {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .neighborhood-item h4 {
+            color: var(--deep-navy);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .neighborhood-item p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-burgundy);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: var(--deep-navy);
+            color: var(--white);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover { color: var(--primary-gold); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .logo { font-size: 1.2rem; }
+            .stat-number { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Real Estate Market Analysis - Monmouth County, NJ</h1>
+        <p class="subtitle">Expert market data and insights to make informed real estate decisions</p>
+    </section>
+
+    <div class="container">
+        <div class="section-intro">
+            <h2>Understanding the Monmouth County Real Estate Market</h2>
+            <p>Making smart real estate decisions in Monmouth County, NJ requires accurate market data and expert analysis. As your local real estate consultant serving Monmouth County, Ocean County, and Middlesex County, I provide comprehensive market analysis to help you understand current conditions, pricing trends, and neighborhood dynamics throughout New Jersey. Whether you're buying houses for sale near you or selling your home, knowledge of the local market is essential for success.</p>
+        </div>
+
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div class="stat-box">
+                    <div class="stat-number">$525K</div>
+                    <div class="stat-label">Median Home Price<br>Monmouth County</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">32</div>
+                    <div class="stat-label">Days on Market<br>Average</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Sale to List<br>Price Ratio</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">1,847</div>
+                    <div class="stat-label">Active Listings<br>Current Inventory</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin: 60px 0 40px; font-size: 2.2rem; color: var(--deep-navy);">Comprehensive Market Analysis Services</h2>
+        
+        <div class="analysis-grid">
+            <div class="analysis-card">
+                <h3>📊 Market Trends Analysis</h3>
+                <p>Track price trends, sales velocity, and inventory levels in Monmouth County. Understand if it's currently a buyer's or seller's market and what that means for your real estate goals in New Jersey.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>🏘️ Neighborhood Reports</h3>
+                <p>Detailed analysis of specific Monmouth County neighborhoods including Marlboro, Manalapan, Holmdel, Freehold, and Colts Neck. School ratings, demographics, amenities, and property values for each New Jersey community.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>💰 Property Valuation</h3>
+                <p>Accurate home valuations using comparative market analysis (CMA) of recent sales in Monmouth County. Know what your property is worth or what you should offer on houses for sale in New Jersey.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>📈 Price Appreciation</h3>
+                <p>Historical price appreciation data for Monmouth County properties. Understand how home values have changed over time and projected future growth in the New Jersey real estate market.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>🏫 School District Data</h3>
+                <p>Comprehensive school district analysis for Monmouth County including test scores, rankings, student-teacher ratios, and how school quality impacts property values throughout New Jersey.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>⏱️ Market Timing</h3>
+                <p>Best times to buy or sell in Monmouth County based on seasonal trends, inventory levels, and market conditions. Strategic timing can save buyers thousands and get sellers higher prices in NJ.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>🏠 Inventory Analysis</h3>
+                <p>Current inventory of houses for sale in Monmouth County by price range, property type, and location. Understand supply and demand dynamics that affect prices throughout New Jersey.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>📉 Days on Market</h3>
+                <p>Average time properties spend on market in Monmouth County by neighborhood and price range. Identify hot markets where homes sell fast and areas with longer sale times in New Jersey.</p>
+            </div>
+
+            <div class="analysis-card">
+                <h3>🎯 Competitive Analysis</h3>
+                <p>Analysis of competing properties when buying or selling in Monmouth County. Understand your competition and position your offer or listing strategically in the New Jersey market.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="market-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.5rem;">Monmouth County Neighborhoods We Analyze</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 50px; font-size: 1.15rem;">Expert market data for communities throughout Monmouth County, NJ</p>
+            
+            <div class="neighborhoods-list">
+                <div class="neighborhood-item">
+                    <h4>Marlboro</h4>
+                    <p>Top-rated schools, family-friendly community. Median price: $650K. Strong appreciation.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Manalapan</h4>
+                    <p>Excellent schools, suburban living. Median price: $580K. Growing market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Holmdel</h4>
+                    <p>Premium location, top schools. Median price: $725K. Luxury market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Freehold</h4>
+                    <p>Affordable options, good schools. Median price: $475K. Active market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Colts Neck</h4>
+                    <p>Equestrian community, estates. Median price: $850K. Exclusive market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Red Bank</h4>
+                    <p>Downtown living, cultural hub. Median price: $525K. Urban market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Rumson</h4>
+                    <p>Waterfront luxury, prestigious. Median price: $1.2M. High-end market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Middletown</h4>
+                    <p>Diverse options, beaches nearby. Median price: $495K. Varied market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Howell</h4>
+                    <p>Family-friendly, affordable. Median price: $425K. Growth market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Wall Township</h4>
+                    <p>Near shore, good value. Median price: $465K. Steady market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Tinton Falls</h4>
+                    <p>Central location, shopping. Median price: $455K. Active market.</p>
+                </div>
+                
+                <div class="neighborhood-item">
+                    <h4>Aberdeen</h4>
+                    <p>NYC commuters, diverse. Median price: $415K. Transit-oriented.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">What Market Analysis Includes</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="analysis-card" style="margin-bottom: 30px;">
+                <h3>For Home Buyers in Monmouth County:</h3>
+                <p style="margin-bottom: 15px;">When you're searching for houses for sale near you in New Jersey, market analysis helps you:</p>
+                <ul style="margin-left: 25px; color: var(--text-light);">
+                    <li>Determine fair market value for properties you're interested in</li>
+                    <li>Understand if you're in a competitive market requiring strong offers</li>
+                    <li>Identify neighborhoods with best value and appreciation potential</li>
+                    <li>Know how long homes typically stay on market in your target area</li>
+                    <li>Make data-driven offers that win without overpaying in Monmouth County</li>
+                    <li>Time your purchase strategically based on market conditions in NJ</li>
+                </ul>
+            </div>
+
+            <div class="analysis-card">
+                <h3>For Home Sellers in Monmouth County:</h3>
+                <p style="margin-bottom: 15px;">When you're selling your home in New Jersey, market analysis helps you:</p>
+                <ul style="margin-left: 25px; color: var(--text-light);">
+                    <li>Price your home competitively to attract buyers and maximize value</li>
+                    <li>Understand what similar homes sold for recently in your neighborhood</li>
+                    <li>Position your property effectively against current competition</li>
+                    <li>Set realistic expectations for sale timeline in Monmouth County</li>
+                    <li>Make strategic decisions about repairs and improvements in New Jersey</li>
+                    <li>Choose the optimal time to list based on seasonal trends in NJ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Need a Custom Market Analysis for Monmouth County?</h2>
+        <p>Get a free, detailed market report for your neighborhood or property. Expert data to guide your real estate decisions in New Jersey.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Free Market Report</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="index.html#about">About</a></p>
+                <p><a href="index.html#services">Services</a></p>
+                <p><a href="index.html#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
