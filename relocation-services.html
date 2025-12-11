@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Relocation services in New Jersey by Christopher Burns. Expert guidance for moving to NJ, neighborhood tours, corporate relocation, out-of-state buyers, military PCS moves, and veteran services. Century 21 Action Plus Realty.">
-    <meta name="keywords" content="relocation services NJ, moving to New Jersey, corporate relocation, military PCS NJ, out-of-state buyers, neighborhood tours, Christopher Burns, VA loans New Jersey, relocating to NJ">
-    <meta name="author" content="Christopher Burns">
-    <meta property="og:title" content="Relocation Services | Christopher Burns - Century 21 Action Plus">
-    <meta property="og:description" content="Professional relocation services throughout New Jersey. Moving guides, neighborhood tours, corporate relocation support, out-of-state buyer assistance, and military/veteran services.">
-    <meta property="og:type" content="website">
-    
-    <title>Relocation Services NJ | Christopher Burns - Century 21 Action Plus Realty</title>
+    <meta name="description" content="Relocation services in Monmouth County, NJ with Chris Burns Realtor. Complete support for families moving to New Jersey. Area information, home search, and settling in throughout Monmouth County.">
+    <meta name="keywords" content="relocation services Monmouth County, moving to NJ, relocation realtor, Chris Burns, relocating to New Jersey, area guide">
+    <title>Relocation Services - Monmouth County, NJ | Chris Burns Realtor</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Chris Burns Realtor - Monmouth County",
+      "url": "https://chrisburnsrealtornj.com",
+      "telephone": "+18002992129",
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"]
+    }
+    </script>
     
     <style>
         :root {
@@ -28,34 +35,21 @@
             --white: #FFFFFF;
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--text-dark);
-            line-height: 1.7;
+            line-height: 1.8;
             background-color: var(--white);
-            overflow-x: hidden;
         }
         
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Cormorant Garamond', serif;
+        h1, h2, h3, h4 { 
+            font-family: 'Cormorant Garamond', serif; 
             font-weight: 600;
-            line-height: 1.2;
+            color: var(--deep-navy);
         }
         
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -63,11 +57,6 @@
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        
-        nav.scrolled {
-            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
         }
         
         .nav-container {
@@ -81,295 +70,102 @@
         
         .logo {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--deep-navy);
             text-decoration: none;
-            transition: color 0.3s ease;
             display: flex;
             align-items: center;
             gap: 15px;
         }
         
-        .logo-image {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-        }
+        .logo-image { height: 50px; width: auto; }
         
-        .logo:hover {
-            color: var(--primary-gold);
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 35px;
-        }
-        
-        .nav-links li {
-            margin: 0;
-        }
-        
-        .nav-links a {
-            color: var(--text-dark);
-            text-decoration: none;
+        .nav-links { display: flex; list-style: none; gap: 35px; }
+        .nav-links a { 
+            color: var(--text-dark); 
+            text-decoration: none; 
             font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
+            transition: color 0.3s;
         }
+        .nav-links a:hover { color: var(--primary-gold); }
         
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary-gold);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        
-        /* Page Header */
-        .page-header {
+        .hero {
             background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
             padding: 150px 20px 80px;
             text-align: center;
             color: var(--white);
-            position: relative;
-            overflow: hidden;
         }
         
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(139, 64, 73, 0.1) 0%, transparent 50%);
-            animation: gradientShift 15s ease-in-out infinite;
-        }
-        
-        @keyframes gradientShift {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-        
-        .page-header-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .page-header h1 {
+        .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
             color: var(--white);
-            animation: fadeInUp 0.8s ease-out;
         }
         
-        .page-header .subtitle {
-            font-size: 1.3rem;
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
             color: rgba(255,255,255,0.9);
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-            animation: fadeInUp 0.8s ease-out 0.2s backwards;
         }
         
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
         
-        /* Main Content Section */
-        .content-section {
-            padding: 80px 20px;
-            background: var(--white);
-        }
-        
-        .intro-text {
+        .section-intro {
             max-width: 900px;
             margin: 0 auto 60px;
             text-align: center;
         }
         
-        .intro-text h2 {
-            font-size: 2.5rem;
-            color: var(--deep-navy);
-            margin-bottom: 20px;
-        }
-        
-        .intro-text p {
+        .section-intro p {
             font-size: 1.15rem;
             color: var(--text-light);
             line-height: 1.8;
         }
         
-        /* Subcategories Grid */
-        .subcategories-grid {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 35px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             margin: 60px 0;
         }
         
-        .subcategory-card {
+        .service-card {
             background: var(--white);
-            padding: 40px 35px;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            position: relative;
+            border-left: 4px solid var(--primary-gold);
         }
         
-        .subcategory-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 0;
-            background: var(--primary-gold);
-            transition: height 0.3s ease;
-            border-radius: 12px 0 0 12px;
-        }
-        
-        .subcategory-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
-            border-color: var(--primary-gold);
-        }
-        
-        .subcategory-card:hover::before {
-            height: 100%;
-        }
-        
-        .subcategory-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .subcategory-card h3 {
-            color: var(--deep-navy);
-            font-size: 1.8rem;
+        .service-card h3 {
+            font-size: 1.6rem;
             margin-bottom: 15px;
-        }
-        
-        .subcategory-card h3 a {
             color: var(--deep-navy);
-            text-decoration: none;
-            transition: color 0.3s ease;
         }
         
-        .subcategory-card h3 a:hover {
-            color: var(--primary-gold);
-        }
-        
-        .subcategory-card p {
-            color: var(--text-light);
-            margin-bottom: 25px;
-            line-height: 1.7;
-            font-size: 1.05rem;
-        }
-        
-        .subcategory-link {
-            display: inline-flex;
-            align-items: center;
-            color: var(--primary-gold);
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            gap: 8px;
-        }
-        
-        .subcategory-link:hover {
-            color: var(--accent-burgundy);
-            gap: 12px;
-        }
-        
-        .subcategory-link::after {
-            content: '→';
-            font-size: 1.2rem;
-        }
-        
-        /* Why Work With Me Section */
-        .why-section {
-            background: var(--soft-cream);
-            padding: 70px 40px;
-            border-radius: 12px;
-            margin: 60px 0;
-        }
-        
-        .why-section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--deep-navy);
-            margin-bottom: 50px;
-        }
-        
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 35px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .benefit-item {
-            text-align: center;
-        }
-        
-        .benefit-icon {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .benefit-item h3 {
-            color: var(--primary-gold);
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-        
-        .benefit-item p {
+        .service-card p {
             color: var(--text-light);
             line-height: 1.7;
-            font-size: 1.05rem;
         }
         
-        /* CTA Section */
         .cta-section {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
+            padding: 80px 20px;
             text-align: center;
-            margin: 70px 0 40px;
+            color: var(--white);
         }
         
         .cta-section h2 {
-            font-size: 2.5rem;
-            color: var(--deep-navy);
+            font-size: 2.8rem;
             margin-bottom: 20px;
+            color: var(--white);
         }
         
         .cta-section p {
             font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 35px;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
         }
         
         .cta-button {
@@ -381,17 +177,14 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+            transition: all 0.3s;
         }
         
         .cta-button:hover {
             background: var(--accent-burgundy);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 64, 73, 0.4);
         }
         
-        /* Footer */
         footer {
             background: var(--deep-navy);
             color: var(--white);
@@ -422,12 +215,10 @@
         .footer-section a {
             color: rgba(255,255,255,0.8);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
         
-        .footer-section a:hover {
-            color: var(--primary-gold);
-        }
+        .footer-section a:hover { color: var(--primary-gold); }
         
         .footer-bottom {
             max-width: 1200px;
@@ -435,248 +226,127 @@
             padding-top: 30px;
             border-top: 1px solid rgba(255,255,255,0.1);
             text-align: center;
-        }
-        
-        .footer-bottom p {
             color: rgba(255,255,255,0.6);
             font-size: 0.9rem;
-            line-height: 1.6;
         }
         
-        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .logo-image {
-                height: 40px;
-            }
-            
-            .page-header h1 {
-                font-size: 2.5rem;
-            }
-            
-            .page-header .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .subcategories-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-            
-            .intro-text h2 {
-                font-size: 2rem;
-            }
-            
-            .why-section h2 {
-                font-size: 2rem;
-            }
-            
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .cta-section h2 {
-                font-size: 2rem;
-            }
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .logo { font-size: 1.2rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
+    <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="ChrisBurnsLogo.png" alt="Christopher Burns Logo" class="logo-image">
-                Christopher Burns
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+                Chris Burns Realtor - Monmouth County
             </a>
             <ul class="nav-links">
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#why-choose">Why Choose Me</a></li>
                 <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#quiz">Find Your Home</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-content">
-            <h1>Relocation Services</h1>
-            <p class="subtitle">Making your move to or within New Jersey seamless and stress-free. Comprehensive relocation support including neighborhood tours, school district guidance, corporate relocation assistance, out-of-state buyer services, and specialized military/veteran PCS support.</p>
+    <section class="hero">
+        <h1>Relocation Services - Monmouth County, NJ</h1>
+        <p class="subtitle">Complete support for families moving to Monmouth County and New Jersey</p>
+    </section>
+
+    <div class="container">
+        <div class="section-intro">
+            <p>Moving to Monmouth County, NJ requires local expertise and comprehensive support. As your relocation specialist serving Monmouth County, Ocean County, and Middlesex County, I provide everything you need for a smooth transition to New Jersey. From neighborhood selection to settling in, I make your move stress-free in communities like Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Area Orientation</h3>
+                <p>Comprehensive overview of Monmouth County neighborhoods. Tour communities, schools, and amenities to find perfect fit throughout New Jersey.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>School District Information</h3>
+                <p>Detailed school district reports for Monmouth County. Test scores, rankings, programs, and boundaries throughout New Jersey communities.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Virtual Home Tours</h3>
+                <p>Remote viewing options for relocating families in Monmouth County. See homes via video before visiting New Jersey in person.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Commute Planning</h3>
+                <p>Analyze commute times to NYC and major employers from Monmouth County. Transit options and traffic patterns throughout New Jersey.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Temporary Housing</h3>
+                <p>Connect with rental options while house hunting in Monmouth County. Short-term housing solutions throughout New Jersey.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Community Resources</h3>
+                <p>Information on utilities, services, and amenities in Monmouth County. Everything you need to know about living in New Jersey.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Home Search Assistance</h3>
+                <p>Personalized home search based on your needs in Monmouth County. Find perfect property quickly throughout New Jersey markets.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Moving Coordination</h3>
+                <p>Recommend movers and coordinate logistics for Monmouth County relocation. Smooth transition to your New Jersey home.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Welcome Package</h3>
+                <p>Local recommendations for restaurants, shopping, and services in Monmouth County. Help you feel at home in New Jersey.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2>Planning to Relocate to Monmouth County?</h2>
+        <p>Complete relocation support from start to finish. Make your move to New Jersey stress-free.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Relocation Package</a>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="content-section">
-        <div class="container">
-            <div class="intro-text">
-                <h2>Welcome to New Jersey</h2>
-                <p>Relocating to a new area is both exciting and challenging. Whether you're moving for work, family, military orders, or lifestyle, I provide comprehensive relocation services to help you understand neighborhoods, schools, commuting, cost of living, and local amenities. From virtual tours and remote home buying assistance to coordinated move-in support, I make your transition to New Jersey smooth and successful.</p>
-            </div>
-
-            <!-- Subcategories Grid -->
-            <div class="subcategories-grid">
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🏡</div>
-                    <h3><a href="moving-to-nj-guide.html">Moving to New Jersey Guide</a></h3>
-                    <p>Complete relocation guide covering cost of living comparisons, job markets and major employers, NJ Transit and commuting options, state taxes and registrations, quality of life factors, and what to expect when moving to the Garden State. Everything you need to know before relocating.</p>
-                    <a href="moving-to-nj-guide.html" class="subcategory-link">Download Relocation Guide</a>
-                </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🗺️</div>
-                    <h3><a href="neighborhood-tours.html">Neighborhood & Community Tours</a></h3>
-                    <p>Customized neighborhood tours tailored to your lifestyle and priorities. In-person or virtual community exploration, school district visits, downtown and shopping areas, parks and recreation, dining and entertainment, and town-by-town comparisons to find your perfect community match.</p>
-                    <a href="neighborhood-tours.html" class="subcategory-link">Schedule Neighborhood Tour</a>
-                </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">💼</div>
-                    <h3><a href="corporate-executive-relocation.html">Corporate & Executive Relocation</a></h3>
-                    <p>White-glove relocation services for corporate transfers and executive moves. Employer relocation package coordination, expedited home search and closing, temporary housing arrangements, spouse career assistance, school placement support, and concierge-level service for seamless transitions.</p>
-                    <a href="corporate-executive-relocation.html" class="subcategory-link">Corporate Relocation Services</a>
-                </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">✈️</div>
-                    <h3><a href="out-of-state-buyers.html">Out-of-State Buyer Services</a></h3>
-                    <p>Specialized services for remote home buyers relocating from other states. Virtual home tours via FaceTime and video, remote offer and negotiation support, electronic signatures and digital closing, coordination with local inspectors and contractors, and property management connections for seamless long-distance buying.</p>
-                    <a href="out-of-state-buyers.html" class="subcategory-link">Remote Buying Services</a>
-                </div>
-
-                <div class="subcategory-card">
-                    <div class="subcategory-icon">🎖️</div>
-                    <h3><a href="military-veteran-relocation.html">Military & Veteran Relocation (PCS)</a></h3>
-                    <p>Dedicated support for military families and veterans with PCS orders to New Jersey. VA loan expertise (0% down, no PMI), military-friendly communities near Joint Base McGuire-Dix-Lakehurst, understanding of PCS timelines and challenges, military clause protection, and gratitude for your service with specialized care.</p>
-                    <a href="military-veteran-relocation.html" class="subcategory-link">Military Relocation Support</a>
-                </div>
-            </div>
-
-            <!-- Why Work With Me Section -->
-            <div class="why-section">
-                <h2>Your Relocation Partner</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🏘️</div>
-                        <h3>Local Expertise</h3>
-                        <p>Deep knowledge of New Jersey neighborhoods, schools, commuting routes, cost of living, and quality of life factors. Help you choose the right community based on your lifestyle, budget, and priorities.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">📱</div>
-                        <h3>Virtual Services</h3>
-                        <p>Full support for long-distance relocations with virtual tours, video walkthroughs, FaceTime property showings, electronic signatures, and remote closing coordination. Buy with confidence from anywhere.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">⚡</div>
-                        <h3>Efficient Process</h3>
-                        <p>Streamlined home search and closing process for time-sensitive relocations. Corporate transfers, military PCS moves, and job-related relocations require quick, coordinated action and expert project management.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🤝</div>
-                        <h3>Complete Support</h3>
-                        <p>Comprehensive relocation assistance beyond just finding a home. Connections to schools, utilities, movers, contractors, and local services. Ongoing support to help you settle into your new community successfully.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="cta-section">
-                <h2>Planning Your Move to New Jersey?</h2>
-                <p>Let's discuss your relocation needs and find the perfect community for you.</p>
-                <a href="index.html#contact" class="cta-button">Schedule Relocation Consultation</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Christopher Burns</h4>
-                <p>Licensed Real Estate Professional<br>
-                Century 21 Action Plus Realty<br>
-                Serving all of New Jersey</p>
+                <h4>Chris Burns Realtor - Monmouth County</h4>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties, NJ</p>
             </div>
-            
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <p><a href="index.html#about">About</a></p>
-                <p><a href="index.html#why-choose">Why Choose Me</a></p>
                 <p><a href="index.html#services">Services</a></p>
                 <p><a href="index.html#contact">Contact</a></p>
             </div>
-            
             <div class="footer-section">
-                <h4>Resources</h4>
-                <p><a href="https://www.actionplusrealty.com/" target="_blank" rel="noopener">Century 21 Action Plus</a></p>
-                <p><a href="index.html#quiz">Home Finder Quiz</a></p>
-                <p><a href="index.html#contact">Schedule Consultation</a></p>
+                <h4>Services</h4>
+                <p><a href="buyer-representation.html">Buyer Representation</a></p>
+                <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
             </div>
-            
             <div class="footer-section">
-                <h4>Office Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                Saturday: By Appointment<br>
-                Sunday: By Appointment</p>
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
+                <p>Monday-Friday: 9 AM - 5 PM<br>Serving Monmouth County, NJ</p>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>&copy; 2024 Christopher Burns - Century 21 Action Plus Realty. All rights reserved. | Each office is independently owned and operated.</p>
-            <p style="margin-top: 10px; font-size: 0.85rem;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
+            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.subcategory-card, .benefit-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
 </body>
 </html>
