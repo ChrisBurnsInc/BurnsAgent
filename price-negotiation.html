@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1000px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .tips-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,84 @@
     <div class="container">
         <div class="section-intro">
             <p>Strong price negotiation makes thousands of dollars difference in Monmouth County real estate transactions. As your skilled negotiator serving Monmouth County, Ocean County, and Middlesex County, I use proven strategies to get buyers the best price and sellers maximum value throughout New Jersey. Every negotiation is different - market conditions, property condition, and motivation all factor into my approach for houses for sale in Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="pricenegotiation1.jpg" alt="Price Negotiation Strategy - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Negotiation Savings Comparison Chart -->
+        <div class="chart-container">
+            <h3>💰 The Power of Expert Negotiation</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 30px; font-size: 1.05rem;">Average savings with professional negotiation vs. without representation</p>
+            
+            <svg viewBox="0 0 900 500" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Background Grid -->
+                <line x1="150" y1="50" x2="150" y2="380" stroke="#e0e0e0" stroke-width="1"/>
+                <line x1="150" y1="380" x2="850" y2="380" stroke="#e0e0e0" stroke-width="2"/>
+                
+                <!-- Y-Axis Labels -->
+                <text x="130" y="385" text-anchor="end" font-size="14" fill="#6C757D">$0</text>
+                <text x="130" y="325" text-anchor="end" font-size="14" fill="#6C757D">$5K</text>
+                <text x="130" y="265" text-anchor="end" font-size="14" fill="#6C757D">$10K</text>
+                <text x="130" y="205" text-anchor="end" font-size="14" fill="#6C757D">$15K</text>
+                <text x="130" y="145" text-anchor="end" font-size="14" fill="#6C757D">$20K</text>
+                <text x="130" y="85" text-anchor="end" font-size="14" fill="#6C757D">$25K</text>
+                
+                <!-- Grid Lines -->
+                <line x1="150" y1="320" x2="850" y2="320" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="150" y1="260" x2="850" y2="260" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="150" y1="200" x2="850" y2="200" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="150" y1="140" x2="850" y2="140" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="5,5"/>
+                <line x1="150" y1="80" x2="850" y2="80" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="5,5"/>
+                
+                <!-- Bar 1: Without Negotiation -->
+                <rect x="250" y="320" width="120" height="60" fill="#FF6B6B" rx="5"/>
+                <text x="310" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C3E50">$5,000</text>
+                <text x="310" y="365" text-anchor="middle" font-size="14" font-weight="600" fill="white">Without</text>
+                <text x="310" y="415" text-anchor="middle" font-size="13" fill="#2C3E50">No Professional</text>
+                <text x="310" y="432" text-anchor="middle" font-size="13" fill="#2C3E50">Negotiator</text>
+                
+                <!-- Bar 2: Basic Negotiation -->
+                <rect x="440" y="230" width="120" height="150" fill="#FFD93D" rx="5"/>
+                <text x="500" y="218" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C3E50">$12,500</text>
+                <text x="500" y="300" text-anchor="middle" font-size="14" font-weight="600" fill="white">Basic</text>
+                <text x="500" y="415" text-anchor="middle" font-size="13" fill="#2C3E50">Standard Agent</text>
+                <text x="500" y="432" text-anchor="middle" font-size="13" fill="#2C3E50">Negotiation</text>
+                
+                <!-- Bar 3: Expert Negotiation (Chris Burns) -->
+                <rect x="630" y="110" width="120" height="270" fill="#228B22" rx="5"/>
+                <text x="690" y="95" text-anchor="middle" font-size="18" font-weight="bold" fill="#228B22">$22,500</text>
+                <text x="690" y="240" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Expert</text>
+                <text x="690" y="260" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Chris Burns</text>
+                <text x="690" y="415" text-anchor="middle" font-size="13" fill="#2C3E50" font-weight="600">Expert Price</text>
+                <text x="690" y="432" text-anchor="middle" font-size="13" fill="#2C3E50" font-weight="600">Negotiation</text>
+                
+                <!-- Savings Arrows and Labels -->
+                <!-- Arrow 1 to 2 -->
+                <path d="M 370 290 L 440 290" stroke="#C9A961" stroke-width="3" fill="none" marker-end="url(#arrowGold)"/>
+                <text x="405" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#C9A961">+$7.5K</text>
+                
+                <!-- Arrow 2 to 3 -->
+                <path d="M 560 200 L 630 200" stroke="#C9A961" stroke-width="3" fill="none" marker-end="url(#arrowGold)"/>
+                <text x="595" y="190" text-anchor="middle" font-size="12" font-weight="bold" fill="#C9A961">+$10K</text>
+                
+                <!-- Total Savings Highlight -->
+                <rect x="250" y="460" width="500" height="30" fill="#FFF3CD" stroke="#C9A961" stroke-width="2" rx="5"/>
+                <text x="500" y="480" text-anchor="middle" font-size="14" font-weight="bold" fill="#856404">💰 Total Expert Advantage: $17,500 More in Your Pocket!</text>
+                
+                <!-- Arrow Marker Definition -->
+                <defs>
+                    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#C9A961" />
+                    </marker>
+                </defs>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 25px; font-size: 0.95rem; font-style: italic;">
+                *Based on average $450K home sale in Monmouth County, NJ. Actual savings vary by property and market conditions.
+            </p>
         </div>
 
         <div class="tips-grid">
