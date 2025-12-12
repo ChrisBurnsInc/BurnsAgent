@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .programs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,103 @@
     <div class="container">
         <div class="section-intro">
             <p>Numerous programs help first-time buyers afford homes in Monmouth County, NJ. As your homebuyer specialist serving Monmouth County, Ocean County, and Middlesex County, I connect you with grants, loans, and assistance programs throughout New Jersey. Down payment assistance and low-interest loans make homeownership possible in Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="buyer-programs2.jpg" alt="First-Time Homebuyer Programs - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Loan Program Comparison Chart -->
+        <div class="chart-container">
+            <h3>💰 First-Time Buyer Loan Programs Comparison</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Compare down payment requirements and key benefits on a $400,000 home</p>
+            
+            <svg viewBox="0 0 1100 900" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Header Row -->
+                <rect x="50" y="30" width="1000" height="60" rx="8" fill="#1A2332"/>
+                <text x="200" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Program</text>
+                <text x="400" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Down Payment</text>
+                <text x="600" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">$ Amount</text>
+                <text x="800" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Credit Score</text>
+                <text x="950" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">PMI?</text>
+                
+                <!-- Row 1: VA Loan -->
+                <rect x="50" y="110" width="1000" height="90" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="3"/>
+                <text x="200" y="145" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">VA Loan</text>
+                <text x="200" y="165" text-anchor="middle" font-size="12" fill="#6C757D">(Veterans & Military)</text>
+                <text x="200" y="185" text-anchor="middle" font-size="11" fill="#228B22">⭐ BEST DEAL</text>
+                
+                <text x="400" y="155" text-anchor="middle" font-size="32" font-weight="bold" fill="#228B22">0%</text>
+                <text x="600" y="155" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">$0</text>
+                <text x="800" y="155" text-anchor="middle" font-size="18" fill="#1A2332">620+</text>
+                <text x="950" y="155" text-anchor="middle" font-size="20" font-weight="bold" fill="#228B22">NO ✓</text>
+                
+                <!-- Row 2: USDA Loan -->
+                <rect x="50" y="220" width="1000" height="90" rx="6" fill="#E1F5FE" stroke="#0288D1" stroke-width="2"/>
+                <text x="200" y="255" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">USDA Loan</text>
+                <text x="200" y="275" text-anchor="middle" font-size="12" fill="#6C757D">(Rural/Suburban Areas)</text>
+                <text x="200" y="295" text-anchor="middle" font-size="11" fill="#0288D1">Income limits apply</text>
+                
+                <text x="400" y="265" text-anchor="middle" font-size="32" font-weight="bold" fill="#0288D1">0%</text>
+                <text x="600" y="265" text-anchor="middle" font-size="28" font-weight="bold" fill="#0288D1">$0</text>
+                <text x="800" y="265" text-anchor="middle" font-size="18" fill="#1A2332">640+</text>
+                <text x="950" y="265" text-anchor="middle" font-size="20" font-weight="bold" fill="#0288D1">YES</text>
+                
+                <!-- Row 3: FHA Loan -->
+                <rect x="50" y="330" width="1000" height="90" rx="6" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+                <text x="200" y="365" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">FHA Loan</text>
+                <text x="200" y="385" text-anchor="middle" font-size="12" fill="#6C757D">(Federal Housing Admin)</text>
+                <text x="200" y="405" text-anchor="middle" font-size="11" fill="#F57C00">Low credit OK</text>
+                
+                <text x="400" y="375" text-anchor="middle" font-size="32" font-weight="bold" fill="#F57C00">3.5%</text>
+                <text x="600" y="375" text-anchor="middle" font-size="28" font-weight="bold" fill="#F57C00">$14,000</text>
+                <text x="800" y="375" text-anchor="middle" font-size="18" fill="#1A2332">580+</text>
+                <text x="950" y="375" text-anchor="middle" font-size="20" font-weight="bold" fill="#F57C00">YES</text>
+                
+                <!-- Row 4: Conventional 97 -->
+                <rect x="50" y="440" width="1000" height="90" rx="6" fill="#F3E5F5" stroke="#8E24AA" stroke-width="2"/>
+                <text x="200" y="475" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Conventional 97</text>
+                <text x="200" y="495" text-anchor="middle" font-size="12" fill="#6C757D">(Fannie Mae/Freddie Mac)</text>
+                <text x="200" y="515" text-anchor="middle" font-size="11" fill="#8E24AA">First-time buyers</text>
+                
+                <text x="400" y="485" text-anchor="middle" font-size="32" font-weight="bold" fill="#8E24AA">3%</text>
+                <text x="600" y="485" text-anchor="middle" font-size="28" font-weight="bold" fill="#8E24AA">$12,000</text>
+                <text x="800" y="485" text-anchor="middle" font-size="18" fill="#1A2332">620+</text>
+                <text x="950" y="485" text-anchor="middle" font-size="20" font-weight="bold" fill="#8E24AA">YES</text>
+                
+                <!-- Row 5: HomeReady/HomePossible -->
+                <rect x="50" y="550" width="1000" height="90" rx="6" fill="#FCE4EC" stroke="#C2185B" stroke-width="2"/>
+                <text x="200" y="585" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">HomeReady/</text>
+                <text x="200" y="605" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Home Possible</text>
+                <text x="200" y="625" text-anchor="middle" font-size="11" fill="#C2185B">Income limits</text>
+                
+                <text x="400" y="595" text-anchor="middle" font-size="32" font-weight="bold" fill="#C2185B">3%</text>
+                <text x="600" y="595" text-anchor="middle" font-size="28" font-weight="bold" fill="#C2185B">$12,000</text>
+                <text x="800" y="595" text-anchor="middle" font-size="18" fill="#1A2332">620+</text>
+                <text x="950" y="595" text-anchor="middle" font-size="20" font-weight="bold" fill="#C2185B">YES</text>
+                
+                <!-- Row 6: Conventional 20% -->
+                <rect x="50" y="660" width="1000" height="90" rx="6" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2"/>
+                <text x="200" y="695" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Conventional</text>
+                <text x="200" y="715" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">20% Down</text>
+                <text x="200" y="735" text-anchor="middle" font-size="11" fill="#D32F2F">Standard loan</text>
+                
+                <text x="400" y="705" text-anchor="middle" font-size="32" font-weight="bold" fill="#D32F2F">20%</text>
+                <text x="600" y="705" text-anchor="middle" font-size="28" font-weight="bold" fill="#D32F2F">$80,000</text>
+                <text x="800" y="705" text-anchor="middle" font-size="18" fill="#1A2332">620+</text>
+                <text x="950" y="705" text-anchor="middle" font-size="20" font-weight="bold" fill="#228B22">NO ✓</text>
+                
+                <!-- Bottom Summary Box -->
+                <rect x="50" y="780" width="1000" height="100" rx="10" fill="#FFF3CD" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="815" text-anchor="middle" font-size="20" font-weight="bold" fill="#856404">💡 Key Takeaway for First-Time Buyers:</text>
+                <text x="550" y="845" text-anchor="middle" font-size="15" fill="#856404">You don't need 20% down! Programs starting at 0-3.5% down make homeownership</text>
+                <text x="550" y="868" text-anchor="middle" font-size="15" fill="#856404">accessible NOW. Chris Burns helps you find the best program for YOUR situation.</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                *PMI = Private Mortgage Insurance (adds ~$100-200/month). Down payment amounts based on $400K home purchase.
+            </p>
         </div>
 
         <div class="programs-grid">
