@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .screening-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,121 @@
     <div class="container">
         <div class="section-intro">
             <p>Not all buyers are created equal in Monmouth County, NJ. As your listing agent serving Monmouth County, Ocean County, and Middlesex County, I thoroughly screen buyers to ensure serious, qualified offers on your property throughout New Jersey. Pre-qualification verification, financial review, and motivation assessment protect your time and ensure successful closings in Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="buyer-screening1.jpg" alt="Buyer Screening Process - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Buyer Qualification Scorecard Chart -->
+        <div class="chart-container">
+            <h3>✅ Buyer Qualification Scorecard</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">How Chris Burns evaluates buyer strength (0-100 points) before accepting offers</p>
+            
+            <svg viewBox="0 0 950 850" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Title -->
+                <rect x="50" y="30" width="850" height="50" rx="8" fill="#1A2332"/>
+                <text x="475" y="62" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Comprehensive 8-Point Buyer Evaluation System</text>
+                
+                <!-- Category 1: Financial Strength -->
+                <rect x="50" y="110" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="135" font-size="15" font-weight="bold" fill="#1A2332">1. Financial Strength (25 pts)</text>
+                <text x="70" y="155" font-size="12" fill="#6C757D">Pre-approval • Down payment • Reserves</text>
+                <rect x="470" y="110" width="150" height="60" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="545" y="145" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">25</text>
+                <rect x="640" y="110" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="135" text-anchor="middle" font-size="13" fill="#856404">Strong = 20-25 pts</text>
+                <text x="770" y="155" text-anchor="middle" font-size="13" fill="#856404">Weak = 0-10 pts</text>
+                
+                <!-- Category 2: Proof of Funds -->
+                <rect x="50" y="185" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="210" font-size="15" font-weight="bold" fill="#1A2332">2. Proof of Funds Verified (20 pts)</text>
+                <text x="70" y="230" font-size="12" fill="#6C757D">Bank statements • Asset verification</text>
+                <rect x="470" y="185" width="150" height="60" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="545" y="220" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">20</text>
+                <rect x="640" y="185" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="210" text-anchor="middle" font-size="13" fill="#856404">Cash buyer = 20 pts</text>
+                <text x="770" y="230" text-anchor="middle" font-size="13" fill="#856404">Financed = 10-15 pts</text>
+                
+                <!-- Category 3: Credit & Debt -->
+                <rect x="50" y="260" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="285" font-size="15" font-weight="bold" fill="#1A2332">3. Credit & Debt Ratio (15 pts)</text>
+                <text x="70" y="305" font-size="12" fill="#6C757D">Credit score • DTI ratio • History</text>
+                <rect x="470" y="260" width="150" height="60" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="545" y="295" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">15</text>
+                <rect x="640" y="260" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="285" text-anchor="middle" font-size="13" fill="#856404">750+ score = 15 pts</text>
+                <text x="770" y="305" text-anchor="middle" font-size="13" fill="#856404">620-680 = 5-8 pts</text>
+                
+                <!-- Category 4: Contingencies -->
+                <rect x="50" y="335" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="360" font-size="15" font-weight="bold" fill="#1A2332">4. Contingencies (10 pts)</text>
+                <text x="70" y="380" font-size="12" fill="#6C757D">Home sale • Inspection • Financing</text>
+                <rect x="470" y="335" width="150" height="60" rx="6" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2"/>
+                <text x="545" y="370" text-anchor="middle" font-size="28" font-weight="bold" fill="#DC143C">3</text>
+                <rect x="640" y="335" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="360" text-anchor="middle" font-size="13" fill="#856404">No contingencies = 10</text>
+                <text x="770" y="380" text-anchor="middle" font-size="13" fill="#856404">Must sell home = 0-3</text>
+                
+                <!-- Category 5: Buyer Motivation -->
+                <rect x="50" y="410" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="435" font-size="15" font-weight="bold" fill="#1A2332">5. Buyer Motivation (10 pts)</text>
+                <text x="70" y="455" font-size="12" fill="#6C757D">Timeline • Urgency • Commitment</text>
+                <rect x="470" y="410" width="150" height="60" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="545" y="445" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">9</text>
+                <rect x="640" y="410" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="435" text-anchor="middle" font-size="13" fill="#856404">Must move = 9-10 pts</text>
+                <text x="770" y="455" text-anchor="middle" font-size="13" fill="#856404">Just looking = 0-3 pts</text>
+                
+                <!-- Category 6: Timeline Match -->
+                <rect x="50" y="485" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="510" font-size="15" font-weight="bold" fill="#1A2332">6. Timeline Match (8 pts)</text>
+                <text x="70" y="530" font-size="12" fill="#6C757D">Closing date • Flexibility • Needs</text>
+                <rect x="470" y="485" width="150" height="60" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="545" y="520" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">8</text>
+                <rect x="640" y="485" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="510" text-anchor="middle" font-size="13" fill="#856404">Perfect match = 8 pts</text>
+                <text x="770" y="530" text-anchor="middle" font-size="13" fill="#856404">Conflicts = 0-3 pts</text>
+                
+                <!-- Category 7: Agent Quality -->
+                <rect x="50" y="560" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="585" font-size="15" font-weight="bold" fill="#1A2332">7. Agent Quality (7 pts)</text>
+                <text x="70" y="605" font-size="12" fill="#6C757D">Experience • Reputation • Reliability</text>
+                <rect x="470" y="560" width="150" height="60" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="545" y="595" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">7</text>
+                <rect x="640" y="560" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="585" text-anchor="middle" font-size="13" fill="#856404">Experienced pro = 7 pts</text>
+                <text x="770" y="605" text-anchor="middle" font-size="13" fill="#856404">New/unknown = 2-4 pts</text>
+                
+                <!-- Category 8: Red Flags -->
+                <rect x="50" y="635" width="400" height="60" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="660" font-size="15" font-weight="bold" fill="#1A2332">8. Red Flag Check (5 pts)</text>
+                <text x="70" y="680" font-size="12" fill="#6C757D">Issues • Concerns • Warning signs</text>
+                <rect x="470" y="635" width="150" height="60" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="545" y="670" text-anchor="middle" font-size="28" font-weight="bold" fill="#228B22">5</text>
+                <rect x="640" y="635" width="260" height="60" rx="6" fill="#FFF3CD" stroke="#C9A961" stroke-width="2"/>
+                <text x="770" y="660" text-anchor="middle" font-size="13" fill="#856404">No red flags = 5 pts</text>
+                <text x="770" y="680" text-anchor="middle" font-size="13" fill="#856404">Multiple issues = 0 pts</text>
+                
+                <!-- Total Score -->
+                <line x1="470" y1="710" x2="900" y2="710" stroke="#1A2332" stroke-width="3"/>
+                <text x="250" y="740" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">TOTAL BUYER SCORE:</text>
+                <rect x="470" y="715" width="150" height="50" rx="8" fill="#C9A961" stroke="#1A2332" stroke-width="3"/>
+                <text x="545" y="748" text-anchor="middle" font-size="32" font-weight="bold" fill="white">92/100</text>
+                
+                <!-- Rating Scale -->
+                <rect x="640" y="715" width="260" height="50" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="770" y="745" text-anchor="middle" font-size="16" font-weight="bold" fill="#228B22">✅ EXCELLENT BUYER</text>
+                
+                <!-- Bottom Summary -->
+                <rect x="50" y="785" width="850" height="50" rx="8" fill="#FFF3CD" stroke="#C9A961" stroke-width="3"/>
+                <text x="475" y="815" text-anchor="middle" font-size="15" font-weight="bold" fill="#856404">Rating: 85-100 = Excellent | 70-84 = Good | 60-69 = Fair | Below 60 = Risky (Reject or Counter)</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                📊 Example shows ideal buyer profile. Chris Burns only presents offers scoring 70+ to protect your time and ensure closing success.
+            </p>
         </div>
 
         <div class="screening-grid">
