@@ -281,6 +281,42 @@
             color: rgba(255,255,255,0.6);
         }
 
+        /* Image Placeholder Sections */
+        .visual-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 2rem;
+        }
+
+        .image-placeholder {
+            background: var(--white);
+            border: 3px dashed var(--primary-gold);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-placeholder h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--deep-navy);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder .suggestion {
+            color: var(--accent-burgundy);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -309,12 +345,15 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Chris Burns Realtor</a>
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Logo" style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Chris Burns Realtor - Monmouth County
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="tel:+18002992129" class="nav-cta">Call: (800) 299-2129</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -329,6 +368,26 @@
     <section class="intro-section">
         <p>Facing financial hardship doesn't automatically mean losing your home. Chris Burns provides compassionate, confidential foreclosure prevention assistance to help Monmouth County homeowners explore all available options to avoid foreclosure throughout New Jersey.</p>
         <p>From loan modification programs to financial counseling resources, get the support you need during difficult times. Act early to maximize your options and protect your home in Marlboro, Manalapan, Freehold, Holmdel, and surrounding communities.</p>
+    </section>
+
+    <!-- Visual Content Section -->
+    <section class="visual-section">
+        <div class="image-placeholder">
+            <h3>🏠 Foreclosure Prevention Support Image</h3>
+            <p><strong>Suggested Image:</strong> Homeowner reviewing documents with professional advisor/counselor</p>
+            <p class="suggestion">💡 Image Ideas: Professional consultation, financial planning meeting, homeowner relief, supportive guidance</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Dimensions: 1200x600px | Format: JPG or PNG | File: foreclosure-prevention-hero.jpg</p>
+        </div>
+
+        <div class="image-placeholder">
+            <h3>📊 Recommended Charts for This Page</h3>
+            <p><strong>Chart 1:</strong> Flowchart showing foreclosure prevention process steps and decision points</p>
+            <p><strong>Chart 2:</strong> Timeline graphic of foreclosure timeline with intervention points highlighted</p>
+            <p><strong>Chart 3:</strong> Pie chart displaying success rates of different prevention methods</p>
+            <p><strong>Chart 4:</strong> Comparison table: Loan Modification vs. Forbearance vs. Repayment Plans</p>
+            <p class="suggestion">💡 Tools: Lucidchart for flowcharts, Canva for timelines, Excel for comparison tables</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Suggested placement: Process flowchart after intro, comparison table in middle section</p>
+        </div>
     </section>
 
     <!-- Content Grid -->
