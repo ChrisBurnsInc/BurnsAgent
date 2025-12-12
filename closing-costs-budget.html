@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .costs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,144 @@
     <div class="container">
         <div class="section-intro">
             <p>Closing costs often surprise first-time buyers in Monmouth County, NJ. As your homebuyer advocate serving Monmouth County, Ocean County, and Middlesex County, I help you understand and budget for all closing expenses throughout New Jersey. Typical closing costs range from 2-5% of purchase price in markets like Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="closing-costs1.jpg" alt="Closing Costs Breakdown - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Closing Costs Breakdown Chart -->
+        <div class="chart-container">
+            <h3>💰 Complete Closing Costs Breakdown</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Typical costs on a $400,000 home purchase in Monmouth County, NJ</p>
+            
+            <svg viewBox="0 0 1100 850" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Title Row -->
+                <rect x="50" y="30" width="1000" height="50" rx="8" fill="#1A2332"/>
+                <text x="300" y="62" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Cost Category</text>
+                <text x="600" y="62" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Typical Range</text>
+                <text x="850" y="62" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Your Cost</text>
+                
+                <!-- Row 1: Down Payment -->
+                <rect x="50" y="100" width="1000" height="70" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="70" y="130" font-size="16" font-weight="bold" fill="#1A2332">Down Payment (20%)</text>
+                <text x="70" y="152" font-size="12" fill="#6C757D">Varies by loan type - 0% to 20%+</text>
+                <text x="600" y="140" text-anchor="middle" font-size="15" fill="#2C3E50">0% - 20%+ of price</text>
+                <text x="850" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#228B22">$80,000</text>
+                
+                <!-- Row 2: Lender Fees -->
+                <rect x="50" y="185" width="1000" height="70" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="215" font-size="16" font-weight="bold" fill="#1A2332">Lender Fees & Origination</text>
+                <text x="70" y="237" font-size="12" fill="#6C757D">Processing, underwriting, points</text>
+                <text x="600" y="225" text-anchor="middle" font-size="15" fill="#2C3E50">0.5% - 1.5%</text>
+                <text x="850" y="225" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">$4,000</text>
+                
+                <!-- Row 3: Title & Escrow -->
+                <rect x="50" y="270" width="1000" height="70" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="300" font-size="16" font-weight="bold" fill="#1A2332">Title Insurance & Escrow</text>
+                <text x="70" y="322" font-size="12" fill="#6C757D">One-time protection policy</text>
+                <text x="600" y="310" text-anchor="middle" font-size="15" fill="#2C3E50">$1,200 - $2,500</text>
+                <text x="850" y="310" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">$1,800</text>
+                
+                <!-- Row 4: Appraisal -->
+                <rect x="50" y="355" width="1000" height="70" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="385" font-size="16" font-weight="bold" fill="#1A2332">Appraisal Fee</text>
+                <text x="70" y="407" font-size="12" fill="#6C757D">Required by lender</text>
+                <text x="600" y="395" text-anchor="middle" font-size="15" fill="#2C3E50">$400 - $600</text>
+                <text x="850" y="395" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">$500</text>
+                
+                <!-- Row 5: Home Inspection -->
+                <rect x="50" y="440" width="1000" height="70" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="470" font-size="16" font-weight="bold" fill="#1A2332">Home Inspection</text>
+                <text x="70" y="492" font-size="12" fill="#6C757D">Varies by home size</text>
+                <text x="600" y="480" text-anchor="middle" font-size="15" fill="#2C3E50">$400 - $700</text>
+                <text x="850" y="480" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">$550</text>
+                
+                <!-- Row 6: Attorney Fees -->
+                <rect x="50" y="525" width="1000" height="70" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="555" font-size="16" font-weight="bold" fill="#1A2332">Attorney Fees (NJ Required)</text>
+                <text x="70" y="577" font-size="12" fill="#6C757D">Real estate attorney closing</text>
+                <text x="600" y="565" text-anchor="middle" font-size="15" fill="#2C3E50">$1,000 - $2,000</text>
+                <text x="850" y="565" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">$1,500</text>
+                
+                <!-- Row 7: Recording & Transfer -->
+                <rect x="50" y="610" width="1000" height="70" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="640" font-size="16" font-weight="bold" fill="#1A2332">Recording & Transfer Fees</text>
+                <text x="70" y="662" font-size="12" fill="#6C757D">County/state fees</text>
+                <text x="600" y="650" text-anchor="middle" font-size="15" fill="#2C3E50">$200 - $500</text>
+                <text x="850" y="650" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">$350</text>
+                
+                <!-- Row 8: Homeowners Insurance -->
+                <rect x="50" y="695" width="1000" height="70" rx="6" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="725" font-size="16" font-weight="bold" fill="#1A2332">Homeowners Insurance (1 year)</text>
+                <text x="70" y="747" font-size="12" fill="#6C757D">First year prepaid</text>
+                <text x="600" y="735" text-anchor="middle" font-size="15" fill="#2C3E50">$1,200 - $2,000</text>
+                <text x="850" y="735" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">$1,600</text>
+                
+                <!-- Total Line -->
+                <line x1="50" y1="780" x2="1050" y2="780" stroke="#1A2332" stroke-width="3"/>
+                
+                <!-- Totals Row -->
+                <text x="300" y="810" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">TOTAL CASH NEEDED AT CLOSING:</text>
+                <rect x="720" y="785" width="280" height="45" rx="8" fill="#228B22" stroke="#1A2332" stroke-width="3"/>
+                <text x="860" y="817" text-anchor="middle" font-size="28" font-weight="bold" fill="white">$90,300</text>
+                
+                <!-- Bottom Summary -->
+                <rect x="50" y="845" width="1000" height="0" rx="0" fill="none"/>
+            </svg>
+            
+            <!-- Second Chart - Cost Pie Breakdown -->
+            <svg viewBox="0 0 900 400" style="max-width: 100%; height: auto; margin: 40px auto 0; display: block;">
+                <text x="450" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">Where Your $90,300 Goes</text>
+                
+                <!-- Pie Chart -->
+                <!-- Down Payment slice (88.6%) - largest -->
+                <path d="M 250,200 L 250,80 A 120,120 0 1,1 139,273 Z" fill="#228B22" stroke="white" stroke-width="2"/>
+                <text x="200" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Down Payment</text>
+                <text x="200" y="178" text-anchor="middle" font-size="13" fill="white">$80,000</text>
+                <text x="200" y="195" text-anchor="middle" font-size="12" fill="white">(88.6%)</text>
+                
+                <!-- Lender Fees slice -->
+                <path d="M 250,200 L 139,273 A 120,120 0 0,1 118,238 Z" fill="#4A90E2" stroke="white" stroke-width="2"/>
+                <text x="120" y="265" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Lender</text>
+                <text x="120" y="278" text-anchor="middle" font-size="10" fill="white">$4K (4.4%)</text>
+                
+                <!-- Title & Insurance slice -->
+                <path d="M 250,200 L 118,238 A 120,120 0 0,1 118,163 Z" fill="#FDB913" stroke="white" stroke-width="2"/>
+                <text x="95" y="200" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Title/Ins</text>
+                <text x="95" y="213" text-anchor="middle" font-size="10" fill="white">$4.8K</text>
+                
+                <!-- Other Costs slice -->
+                <path d="M 250,200 L 118,163 A 120,120 0 0,1 139,127 Z" fill="#8B4049" stroke="white" stroke-width="2"/>
+                <text x="110" y="145" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Other</text>
+                <text x="110" y="158" text-anchor="middle" font-size="10" fill="white">$1.5K</text>
+                
+                <!-- Legend -->
+                <rect x="450" y="100" width="400" height="250" rx="8" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="650" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Cost Breakdown Summary</text>
+                
+                <circle cx="470" cy="160" r="8" fill="#228B22"/>
+                <text x="490" y="165" font-size="13" fill="#1A2332">Down Payment: $80,000 (88.6%)</text>
+                
+                <circle cx="470" cy="190" r="8" fill="#4A90E2"/>
+                <text x="490" y="195" font-size="13" fill="#1A2332">Lender Fees: $4,000 (4.4%)</text>
+                
+                <circle cx="470" cy="220" r="8" fill="#FDB913"/>
+                <text x="490" y="225" font-size="13" fill="#1A2332">Title/Insurance: $4,800 (5.3%)</text>
+                
+                <circle cx="470" cy="250" r="8" fill="#8B4049"/>
+                <text x="490" y="255" font-size="13" fill="#1A2332">Other Fees: $1,500 (1.7%)</text>
+                
+                <line x1="460" y1="275" x2="840" y2="275" stroke="#C9A961" stroke-width="2"/>
+                <text x="650" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">Total: $90,300</text>
+                <text x="650" y="325" text-anchor="middle" font-size="12" fill="#6C757D">Note: Closing costs (excluding down payment)</text>
+                <text x="650" y="342" text-anchor="middle" font-size="12" font-weight="bold" fill="#C9A961">are $10,300 = 2.6% of purchase price</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                💡 Costs vary by loan type, location, and lender. Chris Burns provides personalized estimates for YOUR situation!
+            </p>
         </div>
 
         <div class="costs-grid">
