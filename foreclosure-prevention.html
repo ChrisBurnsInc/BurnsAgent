@@ -373,19 +373,153 @@
     <!-- Visual Content Section -->
     <section class="visual-section">
         <div style="text-align: center; margin: 2rem 0;">
-            <img src="foreclosure-prevention-hero3.jpg" 
-                 alt="Foreclosure Prevention Support - Homeowner Consultation" 
-                 style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <img src="foreclosure-prevention-hero3.jpg" alt="Foreclosure Prevention Support - Homeowner Consultation" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
         </div>
 
-        <div class="image-placeholder">
-            <h3>📊 Recommended Charts for This Page</h3>
-            <p><strong>Chart 1:</strong> Flowchart showing foreclosure prevention process steps and decision points</p>
-            <p><strong>Chart 2:</strong> Timeline graphic of foreclosure timeline with intervention points highlighted</p>
-            <p><strong>Chart 3:</strong> Pie chart displaying success rates of different prevention methods</p>
-            <p><strong>Chart 4:</strong> Comparison table: Loan Modification vs. Forbearance vs. Repayment Plans</p>
-            <p class="suggestion">💡 Tools: Lucidchart for flowcharts, Canva for timelines, Excel for comparison tables</p>
-            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Suggested placement: Process flowchart after intro, comparison table in middle section</p>
+        <!-- Chart 1: Foreclosure Prevention Process Flowchart -->
+        <div style="text-align: center; margin: 3rem 0;">
+            <h3 style="font-family: 'Cormorant Garamond', serif; color: #1A2332; font-size: 2rem; margin-bottom: 1.5rem;">Foreclosure Prevention Process</h3>
+            
+            <!-- SVG Flowchart -->
+            <svg viewBox="0 0 800 1200" style="max-width: 600px; height: auto; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 20px; margin: 0 auto;">
+                <!-- Define Arrow Markers -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#1A2332" />
+                    </marker>
+                </defs>
+                
+                <!-- START -->
+                <rect x="250" y="20" width="300" height="60" rx="30" fill="#C9A961" stroke="#1A2332" stroke-width="2"/>
+                <text x="400" y="55" text-anchor="middle" font-size="18" font-weight="bold" fill="white">FINANCIAL HARDSHIP</text>
+                
+                <!-- Arrow down -->
+                <line x1="400" y1="80" x2="400" y2="120" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Contact Lender -->
+                <rect x="200" y="120" width="400" height="70" rx="5" fill="#4A90E2" stroke="#1A2332" stroke-width="2"/>
+                <text x="400" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Contact Lender Immediately</text>
+                <text x="400" y="175" text-anchor="middle" font-size="14" fill="white">(Within 30 days - Don't ignore bills!)</text>
+                
+                <!-- Arrow down -->
+                <line x1="400" y1="190" x2="400" y2="230" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Loss Mitigation -->
+                <rect x="200" y="230" width="400" height="60" rx="5" fill="#4A90E2" stroke="#1A2332" stroke-width="2"/>
+                <text x="400" y="255" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Request Loss Mitigation</text>
+                <text x="400" y="275" text-anchor="middle" font-size="14" fill="white">Submit Financial Documents</text>
+                
+                <!-- Arrow down -->
+                <line x1="400" y1="290" x2="400" y2="330" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Decision Diamond -->
+                <polygon points="400,330 550,400 400,470 250,400" fill="#FDB913" stroke="#1A2332" stroke-width="2"/>
+                <text x="400" y="395" text-anchor="middle" font-size="15" font-weight="bold">How Many</text>
+                <text x="400" y="415" text-anchor="middle" font-size="15" font-weight="bold">Payments Behind?</text>
+                
+                <!-- Path A: 1-2 Months -->
+                <line x1="250" y1="400" x2="150" y2="400" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="200" y="390" text-anchor="middle" font-size="13" font-weight="bold">1-2 Mo</text>
+                
+                <rect x="20" y="500" width="180" height="100" rx="5" fill="#90EE90" stroke="#1A2332" stroke-width="2"/>
+                <text x="110" y="525" text-anchor="middle" font-size="13" font-weight="bold">OPTIONS:</text>
+                <text x="110" y="545" text-anchor="middle" font-size="12">• Loan Modification</text>
+                <text x="110" y="565" text-anchor="middle" font-size="12">• Repayment Plan</text>
+                <text x="110" y="585" text-anchor="middle" font-size="12">• Forbearance</text>
+                
+                <line x1="110" y1="400" x2="110" y2="500" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Outcome A -->
+                <rect x="20" y="620" width="180" height="50" rx="25" fill="#228B22" stroke="#1A2332" stroke-width="2"/>
+                <text x="110" y="640" text-anchor="middle" font-size="14" font-weight="bold" fill="white">✓ Keep Home</text>
+                <text x="110" y="658" text-anchor="middle" font-size="11" fill="white">(if approved)</text>
+                
+                <line x1="110" y1="600" x2="110" y2="620" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Path B: 3-6 Months -->
+                <line x1="400" y1="470" x2="400" y2="510" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="420" y="495" text-anchor="start" font-size="13" font-weight="bold">3-6 Mo</text>
+                
+                <rect x="310" y="510" width="180" height="110" rx="5" fill="#FFD700" stroke="#1A2332" stroke-width="2"/>
+                <text x="400" y="535" text-anchor="middle" font-size="13" font-weight="bold">OPTIONS:</text>
+                <text x="400" y="555" text-anchor="middle" font-size="12">• Loan Modification</text>
+                <text x="400" y="575" text-anchor="middle" font-size="12">• Short Sale</text>
+                <text x="400" y="595" text-anchor="middle" font-size="12">• Deed in Lieu</text>
+                
+                <!-- Decision B -->
+                <polygon points="400,640 480,680 400,720 320,680" fill="#FDB913" stroke="#1A2332" stroke-width="2"/>
+                <text x="400" y="675" text-anchor="middle" font-size="11" font-weight="bold">Can Afford</text>
+                <text x="400" y="690" text-anchor="middle" font-size="11" font-weight="bold">Modified?</text>
+                
+                <line x1="400" y1="620" x2="400" y2="640" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Outcome B - YES -->
+                <line x1="320" y1="680" x2="260" y2="680" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="290" y="670" text-anchor="middle" font-size="11" font-weight="bold">YES</text>
+                
+                <rect x="220" y="750" width="120" height="50" rx="25" fill="#228B22" stroke="#1A2332" stroke-width="2"/>
+                <text x="280" y="770" text-anchor="middle" font-size="12" font-weight="bold" fill="white">✓ Keep Home</text>
+                <text x="280" y="788" text-anchor="middle" font-size="10" fill="white">Modified Loan</text>
+                
+                <line x1="260" y1="680" x2="260" y2="750" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Outcome B - NO -->
+                <line x1="480" y1="680" x2="540" y2="680" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="510" y="670" text-anchor="middle" font-size="11" font-weight="bold">NO</text>
+                
+                <rect x="480" y="750" width="140" height="50" rx="25" fill="#4A90E2" stroke="#1A2332" stroke-width="2"/>
+                <text x="550" y="770" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Exit Property</text>
+                <text x="550" y="788" text-anchor="middle" font-size="10" fill="white">Short Sale/DIL</text>
+                
+                <line x1="540" y1="680" x2="540" y2="750" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Path C: 6+ Months -->
+                <line x1="550" y1="400" x2="650" y2="400" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <text x="600" y="390" text-anchor="middle" font-size="13" font-weight="bold">6+ Mo</text>
+                
+                <rect x="600" y="500" width="180" height="120" rx="5" fill="#FF6B6B" stroke="#1A2332" stroke-width="2"/>
+                <text x="690" y="525" text-anchor="middle" font-size="13" font-weight="bold" fill="white">URGENT:</text>
+                <text x="690" y="545" text-anchor="middle" font-size="12" fill="white">• Emergency Mod</text>
+                <text x="690" y="565" text-anchor="middle" font-size="12" fill="white">• Pre-Foreclosure Sale</text>
+                <text x="690" y="585" text-anchor="middle" font-size="12" fill="white">• Bankruptcy (Ch 13)</text>
+                <text x="690" y="605" text-anchor="middle" font-size="11" font-weight="bold" fill="white">⚠️ ACT NOW!</text>
+                
+                <line x1="690" y1="400" x2="690" y2="500" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Outcome C -->
+                <rect x="600" y="640" width="180" height="50" rx="25" fill="#DC143C" stroke="#1A2332" stroke-width="2"/>
+                <text x="690" y="660" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Without Action:</text>
+                <text x="690" y="678" text-anchor="middle" font-size="11" fill="white">Foreclosure → Eviction</text>
+                
+                <line x1="690" y1="620" x2="690" y2="640" stroke="#1A2332" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Warning Box at Bottom -->
+                <rect x="150" y="850" width="500" height="80" rx="10" fill="#FFF3CD" stroke="#FF6B00" stroke-width="3"/>
+                <text x="400" y="880" text-anchor="middle" font-size="16" font-weight="bold" fill="#856404">⚠️ KEY REMINDERS:</text>
+                <text x="400" y="905" text-anchor="middle" font-size="13" fill="#856404">• Contact lender at FIRST sign of trouble</text>
+                <text x="400" y="925" text-anchor="middle" font-size="13" fill="#856404">• The earlier you act, the more options you have</text>
+                
+                <!-- Legend -->
+                <text x="50" y="980" font-size="14" font-weight="bold">Legend:</text>
+                <rect x="50" y="990" width="30" height="20" fill="#228B22"/>
+                <text x="85" y="1005" font-size="12">Success</text>
+                
+                <rect x="160" y="990" width="30" height="20" fill="#FDB913"/>
+                <text x="195" y="1005" font-size="12">Decision</text>
+                
+                <rect x="270" y="990" width="30" height="20" fill="#4A90E2"/>
+                <text x="305" y="1005" font-size="12">Action</text>
+                
+                <rect x="380" y="990" width="30" height="20" fill="#FF6B6B"/>
+                <text x="415" y="1005" font-size="12">Urgent</text>
+                
+                <rect x="490" y="990" width="30" height="20" fill="#DC143C"/>
+                <text x="525" y="1005" font-size="12">Foreclosure</text>
+            </svg>
+            
+            <p style="color: #6C757D; font-size: 0.95rem; margin-top: 1rem; font-style: italic;">
+                Interactive flowchart showing key decision points and available options at each stage
+            </p>
         </div>
     </section>
 
@@ -445,7 +579,7 @@
         <p>Confidential assistance to explore your options and protect your home</p>
         <div class="cta-buttons">
             <a href="tel:+18002992129" class="btn btn-primary">Call Now: (800) 299-2129</a>
-            <a href="tel:+18002992129" class="btn btn-secondary">Request Consultation</a>
+            <a href="index.html#contact" class="btn btn-secondary">Request Consultation</a>
         </div>
     </section>
 
