@@ -281,6 +281,41 @@
             color: rgba(255,255,255,0.6);
         }
 
+        /* Image Placeholder Sections */
+        .visual-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 2rem;
+        }
+
+        .image-placeholder {
+            background: var(--white);
+            border: 3px dashed var(--primary-gold);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-placeholder h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--deep-navy);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder .suggestion {
+            color: var(--accent-burgundy);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -302,6 +337,10 @@
             .cta-section h2 {
                 font-size: 2rem;
             }
+
+            .image-placeholder {
+                padding: 2rem 1rem;
+            }
         }
     </style>
 </head>
@@ -309,12 +348,15 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Chris Burns Realtor</a>
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Logo" style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Chris Burns Realtor - Monmouth County
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="tel:+18002992129" class="nav-cta">Call: (800) 299-2129</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -329,6 +371,26 @@
     <section class="intro-section">
         <p>Understanding current market trends and future forecasts is essential for making informed real estate decisions. Chris Burns provides comprehensive market analysis backed by years of experience and deep knowledge of Monmouth County's real estate landscape throughout New Jersey.</p>
         <p>From quarterly market reports to long-term investment timing guidance, get the insights you need to buy or sell with confidence in Marlboro, Manalapan, Freehold, Holmdel, and surrounding communities.</p>
+    </section>
+
+    <!-- Visual Content Section -->
+    <section class="visual-section">
+        <div class="image-placeholder">
+            <h3>📊 Featured Market Data Visualization</h3>
+            <p><strong>Suggested Image:</strong> Professional real estate market analysis dashboard or graphs</p>
+            <p class="suggestion">💡 Image Ideas: Market trend graphs, housing price charts, inventory levels chart</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Dimensions: 1200x600px | Format: JPG or PNG | File: market-trends-hero.jpg</p>
+        </div>
+
+        <div class="image-placeholder">
+            <h3>📈 Recommended Charts for This Page</h3>
+            <p><strong>Chart 1:</strong> Line graph showing home price trends over 12-24 months (Monmouth County)</p>
+            <p><strong>Chart 2:</strong> Bar chart comparing inventory levels by quarter</p>
+            <p><strong>Chart 3:</strong> Area chart showing days on market trends</p>
+            <p><strong>Chart 4:</strong> Combo chart with price trends vs. interest rates</p>
+            <p class="suggestion">💡 Tools: Canva, Excel, Google Charts, or Tableau for professional charts</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Suggested placement: Between content cards or in a dedicated data section</p>
+        </div>
     </section>
 
     <!-- Content Grid -->
