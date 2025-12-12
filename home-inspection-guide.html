@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1000px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .inspection-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -195,7 +228,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmin(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,109 @@
     <div class="container">
         <div class="section-intro">
             <p>Home inspections are critical when buying property in Monmouth County, NJ. As your trusted advisor serving Monmouth County, Ocean County, and Middlesex County, I coordinate professional inspections and help you understand results throughout New Jersey. A thorough inspection protects you from unexpected repairs and gives leverage for negotiations on homes in Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="homeinspection1.jpg" alt="Professional Home Inspection - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Home Inspection Timeline Chart -->
+        <div class="chart-container">
+            <h3>🏠 Home Inspection Process Timeline</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">What to expect from offer acceptance to inspection completion</p>
+            
+            <svg viewBox="0 0 900 650" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Timeline Line -->
+                <line x1="100" y1="100" x2="800" y2="100" stroke="#C9A961" stroke-width="4"/>
+                
+                <!-- Day 1-2: Offer Accepted -->
+                <circle cx="100" cy="100" r="20" fill="#228B22" stroke="#1A2332" stroke-width="2"/>
+                <text x="100" y="107" text-anchor="middle" font-size="18" font-weight="bold" fill="white">✓</text>
+                <rect x="40" y="140" width="120" height="80" rx="8" fill="#90EE90" stroke="#228B22" stroke-width="2"/>
+                <text x="100" y="165" text-anchor="middle" font-size="14" font-weight="bold">Day 1-2</text>
+                <text x="100" y="185" text-anchor="middle" font-size="12">Offer Accepted</text>
+                <text x="100" y="205" text-anchor="middle" font-size="11">Schedule Inspector</text>
+                
+                <!-- Day 3-7: Schedule Inspection -->
+                <circle cx="275" cy="100" r="20" fill="#4A90E2" stroke="#1A2332" stroke-width="2"/>
+                <text x="275" y="107" text-anchor="middle" font-size="18" font-weight="bold" fill="white">2</text>
+                <rect x="215" y="140" width="120" height="80" rx="8" fill="#87CEEB" stroke="#4A90E2" stroke-width="2"/>
+                <text x="275" y="165" text-anchor="middle" font-size="14" font-weight="bold">Day 3-7</text>
+                <text x="275" y="185" text-anchor="middle" font-size="12">Schedule</text>
+                <text x="275" y="205" text-anchor="middle" font-size="11">2-3 Hours Onsite</text>
+                
+                <!-- Day 7-10: Inspection Day -->
+                <circle cx="450" cy="100" r="20" fill="#FDB913" stroke="#1A2332" stroke-width="2"/>
+                <text x="450" y="107" text-anchor="middle" font-size="18" font-weight="bold" fill="white">3</text>
+                <rect x="390" y="140" width="120" height="80" rx="8" fill="#FFD700" stroke="#FDB913" stroke-width="2"/>
+                <text x="450" y="165" text-anchor="middle" font-size="14" font-weight="bold">Day 7-10</text>
+                <text x="450" y="185" text-anchor="middle" font-size="12">Inspection Day</text>
+                <text x="450" y="205" text-anchor="middle" font-size="11">You Attend</text>
+                
+                <!-- Day 11-12: Review Report -->
+                <circle cx="625" cy="100" r="20" fill="#8B4049" stroke="#1A2332" stroke-width="2"/>
+                <text x="625" y="107" text-anchor="middle" font-size="18" font-weight="bold" fill="white">4</text>
+                <rect x="565" y="140" width="120" height="80" rx="8" fill="#D8BFD8" stroke="#8B4049" stroke-width="2"/>
+                <text x="625" y="165" text-anchor="middle" font-size="14" font-weight="bold">Day 11-12</text>
+                <text x="625" y="185" text-anchor="middle" font-size="12">Review Report</text>
+                <text x="625" y="205" text-anchor="middle" font-size="11">With Agent</text>
+                
+                <!-- Day 13-14: Negotiate Repairs -->
+                <circle cx="800" cy="100" r="20" fill="#C9A961" stroke="#1A2332" stroke-width="2"/>
+                <text x="800" y="107" text-anchor="middle" font-size="18" font-weight="bold" fill="white">5</text>
+                <rect x="740" y="140" width="120" height="80" rx="8" fill="#F0E68C" stroke="#C9A961" stroke-width="2"/>
+                <text x="800" y="165" text-anchor="middle" font-size="14" font-weight="bold">Day 13-14</text>
+                <text x="800" y="185" text-anchor="middle" font-size="12">Negotiate</text>
+                <text x="800" y="205" text-anchor="middle" font-size="11">Repairs/Credits</text>
+                
+                <!-- What's Inspected Checklist Below -->
+                <rect x="50" y="280" width="800" height="40" rx="5" fill="#1A2332"/>
+                <text x="450" y="305" text-anchor="middle" font-size="18" font-weight="bold" fill="white">📋 What's Inspected During the Process</text>
+                
+                <!-- Column 1 -->
+                <rect x="80" y="350" width="220" height="260" rx="8" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="190" y="375" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A2332">Structural Systems</text>
+                <text x="90" y="400" font-size="12" fill="#2C3E50">✓ Foundation & Basement</text>
+                <text x="90" y="425" font-size="12" fill="#2C3E50">✓ Roof & Attic</text>
+                <text x="90" y="450" font-size="12" fill="#2C3E50">✓ Walls & Ceilings</text>
+                <text x="90" y="475" font-size="12" fill="#2C3E50">✓ Floors & Stairs</text>
+                <text x="90" y="500" font-size="12" fill="#2C3E50">✓ Windows & Doors</text>
+                <text x="90" y="525" font-size="12" fill="#2C3E50">✓ Exterior Siding</text>
+                <text x="90" y="550" font-size="12" fill="#2C3E50">✓ Garage & Driveway</text>
+                <text x="90" y="575" font-size="12" fill="#2C3E50">✓ Drainage Systems</text>
+                <text x="90" y="600" font-size="12" fill="#2C3E50">✓ Grading & Landscape</text>
+                
+                <!-- Column 2 -->
+                <rect x="340" y="350" width="220" height="260" rx="8" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="450" y="375" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A2332">Major Systems</text>
+                <text x="350" y="400" font-size="12" fill="#2C3E50">✓ Electrical Panel</text>
+                <text x="350" y="425" font-size="12" fill="#2C3E50">✓ Wiring & Outlets</text>
+                <text x="350" y="450" font-size="12" fill="#2C3E50">✓ Plumbing System</text>
+                <text x="350" y="475" font-size="12" fill="#2C3E50">✓ Water Heater</text>
+                <text x="350" y="500" font-size="12" fill="#2C3E50">✓ Heating System</text>
+                <text x="350" y="525" font-size="12" fill="#2C3E50">✓ Cooling System</text>
+                <text x="350" y="550" font-size="12" fill="#2C3E50">✓ Ventilation</text>
+                <text x="350" y="575" font-size="12" fill="#2C3E50">✓ Insulation</text>
+                <text x="350" y="600" font-size="12" fill="#2C3E50">✓ Ductwork</text>
+                
+                <!-- Column 3 -->
+                <rect x="600" y="350" width="220" height="260" rx="8" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="710" y="375" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A2332">Safety & Appliances</text>
+                <text x="610" y="400" font-size="12" fill="#2C3E50">✓ Smoke Detectors</text>
+                <text x="610" y="425" font-size="12" fill="#2C3E50">✓ CO Detectors</text>
+                <text x="610" y="450" font-size="12" fill="#2C3E50">✓ GFCI Outlets</text>
+                <text x="610" y="475" font-size="12" fill="#2C3E50">✓ Handrails</text>
+                <text x="610" y="500" font-size="12" fill="#2C3E50">✓ Kitchen Appliances</text>
+                <text x="610" y="525" font-size="12" fill="#2C3E50">✓ Dishwasher</text>
+                <text x="610" y="550" font-size="12" fill="#2C3E50">✓ Disposal</text>
+                <text x="610" y="575" font-size="12" fill="#2C3E50">✓ Microwave</text>
+                <text x="610" y="600" font-size="12" fill="#2C3E50">✓ Moisture Issues</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                ⏱️ Typical timeline: 14 days from offer acceptance to repair negotiations. Chris Burns coordinates every step!
+            </p>
         </div>
 
         <div class="inspection-grid">
