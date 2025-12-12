@@ -281,6 +281,42 @@
             color: rgba(255,255,255,0.6);
         }
 
+        /* Image Placeholder Sections */
+        .visual-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 2rem;
+        }
+
+        .image-placeholder {
+            background: var(--white);
+            border: 3px dashed var(--primary-gold);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-placeholder h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--deep-navy);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder .suggestion {
+            color: var(--accent-burgundy);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -309,12 +345,15 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Chris Burns Realtor</a>
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Logo" style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Chris Burns Realtor - Monmouth County
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="tel:+18002992129" class="nav-cta">Call: (800) 299-2129</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -329,6 +368,26 @@
     <section class="intro-section">
         <p>Negotiating with mortgage lenders requires understanding banking procedures, loss mitigation programs, and effective communication strategies. Chris Burns provides professional representation in lender negotiations to help Monmouth County homeowners explore foreclosure alternatives throughout New Jersey.</p>
         <p>From initial contact with loss mitigation departments to final agreement execution, receive expert advocacy when negotiating loan modifications, short sales, and other alternatives in Marlboro, Manalapan, Freehold, Holmdel, and surrounding areas.</p>
+    </section>
+
+    <!-- Visual Content Section -->
+    <section class="visual-section">
+        <div class="image-placeholder">
+            <h3>💼 Professional Bank Negotiation Image</h3>
+            <p><strong>Suggested Image:</strong> Professional meeting with handshake, negotiation table, or advisor-client consultation</p>
+            <p class="suggestion">💡 Image Ideas: Business handshake, professional consultation, negotiation meeting, financial advisor with client</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Dimensions: 1200x600px | Format: JPG or PNG | File: bank-negotiation-hero.jpg</p>
+        </div>
+
+        <div class="image-placeholder">
+            <h3>📊 Recommended Charts for This Page</h3>
+            <p><strong>Chart 1:</strong> Flowchart showing how to navigate loss mitigation departments and escalation paths</p>
+            <p><strong>Chart 2:</strong> Checklist table of required documents for loss mitigation applications</p>
+            <p><strong>Chart 3:</strong> Timeline graphic showing negotiation and approval process with typical timeframes</p>
+            <p><strong>Chart 4:</strong> Comparison chart of different loss mitigation options (modification, forbearance, short sale)</p>
+            <p class="suggestion">💡 Tools: Lucidchart for navigation flowcharts, Excel for document checklist, Canva for timelines</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Suggested placement: Navigation flowchart early, document checklist mid-page, comparison chart near end</p>
+        </div>
     </section>
 
     <!-- Content Grid -->
