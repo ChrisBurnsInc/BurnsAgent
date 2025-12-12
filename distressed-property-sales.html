@@ -281,6 +281,42 @@
             color: rgba(255,255,255,0.6);
         }
 
+        /* Image Placeholder Sections */
+        .visual-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 2rem;
+        }
+
+        .image-placeholder {
+            background: var(--white);
+            border: 3px dashed var(--primary-gold);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-placeholder h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--deep-navy);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder .suggestion {
+            color: var(--accent-burgundy);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -309,12 +345,15 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Chris Burns Realtor</a>
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Logo" style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Chris Burns Realtor - Monmouth County
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="tel:+18002992129" class="nav-cta">Call: (800) 299-2129</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -329,6 +368,26 @@
     <section class="intro-section">
         <p>Selling a distressed property requires specialized marketing strategies and realistic pricing to attract the right buyers. Chris Burns has extensive experience selling properties with deferred maintenance, code violations, tenant issues, and other challenges throughout New Jersey.</p>
         <p>From fixer-uppers to properties with title problems, get expert representation that knows how to position distressed properties for successful sales in Marlboro, Manalapan, Freehold, Holmdel, and all Monmouth County communities.</p>
+    </section>
+
+    <!-- Visual Content Section -->
+    <section class="visual-section">
+        <div class="image-placeholder">
+            <h3>🏚️ Distressed Property Transformation Image</h3>
+            <p><strong>Suggested Image:</strong> Before/after split image of fixer-upper property renovation</p>
+            <p class="suggestion">💡 Image Ideas: Property needing repairs, fixer-upper exterior, renovation potential, as-is property condition</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Dimensions: 1200x600px | Format: JPG or PNG | File: distressed-property-hero.jpg</p>
+        </div>
+
+        <div class="image-placeholder">
+            <h3>📊 Recommended Charts for This Page</h3>
+            <p><strong>Chart 1:</strong> Bar chart comparing as-is pricing vs. market value (showing discount strategy)</p>
+            <p><strong>Chart 2:</strong> Timeline showing typical distressed property sale process and timeframes</p>
+            <p><strong>Chart 3:</strong> Data table categorizing property conditions (Cosmetic, Moderate Repairs, Major Rehab)</p>
+            <p><strong>Chart 4:</strong> Flowchart illustrating investor buyer targeting and marketing strategy</p>
+            <p class="suggestion">💡 Tools: Excel for pricing comparisons, Canva for condition categories, process flow diagrams</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Suggested placement: Pricing chart early, condition categories mid-page, marketing flow near end</p>
+        </div>
     </section>
 
     <!-- Content Grid -->
