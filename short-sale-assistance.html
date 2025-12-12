@@ -281,6 +281,42 @@
             color: rgba(255,255,255,0.6);
         }
 
+        /* Image Placeholder Sections */
+        .visual-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 2rem;
+        }
+
+        .image-placeholder {
+            background: var(--white);
+            border: 3px dashed var(--primary-gold);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-placeholder h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--deep-navy);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder .suggestion {
+            color: var(--accent-burgundy);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -309,12 +345,15 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Chris Burns Realtor</a>
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Logo" style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Chris Burns Realtor - Monmouth County
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="tel:+18002992129" class="nav-cta">Call: (800) 299-2129</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -329,6 +368,26 @@
     <section class="intro-section">
         <p>When you owe more on your mortgage than your home is worth, a short sale can provide an alternative to foreclosure with less credit damage. Chris Burns specializes in negotiating short sales with lenders and managing the complex process throughout New Jersey.</p>
         <p>From initial hardship letters to final bank approval, receive expert representation that maximizes your chances of successful short sale approval in Marlboro, Manalapan, Freehold, Holmdel, and all Monmouth County communities.</p>
+    </section>
+
+    <!-- Visual Content Section -->
+    <section class="visual-section">
+        <div class="image-placeholder">
+            <h3>🤝 Short Sale Success Image</h3>
+            <p><strong>Suggested Image:</strong> Professional handshake at closing table with documents</p>
+            <p class="suggestion">💡 Image Ideas: Closing documents signing, realtor-client partnership, successful negotiation, relief from debt</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Dimensions: 1200x600px | Format: JPG or PNG | File: short-sale-hero.jpg</p>
+        </div>
+
+        <div class="image-placeholder">
+            <h3>📊 Recommended Charts for This Page</h3>
+            <p><strong>Chart 1:</strong> Timeline graphic showing typical short sale process (3-6 months)</p>
+            <p><strong>Chart 2:</strong> Bar chart comparing credit impact: Short Sale vs. Foreclosure</p>
+            <p><strong>Chart 3:</strong> Flowchart illustrating short sale approval steps and decision points</p>
+            <p><strong>Chart 4:</strong> Comparison table: Short Sale vs. Traditional Sale (timeline, process, outcomes)</p>
+            <p class="suggestion">💡 Tools: Timeline maker tools, Excel for comparisons, Lucidchart for process flows</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Suggested placement: Timeline after intro, comparison charts between content sections</p>
+        </div>
     </section>
 
     <!-- Content Grid -->
