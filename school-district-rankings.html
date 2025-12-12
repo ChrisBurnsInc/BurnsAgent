@@ -281,6 +281,42 @@
             color: rgba(255,255,255,0.6);
         }
 
+        /* Image Placeholder Sections */
+        .visual-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 2rem;
+        }
+
+        .image-placeholder {
+            background: var(--white);
+            border: 3px dashed var(--primary-gold);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-placeholder h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--deep-navy);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder .suggestion {
+            color: var(--accent-burgundy);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -309,12 +345,15 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">Chris Burns Realtor</a>
+            <a href="index.html" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Logo" style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Chris Burns Realtor - Monmouth County
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="tel:+18002992129" class="nav-cta">Call: (800) 299-2129</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#why-choose">Why Choose Me</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -329,6 +368,26 @@
     <section class="intro-section">
         <p>For families with children, school district quality is often the most important factor in choosing where to live. Chris Burns provides detailed information on school district rankings, test scores, programs, and boundaries to help you find the perfect home in the right school district throughout New Jersey.</p>
         <p>Get the facts you need about education quality in Marlboro, Manalapan, Freehold, Holmdel, Colts Neck, and all Monmouth County communities to make the best decision for your family's future.</p>
+    </section>
+
+    <!-- Visual Content Section -->
+    <section class="visual-section">
+        <div class="image-placeholder">
+            <h3>👨‍👩‍👧‍👦 Featured School District Image</h3>
+            <p><strong>Suggested Image:</strong> Happy family with children in front of a quality school building</p>
+            <p class="suggestion">💡 Image Ideas: School exterior, students learning, family choosing schools, educational environment</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Dimensions: 1200x600px | Format: JPG or PNG | File: school-districts-hero.jpg</p>
+        </div>
+
+        <div class="image-placeholder">
+            <h3>📊 Recommended Charts for This Page</h3>
+            <p><strong>Chart 1:</strong> Bar chart comparing test scores across Monmouth County districts</p>
+            <p><strong>Chart 2:</strong> Data table with school rankings, ratings, and key metrics</p>
+            <p><strong>Chart 3:</strong> Interactive map showing school district boundaries</p>
+            <p><strong>Chart 4:</strong> Horizontal bar chart of student-teacher ratios by district</p>
+            <p class="suggestion">💡 Tools: Excel, Google Sheets, Tableau, or DataWrapper for interactive charts</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">Suggested placement: Between content cards showcasing district comparisons</p>
+        </div>
     </section>
 
     <!-- Content Grid -->
