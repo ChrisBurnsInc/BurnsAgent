@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .steps-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,87 @@
     <div class="container">
         <div class="section-intro">
             <p>Closing is the final and most critical step in your Monmouth County real estate transaction. As your dedicated coordinator serving Monmouth County, Ocean County, and Middlesex County, I manage every detail from accepted offer to final closing day throughout New Jersey. From attorney coordination to final walkthrough, I ensure nothing falls through the cracks on your home purchase or sale in Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="closing-coordination1.jpg" alt="Closing Coordination - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Closing Timeline Chart -->
+        <div class="chart-container">
+            <h3>🔑 Complete Closing Timeline: Contract to Keys</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Typical 30-45 day closing process with Chris Burns coordinating every step</p>
+            
+            <svg viewBox="0 0 1000 900" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Main Timeline Vertical Line -->
+                <line x1="120" y1="50" x2="120" y2="820" stroke="#C9A961" stroke-width="6"/>
+                
+                <!-- Week 1: Days 1-7 -->
+                <circle cx="120" cy="80" r="25" fill="#228B22" stroke="#1A2332" stroke-width="3"/>
+                <text x="120" y="90" text-anchor="middle" font-size="20" font-weight="bold" fill="white">1</text>
+                
+                <rect x="180" y="50" width="750" height="90" rx="10" fill="#90EE90" stroke="#228B22" stroke-width="2"/>
+                <text x="200" y="75" font-size="18" font-weight="bold" fill="#1A2332">📋 Week 1: Contract & Initial Setup (Days 1-7)</text>
+                <text x="200" y="100" font-size="13" fill="#2C3E50">✓ Signed contract & earnest money deposit</text>
+                <text x="200" y="120" font-size="13" fill="#2C3E50">✓ Attorney review period begins • Order title search • Schedule home inspection</text>
+                
+                <!-- Week 2: Days 8-14 -->
+                <circle cx="120" cy="200" r="25" fill="#4A90E2" stroke="#1A2332" stroke-width="3"/>
+                <text x="120" y="210" text-anchor="middle" font-size="20" font-weight="bold" fill="white">2</text>
+                
+                <rect x="180" y="170" width="750" height="90" rx="10" fill="#87CEEB" stroke="#4A90E2" stroke-width="2"/>
+                <text x="200" y="195" font-size="18" font-weight="bold" fill="#1A2332">🔍 Week 2: Inspections & Due Diligence (Days 8-14)</text>
+                <text x="200" y="220" font-size="13" fill="#2C3E50">✓ Complete home inspection • Review inspection report with agent</text>
+                <text x="200" y="240" font-size="13" fill="#2C3E50">✓ Request repairs/credits • Mortgage application submitted • Appraisal ordered</text>
+                
+                <!-- Week 3: Days 15-21 -->
+                <circle cx="120" cy="320" r="25" fill="#FDB913" stroke="#1A2332" stroke-width="3"/>
+                <text x="120" y="330" text-anchor="middle" font-size="20" font-weight="bold" fill="white">3</text>
+                
+                <rect x="180" y="290" width="750" height="90" rx="10" fill="#FFD700" stroke="#FDB913" stroke-width="2"/>
+                <text x="200" y="315" font-size="18" font-weight="bold" fill="#1A2332">💰 Week 3: Appraisal & Financing (Days 15-21)</text>
+                <text x="200" y="340" font-size="13" fill="#2C3E50">✓ Property appraisal completed • Title search completed • Survey ordered</text>
+                <text x="200" y="360" font-size="13" fill="#2C3E50">✓ Lender processing mortgage application • Submit additional docs to lender</text>
+                
+                <!-- Week 4: Days 22-28 -->
+                <circle cx="120" cy="440" r="25" fill="#8B4049" stroke="#1A2332" stroke-width="3"/>
+                <text x="120" y="450" text-anchor="middle" font-size="20" font-weight="bold" fill="white">4</text>
+                
+                <rect x="180" y="410" width="750" height="90" rx="10" fill="#D8BFD8" stroke="#8B4049" stroke-width="2"/>
+                <text x="200" y="435" font-size="18" font-weight="bold" fill="#1A2332">📄 Week 4: Final Documentation (Days 22-28)</text>
+                <text x="200" y="460" font-size="13" fill="#2C3E50">✓ Title commitment received • Review title exceptions with attorney</text>
+                <text x="200" y="480" font-size="13" fill="#2C3E50">✓ Homeowners insurance secured • Final mortgage approval (Clear to Close)</text>
+                
+                <!-- Week 5: Days 29-35 -->
+                <circle cx="120" cy="560" r="25" fill="#FF6B6B" stroke="#1A2332" stroke-width="3"/>
+                <text x="120" y="570" text-anchor="middle" font-size="20" font-weight="bold" fill="white">5</text>
+                
+                <rect x="180" y="530" width="750" height="90" rx="10" fill="#FFB6C1" stroke="#FF6B6B" stroke-width="2"/>
+                <text x="200" y="555" font-size="18" font-weight="bold" fill="#1A2332">🏡 Week 5: Final Prep (Days 29-35)</text>
+                <text x="200" y="580" font-size="13" fill="#2C3E50">✓ Final walkthrough (24-48 hrs before closing) • Review closing disclosure</text>
+                <text x="200" y="600" font-size="13" fill="#2C3E50">✓ Wire transfer instructions received • Confirm all repairs completed</text>
+                
+                <!-- Closing Day -->
+                <circle cx="120" cy="680" r="25" fill="#C9A961" stroke="#1A2332" stroke-width="3"/>
+                <text x="120" y="690" text-anchor="middle" font-size="20" font-weight="bold" fill="white">🔑</text>
+                
+                <rect x="180" y="650" width="750" height="90" rx="10" fill="#F0E68C" stroke="#C9A961" stroke-width="3"/>
+                <text x="200" y="675" font-size="18" font-weight="bold" fill="#1A2332">🎉 CLOSING DAY! (Days 30-45)</text>
+                <text x="200" y="700" font-size="13" fill="#2C3E50">✓ Sign all closing documents • Wire closing funds • Receive keys!</text>
+                <text x="200" y="720" font-size="13" fill="#2C3E50">✓ Record deed with county • Transfer utilities • Celebrate your new home! 🏠</text>
+                
+                <!-- Key Parties Involved Box -->
+                <rect x="180" y="770" width="750" height="110" rx="10" fill="#FFF3CD" stroke="#C9A961" stroke-width="3"/>
+                <text x="555" y="795" text-anchor="middle" font-size="16" font-weight="bold" fill="#856404">👥 Chris Burns Coordinates With:</text>
+                <text x="200" y="820" font-size="13" fill="#856404">• Your Attorney • Title Company • Mortgage Lender • Home Inspector • Appraiser</text>
+                <text x="200" y="840" font-size="13" fill="#856404">• Insurance Agent • Sellers & Seller's Agent • Moving Company • Utility Companies</text>
+                <text x="200" y="860" font-size="13" font-weight="bold" fill="#856404">Result: You focus on packing while I handle 100+ coordination tasks!</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                ⏱️ Timeline may vary based on financing type, property condition, and market conditions. Chris Burns keeps you informed at every step!
+            </p>
         </div>
 
         <div class="steps-grid">
