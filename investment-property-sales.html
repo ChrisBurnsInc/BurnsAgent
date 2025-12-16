@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio strategy for real estate investors in Monmouth County, NJ with Chris Burns Realtor. Build wealth through diversified property portfolios. Long-term investment planning throughout New Jersey.">
-    <meta name="keywords" content="portfolio strategy Monmouth County, real estate portfolio NJ, investment strategy, Chris Burns realtor, property diversification New Jersey">
-    <title>Portfolio Strategy - Monmouth County, NJ | Chris Burns Realtor</title>
+    <meta name="description" content="Investment property sales in Monmouth County, NJ with Chris Burns Realtor. Expert guidance for rental income properties, fix and flip opportunities, multi-family homes, and commercial real estate. Build wealth through real estate investing in New Jersey.">
+    <meta name="keywords" content="investment property Monmouth County, rental properties NJ, fix and flip, multi-family homes, commercial real estate, real estate investing, Chris Burns realtor, houses for sale, income properties New Jersey">
+    <title>Investment Property Sales - Monmouth County, NJ | Chris Burns Realtor</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,15 @@
       "name": "Chris Burns Realtor - Monmouth County",
       "url": "https://chrisburnsrealtornj.com",
       "telephone": "+18002992129",
-      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"]
+      "areaServed": ["Monmouth County, NJ", "Ocean County, NJ", "Middlesex County, NJ"],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Investment Property Sales",
+          "description": "Expert guidance for purchasing investment properties including rental income properties, fix and flip opportunities, and multi-family homes in Monmouth County, NJ"
+        }
+      }
     }
     </script>
     
@@ -117,67 +125,93 @@
             text-align: center;
         }
         
+        .section-intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--deep-navy);
+        }
+        
         .section-intro p {
             font-size: 1.15rem;
             color: var(--text-light);
             line-height: 1.8;
         }
         
-        /* Visual Content Sections */
-        .visual-section {
-            max-width: 1100px;
-            margin: 60px auto;
-        }
-        
-        .hero-image-container {
-            text-align: center;
-            margin: 40px 0;
-        }
-        
-        .hero-image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-        }
-        
-        .chart-container {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            margin: 60px auto;
-        }
-        
-        .chart-container h3 {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--deep-navy);
-            margin-bottom: 30px;
-        }
-        
-        .strategy-grid {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             margin: 60px 0;
         }
         
-        .strategy-card {
+        .service-card {
             background: var(--white);
-            padding: 30px;
+            padding: 35px 30px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
             border-left: 4px solid var(--primary-gold);
         }
         
-        .strategy-card h3 {
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .service-card h3 {
             font-size: 1.6rem;
             margin-bottom: 15px;
             color: var(--deep-navy);
         }
         
-        .strategy-card p {
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .service-link {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        
+        .service-link:hover { color: var(--accent-burgundy); }
+        
+        .why-choose {
+            background: var(--soft-cream);
+            padding: 80px 20px;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .why-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .why-icon {
+            font-size: 3.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+        
+        .why-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--deep-navy);
+        }
+        
+        .why-item p {
             color: var(--text-light);
             line-height: 1.7;
         }
@@ -216,6 +250,43 @@
         .cta-button:hover {
             background: var(--accent-burgundy);
             transform: translateY(-2px);
+        }
+        
+        .testimonials {
+            background: var(--white);
+            padding: 80px 20px;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-cream);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-gold);
+        }
+        
+        .testimonial-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
         }
         
         footer {
@@ -266,8 +337,8 @@
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
             .logo { font-size: 1.2rem; }
-            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -288,215 +359,136 @@
     </nav>
 
     <section class="hero">
-        <h1>Portfolio Strategy - Monmouth County, NJ</h1>
-        <p class="subtitle">Long-term investment strategy for building wealth through real estate</p>
+        <h1>Investment Property Sales in Monmouth County, NJ</h1>
+        <p class="subtitle">Build wealth through strategic real estate investing with expert guidance</p>
     </section>
 
     <div class="container">
         <div class="section-intro">
-            <p>Building a profitable real estate portfolio requires strategic planning and diversification in Monmouth County, NJ. As your portfolio strategist serving Monmouth County, Ocean County, and Middlesex County, I help investors develop long-term wealth-building plans throughout New Jersey. Whether you're buying your first rental or your tenth, I'll help you build a profitable portfolio in Marlboro, Manalapan, Freehold, and Holmdel. Portfolio diversification, market timing, and property selection guidance for sustainable growth.</p>
+            <h2>Your Partner for Real Estate Investment Success in Monmouth County</h2>
+            <p>Building wealth through real estate investment requires expertise, market knowledge, and strategic planning. As a dedicated investment property specialist serving Monmouth County, Ocean County, and Middlesex County, I help investors find profitable rental properties, fix and flip opportunities, and multi-family homes throughout New Jersey. Whether you're a first-time investor or expanding your portfolio, I provide the analysis, guidance, and local market expertise you need to make smart investment decisions in communities like Freehold, Howell, Brick, and Jackson.</p>
         </div>
 
-        <!-- Hero Image -->
-        <div class="hero-image-container">
-            <img src="portfolio1.jpg" alt="Portfolio Strategy - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
-        </div>
-
-        <!-- Portfolio Building Strategy Chart -->
-        <div class="chart-container">
-            <h3>📈 10-Year Portfolio Building Strategy</h3>
-            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">From 1 property to financial freedom - Your roadmap to wealth</p>
-            
-            <svg viewBox="0 0 1100 1250" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
-                <!-- Header -->
-                <rect x="50" y="30" width="1000" height="60" rx="8" fill="#1A2332"/>
-                <text x="550" y="68" text-anchor="middle" font-size="22" font-weight="bold" fill="white">🎯 Strategic Portfolio Growth Plan: Years 1-10</text>
-                
-                <!-- Year 1-2: Foundation -->
-                <rect x="50" y="110" width="1000" height="140" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="3"/>
-                <circle cx="100" cy="150" r="25" fill="#228B22"/>
-                <text x="100" y="158" text-anchor="middle" font-size="18" font-weight="bold" fill="white">YR 1-2</text>
-                <text x="150" y="145" font-size="20" font-weight="bold" fill="#1A2332">PHASE 1: Build Foundation</text>
-                <text x="150" y="175" font-size="14" fill="#2C3E50"><tspan font-weight="bold">Goal:</tspan> Acquire first investment property</text>
-                <text x="150" y="195" font-size="13" fill="#2C3E50">• Single-family home OR small multi-family (duplex)</text>
-                <text x="150" y="213" font-size="13" fill="#2C3E50">• Focus: Learn landlord basics, positive cash flow</text>
-                <text x="150" y="231" font-size="13" fill="#2C3E50">• Investment: $80K down payment, $400K property</text>
-                <rect x="700" y="125" width="330" height="110" rx="6" fill="white" stroke="#228B22" stroke-width="2"/>
-                <text x="865" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#228B22">Portfolio Value: $400K</text>
-                <text x="720" y="175" font-size="13" fill="#2C3E50">Properties: 1</text>
-                <text x="720" y="193" font-size="13" fill="#2C3E50">Monthly Cash Flow: -$500</text>
-                <text x="720" y="211" font-size="13" fill="#2C3E50">Equity Building: $6K/year</text>
-                <text x="720" y="229" font-size="13" font-weight="bold" fill="#228B22">Status: Foundation Set ✓</text>
-                
-                <!-- Year 3-4: Expansion -->
-                <rect x="50" y="270" width="1000" height="140" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="3"/>
-                <circle cx="100" cy="310" r="25" fill="#2196F3"/>
-                <text x="100" y="318" text-anchor="middle" font-size="18" font-weight="bold" fill="white">YR 3-4</text>
-                <text x="150" y="305" font-size="20" font-weight="bold" fill="#1A2332">PHASE 2: Strategic Expansion</text>
-                <text x="150" y="335" font-size="14" fill="#2C3E50"><tspan font-weight="bold">Goal:</tspan> Add 2 more properties</text>
-                <text x="150" y="355" font-size="13" fill="#2C3E50">• Leverage equity from Property #1 (now worth $430K)</text>
-                <text x="150" y="373" font-size="13" fill="#2C3E50">• Buy Property #2: Another single-family ($420K)</text>
-                <text x="150" y="391" font-size="13" fill="#2C3E50">• Buy Property #3: Fourplex for better cash flow ($550K)</text>
-                <rect x="700" y="285" width="330" height="110" rx="6" fill="white" stroke="#2196F3" stroke-width="2"/>
-                <text x="865" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#2196F3">Portfolio Value: $1.4M</text>
-                <text x="720" y="335" font-size="13" fill="#2C3E50">Properties: 3</text>
-                <text x="720" y="353" font-size="13" fill="#2C3E50">Monthly Cash Flow: +$800</text>
-                <text x="720" y="371" font-size="13" fill="#2C3E50">Equity Building: $22K/year</text>
-                <text x="720" y="389" font-size="13" font-weight="bold" fill="#2196F3">Status: Growing Strong 📈</text>
-                
-                <!-- Year 5-6: Diversification -->
-                <rect x="50" y="430" width="1000" height="140" rx="8" fill="#FFF9C4" stroke="#FBC02D" stroke-width="3"/>
-                <circle cx="100" cy="470" r="25" fill="#FBC02D"/>
-                <text x="100" y="478" text-anchor="middle" font-size="18" font-weight="bold" fill="white">YR 5-6</text>
-                <text x="150" y="465" font-size="20" font-weight="bold" fill="#1A2332">PHASE 3: Diversify Property Types</text>
-                <text x="150" y="495" font-size="14" fill="#2C3E50"><tspan font-weight="bold">Goal:</tspan> Add commercial + higher-value properties</text>
-                <text x="150" y="515" font-size="13" fill="#2C3E50">• Property #4: Small commercial building ($650K)</text>
-                <text x="150" y="533" font-size="13" fill="#2C3E50">• Property #5: High-end rental ($600K)</text>
-                <text x="150" y="551" font-size="13" fill="#2C3E50">• Strategy: Mix residential + commercial for stability</text>
-                <rect x="700" y="445" width="330" height="110" rx="6" fill="white" stroke="#FBC02D" stroke-width="2"/>
-                <text x="865" y="470" text-anchor="middle" font-size="16" font-weight="bold" fill="#FBC02D">Portfolio Value: $2.9M</text>
-                <text x="720" y="495" font-size="13" fill="#2C3E50">Properties: 5</text>
-                <text x="720" y="513" font-size="13" fill="#2C3E50">Monthly Cash Flow: +$3,500</text>
-                <text x="720" y="531" font-size="13" fill="#2C3E50">Equity Building: $48K/year</text>
-                <text x="720" y="549" font-size="13" font-weight="bold" fill="#FBC02D">Status: Diversified 🎯</text>
-                
-                <!-- Year 7-8: Optimization -->
-                <rect x="50" y="590" width="1000" height="140" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="3"/>
-                <circle cx="100" cy="630" r="25" fill="#9C27B0"/>
-                <text x="100" y="638" text-anchor="middle" font-size="18" font-weight="bold" fill="white">YR 7-8</text>
-                <text x="150" y="625" font-size="20" font-weight="bold" fill="#1A2332">PHASE 4: Optimize & Refinance</text>
-                <text x="150" y="655" font-size="14" fill="#2C3E50"><tspan font-weight="bold">Goal:</tspan> 1031 exchanges + portfolio optimization</text>
-                <text x="150" y="675" font-size="13" fill="#2C3E50">• Sell underperforming properties via 1031 exchange</text>
-                <text x="150" y="693" font-size="13" fill="#2C3E50">• Acquire larger multi-family buildings (10-20 units)</text>
-                <text x="150" y="711" font-size="13" fill="#2C3E50">• Refinance to pull equity for next acquisitions</text>
-                <rect x="700" y="605" width="330" height="110" rx="6" fill="white" stroke="#9C27B0" stroke-width="2"/>
-                <text x="865" y="630" text-anchor="middle" font-size="16" font-weight="bold" fill="#9C27B0">Portfolio Value: $4.2M</text>
-                <text x="720" y="655" font-size="13" fill="#2C3E50">Properties: 6 (consolidated)</text>
-                <text x="720" y="673" font-size="13" fill="#2C3E50">Monthly Cash Flow: +$7,200</text>
-                <text x="720" y="691" font-size="13" fill="#2C3E50">Equity Building: $78K/year</text>
-                <text x="720" y="709" font-size="13" font-weight="bold" fill="#9C27B0">Status: Optimized 💪</text>
-                
-                <!-- Year 9-10: Financial Freedom -->
-                <rect x="50" y="750" width="1000" height="160" rx="8" fill="#C8E6C9" stroke="#228B22" stroke-width="4"/>
-                <circle cx="100" cy="800" r="30" fill="#C9A961"/>
-                <text x="100" y="810" text-anchor="middle" font-size="20" font-weight="bold" fill="white">YR 10</text>
-                <text x="160" y="790" font-size="24" font-weight="bold" fill="#1A2332">PHASE 5: Financial Freedom Achieved! 🎉</text>
-                <text x="160" y="825" font-size="14" fill="#2C3E50"><tspan font-weight="bold">Result:</tspan> Sustainable passive income replacing job</text>
-                <text x="160" y="845" font-size="13" fill="#2C3E50">• 8-10 properties generating consistent cash flow</text>
-                <text x="160" y="863" font-size="13" fill="#2C3E50">• Option to retire from W-2 job if desired</text>
-                <text x="160" y="881" font-size="13" fill="#2C3E50">• Continue growing OR maintain & enjoy lifestyle</text>
-                <rect x="700" y="770" width="330" height="125" rx="6" fill="white" stroke="#228B22" stroke-width="3"/>
-                <text x="865" y="800" text-anchor="middle" font-size="18" font-weight="bold" fill="#228B22">Portfolio Value: $6.5M+</text>
-                <text x="720" y="830" font-size="14" font-weight="bold" fill="#2C3E50">Properties: 8-10</text>
-                <text x="720" y="850" font-size="14" font-weight="bold" fill="#228B22">Monthly Cash Flow: $12,000+</text>
-                <text x="720" y="870" font-size="13" fill="#2C3E50">Annual Passive Income: $144K</text>
-                <text x="865" y="890" text-anchor="middle" font-size="14" font-weight="bold" fill="#C9A961">🏆 FINANCIAL FREEDOM!</text>
-                
-                <!-- Diversification Pie Chart -->
-                <rect x="50" y="930" width="1000" height="280" rx="8" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
-                <text x="550" y="965" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">🎯 Optimal Portfolio Diversification (Year 10)</text>
-                
-                <!-- Pie Chart -->
-                <circle cx="280" cy="1120" r="100" fill="none" stroke="#E0E0E0" stroke-width="2"/>
-                
-                <!-- Slice 1: Single-Family (30%) -->
-                <path d="M 280,1120 L 280,1020 A 100,100 0 0,1 363,1166 Z" fill="#4A90E2" stroke="white" stroke-width="2"/>
-                <text x="315" y="1085" text-anchor="middle" font-size="14" font-weight="bold" fill="white">30%</text>
-                
-                <!-- Slice 2: Multi-Family (35%) -->
-                <path d="M 280,1120 L 363,1166 A 100,100 0 0,1 218,1193 Z" fill="#228B22" stroke="white" stroke-width="2"/>
-                <text x="290" y="1170" text-anchor="middle" font-size="14" font-weight="bold" fill="white">35%</text>
-                
-                <!-- Slice 3: Commercial (25%) -->
-                <path d="M 280,1120 L 218,1193 A 100,100 0 0,1 197,1074 Z" fill="#FDB913" stroke="white" stroke-width="2"/>
-                <text x="220" y="1135" text-anchor="middle" font-size="14" font-weight="bold" fill="white">25%</text>
-                
-                <!-- Slice 4: Other (10%) -->
-                <path d="M 280,1120 L 197,1074 A 100,100 0 0,1 280,1020 Z" fill="#9C27B0" stroke="white" stroke-width="2"/>
-                <text x="240" y="1070" text-anchor="middle" font-size="12" font-weight="bold" fill="white">10%</text>
-                
-                <!-- Legend -->
-                <rect x="420" y="1000" width="600" height="190" rx="6" fill="white" stroke="#C9A961" stroke-width="2"/>
-                <text x="720" y="1025" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Diversified Portfolio Mix</text>
-                
-                <circle cx="445" cy="1050" r="10" fill="#4A90E2"/>
-                <text x="465" y="1056" font-size="13" fill="#1A2332"><tspan font-weight="bold">Single-Family Homes (30%):</tspan> 3-4 properties</text>
-                <text x="465" y="1073" font-size="11" fill="#6C757D">Foundation properties, easier management, broad market appeal</text>
-                
-                <circle cx="445" cy="1095" r="10" fill="#228B22"/>
-                <text x="465" y="1101" font-size="13" fill="#1A2332"><tspan font-weight="bold">Multi-Family (35%):</tspan> 2-3 buildings (duplexes to 20-unit)</text>
-                <text x="465" y="1118" font-size="11" fill="#6C757D">Best cash flow, reduced vacancy risk, economies of scale</text>
-                
-                <circle cx="445" cy="1140" r="10" fill="#FDB913"/>
-                <text x="465" y="1146" font-size="13" fill="#1A2332"><tspan font-weight="bold">Commercial Real Estate (25%):</tspan> 1-2 properties</text>
-                <text x="465" y="1163" font-size="11" fill="#6C757D">Longer leases, stable income, triple-net leases preferred</text>
-                
-                <circle cx="445" cy="1180" r="10" fill="#9C27B0"/>
-                <text x="465" y="1186" font-size="13" fill="#1A2332"><tspan font-weight="bold">Other/Opportunistic (10%):</tspan> Fix-flip, land, etc.</text>
-                
-                <!-- Bottom Summary -->
-                <rect x="50" y="1230" width="1000" height="0" rx="0" fill="none"/>
-            </svg>
-            
-            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
-                💡 Timeline flexible based on market conditions, personal finances, and goals. Chris Burns customizes strategy for YOUR situation!
-            </p>
-        </div>
-
-        <div class="strategy-grid">
-            <div class="strategy-card">
-                <h3>Portfolio Diversification</h3>
-                <p>Mix property types in Monmouth County for balanced risk. Single-family, multi-family, commercial throughout New Jersey portfolio.</p>
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--deep-navy);">Comprehensive Investment Property Services in Monmouth County</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🏘️ Rental Income Properties</h3>
+                <p>Find cash-flowing rental properties in Monmouth County and Ocean County. Expert analysis of rental rates, property management costs, cap rates, and ROI projections. I'll help you find single-family rentals, condos, and townhomes that generate positive monthly income.</p>
+                <a href="rental-income-properties.html" class="service-link">Explore Rental Properties →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>Market Timing</h3>
-                <p>Understand real estate cycles in Monmouth County. Buy opportunities during market shifts throughout New Jersey.</p>
+            <div class="service-card">
+                <h3>🔨 Fix and Flip Opportunities</h3>
+                <p>Identify undervalued properties with renovation potential in New Jersey. I'll help you find fixer-uppers, distressed properties, and foreclosures in Monmouth County. Guidance on renovation costs, after-repair value (ARV), and profit margin analysis for successful flips.</p>
+                <a href="fix-flip-opportunities.html" class="service-link">Find Flip Properties →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>Property Selection</h3>
-                <p>Choose properties that fit portfolio goals in Monmouth County. Cash flow vs appreciation strategies throughout New Jersey.</p>
+            <div class="service-card">
+                <h3>🏢 Multi-Family Properties</h3>
+                <p>Maximize investment returns with multi-family homes for sale in Monmouth County. Duplexes, triplexes, and small apartment buildings that offer multiple income streams. Expert analysis of unit mix, rental potential, and property management requirements.</p>
+                <a href="multi-family-properties.html" class="service-link">View Multi-Family Homes →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>Financing Strategy</h3>
-                <p>Leverage equity for portfolio growth in Monmouth County. Refinancing and cash-out strategies throughout New Jersey.</p>
+            <div class="service-card">
+                <h3>🏪 Commercial Real Estate</h3>
+                <p>Commercial property investment opportunities in New Jersey including retail spaces, office buildings, and mixed-use properties. Market analysis, tenant evaluation, and commercial lease guidance for investors looking beyond residential real estate.</p>
+                <a href="commercial-real-estate.html" class="service-link">Explore Commercial Properties →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>1031 Exchanges</h3>
-                <p>Tax-deferred portfolio upgrades in Monmouth County. Trade up to better properties throughout New Jersey.</p>
+            <div class="service-card">
+                <h3>💼 1031 Exchange Services</h3>
+                <p>Tax-advantaged property exchanges in Monmouth County. Guidance on 1031 exchange requirements, timeline management, and identification of replacement properties. Maximize your investment returns while deferring capital gains taxes on property sales.</p>
+                <a href="1031-exchange-services.html" class="service-link">Learn About 1031 Exchanges →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>Risk Management</h3>
-                <p>Protect portfolio with insurance and reserves in Monmouth County. Emergency funds and proper coverage throughout New Jersey.</p>
+            <div class="service-card">
+                <h3>📊 Investment Property Analysis</h3>
+                <p>Comprehensive financial analysis for every investment property in New Jersey. Cash flow projections, cap rate calculations, expense analysis, and market rent comparisons. Data-driven insights to help you make smart investment decisions in Monmouth County.</p>
+                <a href="investment-property-analysis.html" class="service-link">Get Property Analysis →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>Exit Strategies</h3>
-                <p>Plan long-term goals for Monmouth County portfolio. Retirement income, generational wealth throughout New Jersey.</p>
+            <div class="service-card">
+                <h3>🎯 Portfolio Strategy</h3>
+                <p>Long-term investment strategy development for building wealth through real estate in New Jersey. Portfolio diversification, market timing, and property selection guidance. Whether you're buying your first rental or your tenth, I'll help you build a profitable portfolio.</p>
+                <a href="investment-property-analysis.html" class="service-link">Build Your Portfolio →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>Property Management</h3>
-                <p>Scale operations with professional management in Monmouth County. Systems for portfolio growth throughout New Jersey.</p>
+            <div class="service-card">
+                <h3>🔍 Market Research</h3>
+                <p>In-depth market research for investment properties in Monmouth County, Ocean County, and Middlesex County. Neighborhood analysis, rental rate trends, property appreciation rates, and economic indicators. Know before you buy with comprehensive market data.</p>
+                <a href="real-estate-market-analysis.html" class="service-link">View Market Research →</a>
             </div>
 
-            <div class="strategy-card">
-                <h3>Market Analysis</h3>
-                <p>Track neighborhood trends in Monmouth County. Data-driven acquisition decisions throughout New Jersey markets.</p>
+            <div class="service-card">
+                <h3>🤝 Investor Network Connections</h3>
+                <p>Connect with property managers, contractors, lenders, and other real estate investors in New Jersey. Access to my network of trusted professionals who specialize in investment property services throughout Monmouth County and the surrounding areas.</p>
+                <a href="index.html#contact" class="service-link">Build Your Team →</a>
             </div>
         </div>
     </div>
 
+    <section class="why-choose">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.8rem;">Why Invest in Monmouth County Real Estate With Chris Burns</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">📈</div>
+                    <h3>Data-Driven Analysis</h3>
+                    <p>Comprehensive financial analysis for every investment property. Cap rates, cash flow projections, ROI calculations, and market comparisons. Make investment decisions based on real numbers, not guesswork.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🏆</div>
+                    <h3>Local Market Expertise</h3>
+                    <p>Deep knowledge of Monmouth County, Ocean County, and Middlesex County rental markets. I know which neighborhoods have strong rental demand, appreciation potential, and the best investment opportunities in New Jersey.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💰</div>
+                    <h3>Investor-Focused Service</h3>
+                    <p>I understand investment property metrics and speak your language. Whether you're analyzing cap rates or calculating cash-on-cash returns, I provide the data and insights real estate investors need.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🔗</div>
+                    <h3>Professional Network</h3>
+                    <p>Connections to property managers, contractors, hard money lenders, and other investment property professionals in New Jersey. Get your investment team in place quickly with trusted referrals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.8rem;">What Real Estate Investors Say About Chris Burns</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 50px; font-size: 1.15rem;">Success stories from investment property buyers in Monmouth County, NJ</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris helped me find my first rental property in Howell. He ran all the numbers, showed me how to calculate cash flow, and connected me with a great property manager. The property is now cash flowing $400/month and I'm looking to buy my second rental with his help."</p>
+                    <p class="testimonial-author">— Robert K.</p>
+                    <p class="testimonial-location">Real Estate Investor, Howell, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I've bought three fix-and-flip properties with Chris over the last two years. He has a great eye for undervalued properties and helps me run the ARV numbers to make sure the deal makes sense. His contractor connections have been invaluable too."</p>
+                    <p class="testimonial-author">— Michael S.</p>
+                    <p class="testimonial-location">Real Estate Investor, Freehold, NJ</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Chris helped us complete a 1031 exchange from our old rental in Manalapan to a multi-family property in Brick. He handled all the tight timelines and found us a great replacement property that generates twice the income. Highly recommend for serious investors!"</p>
+                    <p class="testimonial-author">— James & Patricia L.</p>
+                    <p class="testimonial-location">Real Estate Investors, Ocean County, NJ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
-        <h2>Build Your Real Estate Portfolio in Monmouth County</h2>
-        <p>Strategic guidance from first property to financial freedom throughout New Jersey.</p>
+        <h2>Ready to Start Investing in Monmouth County Real Estate?</h2>
+        <p>Let's discuss your investment goals and find properties that build wealth. Expert guidance for every type of real estate investor.</p>
         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
             <a href="tel:+18002992129" class="cta-button">Call Now: (800) 299-2129</a>
-            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Portfolio Consultation</a>
+            <a href="index.html#contact" class="cta-button" style="background: var(--accent-burgundy);">Request Free Consultation</a>
         </div>
     </section>
 
@@ -516,6 +508,7 @@
                 <h4>Services</h4>
                 <p><a href="buyer-representation.html">Buyer Representation</a></p>
                 <p><a href="seller-representation.html">Seller Representation</a></p>
+                <p><a href="first-time-homebuyer-assistance.html">First-Time Buyers</a></p>
                 <p><a href="investment-property-sales.html">Investment Properties</a></p>
             </div>
             <div class="footer-section">
@@ -526,6 +519,7 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+            <p style="margin-top: 10px;">Fair Housing Statement: We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation.</p>
         </div>
     </footer>
 </body>
