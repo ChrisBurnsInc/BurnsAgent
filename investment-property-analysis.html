@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .analysis-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,163 @@
     <div class="container">
         <div class="section-intro">
             <p>Successful real estate investing requires thorough financial analysis in Monmouth County, NJ. As your investment analyst serving Monmouth County, Ocean County, and Middlesex County, I provide detailed cash flow projections and ROI calculations throughout New Jersey. Data-driven decisions lead to profitable investments in Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="investment-prop-analysis1.jpg" alt="Investment Property Analysis - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Investment Metrics Dashboard Chart -->
+        <div class="chart-container">
+            <h3>📊 Complete Investment Analysis Dashboard</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Key metrics every investor must know - Example: $400K property with $3,200/month rent</p>
+            
+            <svg viewBox="0 0 1100 1350" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Property Summary Header -->
+                <rect x="50" y="30" width="1000" height="80" rx="8" fill="#1A2332"/>
+                <text x="550" y="60" text-anchor="middle" font-size="20" font-weight="bold" fill="white">🏠 Property Overview</text>
+                <text x="180" y="90" font-size="14" fill="white">Purchase: $400,000</text>
+                <text x="380" y="90" font-size="14" fill="white">Rent: $3,200/mo</text>
+                <text x="580" y="90" font-size="14" fill="white">Down: $80,000 (20%)</text>
+                <text x="800" y="90" font-size="14" fill="white">Location: Monmouth County</text>
+                
+                <!-- Metric 1: Cap Rate -->
+                <rect x="50" y="130" width="500" height="140" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="70" y="160" font-size="18" font-weight="bold" fill="#1A2332">1️⃣ Cap Rate (Capitalization Rate)</text>
+                <text x="70" y="185" font-size="13" font-style="italic" fill="#6C757D">Formula: NOI ÷ Purchase Price</text>
+                <rect x="70" y="195" width="460" height="60" rx="6" fill="white"/>
+                <text x="90" y="220" font-size="13" fill="#2C3E50">NOI: $38,400 (rent) - $18,400 (expenses) = $20,000</text>
+                <text x="90" y="240" font-size="13" fill="#2C3E50">Cap Rate: $20,000 ÷ $400,000 = <tspan font-weight="bold" fill="#228B22">5.0%</tspan></text>
+                <text x="300" y="265" text-anchor="middle" font-size="11" fill="#6C757D">Good: 5-10% | Excellent: 10%+</text>
+                
+                <!-- Metric 2: Cash-on-Cash Return -->
+                <rect x="570" y="130" width="480" height="140" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="590" y="160" font-size="18" font-weight="bold" fill="#1A2332">2️⃣ Cash-on-Cash Return (CoC)</text>
+                <text x="590" y="185" font-size="13" font-style="italic" fill="#6C757D">Formula: Annual Cash Flow ÷ Cash Invested</text>
+                <rect x="590" y="195" width="440" height="60" rx="6" fill="white"/>
+                <text x="610" y="220" font-size="13" fill="#2C3E50">Annual Cash Flow: -$6,060 (see below)</text>
+                <text x="610" y="240" font-size="13" fill="#2C3E50">CoC: -$6,060 ÷ $80,000 = <tspan font-weight="bold" fill="#D32F2F">-7.6%</tspan></text>
+                <text x="810" y="265" text-anchor="middle" font-size="11" fill="#6C757D">Target: 8-12% | Negative OK if equity builds</text>
+                
+                <!-- Metric 3: Gross Rent Multiplier -->
+                <rect x="50" y="290" width="500" height="140" rx="8" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+                <text x="70" y="320" font-size="18" font-weight="bold" fill="#1A2332">3️⃣ Gross Rent Multiplier (GRM)</text>
+                <text x="70" y="345" font-size="13" font-style="italic" fill="#6C757D">Formula: Purchase Price ÷ Annual Gross Rent</text>
+                <rect x="70" y="355" width="460" height="60" rx="6" fill="white"/>
+                <text x="90" y="380" font-size="13" fill="#2C3E50">Annual Rent: $3,200 × 12 = $38,400</text>
+                <text x="90" y="400" font-size="13" fill="#2C3E50">GRM: $400,000 ÷ $38,400 = <tspan font-weight="bold" fill="#F57C00">10.4</tspan></text>
+                <text x="300" y="425" text-anchor="middle" font-size="11" fill="#6C757D">Lower = Better | Typical: 8-15</text>
+                
+                <!-- Metric 4: Operating Expense Ratio -->
+                <rect x="570" y="290" width="480" height="140" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+                <text x="590" y="320" font-size="18" font-weight="bold" fill="#1A2332">4️⃣ Operating Expense Ratio (OER)</text>
+                <text x="590" y="345" font-size="13" font-style="italic" fill="#6C757D">Formula: Operating Expenses ÷ Gross Income</text>
+                <rect x="590" y="355" width="440" height="60" rx="6" fill="white"/>
+                <text x="610" y="380" font-size="13" fill="#2C3E50">Expenses: $18,400 (taxes, insurance, maint, mgmt)</text>
+                <text x="610" y="400" font-size="13" fill="#2C3E50">OER: $18,400 ÷ $38,400 = <tspan font-weight="bold" fill="#9C27B0">47.9%</tspan></text>
+                <text x="810" y="425" text-anchor="middle" font-size="11" fill="#6C757D">Typical: 35-50% | Lower = Better</text>
+                
+                <!-- Metric 5: Debt Service Coverage Ratio -->
+                <rect x="50" y="450" width="500" height="140" rx="8" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2"/>
+                <text x="70" y="480" font-size="18" font-weight="bold" fill="#1A2332">5️⃣ Debt Service Coverage Ratio (DSCR)</text>
+                <text x="70" y="505" font-size="13" font-style="italic" fill="#6C757D">Formula: NOI ÷ Annual Debt Service</text>
+                <rect x="70" y="515" width="460" height="60" rx="6" fill="white"/>
+                <text x="90" y="540" font-size="13" fill="#2C3E50">NOI: $20,000 | Mortgage: $25,548/year</text>
+                <text x="90" y="560" font-size="13" fill="#2C3E50">DSCR: $20,000 ÷ $25,548 = <tspan font-weight="bold" fill="#FF6B6B">0.78</tspan></text>
+                <text x="300" y="585" text-anchor="middle" font-size="11" fill="#6C757D">Lenders want: 1.2+ | Below 1.0 = Negative cash flow</text>
+                
+                <!-- Metric 6: Break-Even Occupancy -->
+                <rect x="570" y="450" width="480" height="140" rx="8" fill="#E0F7FA" stroke="#00ACC1" stroke-width="2"/>
+                <text x="590" y="480" font-size="18" font-weight="bold" fill="#1A2332">6️⃣ Break-Even Occupancy (BEO)</text>
+                <text x="590" y="505" font-size="13" font-style="italic" fill="#6C757D">Formula: (Operating + Debt) ÷ Gross Income</text>
+                <rect x="590" y="515" width="440" height="60" rx="6" fill="white"/>
+                <text x="610" y="540" font-size="13" fill="#2C3E50">Total Costs: $18,400 + $25,548 = $43,948</text>
+                <text x="610" y="560" font-size="13" fill="#2C3E50">BEO: $43,948 ÷ $38,400 = <tspan font-weight="bold" fill="#00ACC1">114%</tspan></text>
+                <text x="810" y="585" text-anchor="middle" font-size="11" fill="#6C757D">Lower = Better | Must stay rented to break even!</text>
+                
+                <!-- Metric 7: Total ROI (5 Years) -->
+                <rect x="50" y="610" width="500" height="160" rx="8" fill="#C8E6C9" stroke="#228B22" stroke-width="3"/>
+                <text x="70" y="640" font-size="18" font-weight="bold" fill="#1A2332">7️⃣ Total 5-Year Return on Investment</text>
+                <text x="70" y="665" font-size="13" font-style="italic" fill="#6C757D">Cash Flow + Equity + Appreciation + Tax Savings</text>
+                <rect x="70" y="675" width="460" height="80" rx="6" fill="white"/>
+                <text x="90" y="700" font-size="12" fill="#2C3E50">Cash flow (5 yrs): -$6,060 × 5 = -$30,300</text>
+                <text x="90" y="718" font-size="12" fill="#2C3E50">Equity buildup: $32,400 (principal paydown)</text>
+                <text x="90" y="736" font-size="12" fill="#2C3E50">Appreciation (3%): $60,000 | Tax savings: $45,450</text>
+                <text x="300" y="763" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">Total Gain: $107,550 on $80K = 134% ROI!</text>
+                <text x="300" y="785" text-anchor="middle" font-size="11" fill="#6C757D">26.8% annualized return</text>
+                
+                <!-- Metric 8: 1% Rule -->
+                <rect x="570" y="610" width="480" height="160" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+                <text x="590" y="640" font-size="18" font-weight="bold" fill="#1A2332">8️⃣ The 1% Rule (Quick Filter)</text>
+                <text x="590" y="665" font-size="13" font-style="italic" fill="#6C757D">Monthly Rent ÷ Purchase Price ≥ 1%?</text>
+                <rect x="590" y="675" width="440" height="80" rx="6" fill="white"/>
+                <text x="610" y="700" font-size="13" fill="#2C3E50">Rent: $3,200 | Price: $400,000</text>
+                <text x="610" y="720" font-size="13" fill="#2C3E50">Ratio: $3,200 ÷ $400,000 = <tspan font-weight="bold" fill="#FF9800">0.8%</tspan></text>
+                <text x="610" y="740" font-size="12" fill="#D32F2F">❌ Fails 1% rule (but may still work!)</text>
+                <text x="810" y="763" text-anchor="middle" font-size="11" fill="#6C757D">1% = Good cash flow | 2% = Excellent</text>
+                <text x="810" y="780" text-anchor="middle" font-size="10" fill="#6C757D">Hard to hit 1% in Monmouth County</text>
+                
+                <!-- Rating Summary -->
+                <rect x="50" y="790" width="1000" height="130" rx="8" fill="#FFF9C4" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="820" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">📈 Overall Investment Rating</text>
+                
+                <rect x="80" y="840" width="300" height="60" rx="6" fill="white" stroke="#D32F2F" stroke-width="2"/>
+                <text x="230" y="862" text-anchor="middle" font-size="14" font-weight="bold" fill="#D32F2F">Negative Cash Flow</text>
+                <text x="230" y="882" text-anchor="middle" font-size="12" fill="#2C3E50">-$505/month</text>
+                <text x="230" y="898" text-anchor="middle" font-size="10" fill="#6C757D">Need to cover shortfall</text>
+                
+                <rect x="400" y="840" width="300" height="60" rx="6" fill="white" stroke="#FBC02D" stroke-width="2"/>
+                <text x="550" y="862" text-anchor="middle" font-size="14" font-weight="bold" fill="#F57C00">Building Equity</text>
+                <text x="550" y="882" text-anchor="middle" font-size="12" fill="#2C3E50">$6,480/year principal</text>
+                <text x="550" y="898" text-anchor="middle" font-size="10" fill="#6C757D">+ appreciation gains</text>
+                
+                <rect x="720" y="840" width="300" height="60" rx="6" fill="white" stroke="#228B22" stroke-width="3"/>
+                <text x="870" y="862" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">Long-Term Winner</text>
+                <text x="870" y="882" text-anchor="middle" font-size="12" fill="#228B22">134% 5-year ROI</text>
+                <text x="870" y="898" text-anchor="middle" font-size="10" fill="#6C757D">Wealth building strategy</text>
+                
+                <!-- Key Metrics Reference Table -->
+                <rect x="50" y="940" width="1000" height="180" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="550" y="970" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">📋 Quick Reference: What Makes a Good Deal?</text>
+                
+                <rect x="80" y="990" width="300" height="110" rx="6" fill="white"/>
+                <text x="230" y="1012" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">EXCELLENT</text>
+                <text x="100" y="1035" font-size="12" fill="#2C3E50">• Cap Rate: 10%+</text>
+                <text x="100" y="1053" font-size="12" fill="#2C3E50">• CoC: 12%+</text>
+                <text x="100" y="1071" font-size="12" fill="#2C3E50">• DSCR: 1.5+</text>
+                <text x="100" y="1089" font-size="12" fill="#2C3E50">• 1% Rule: Passes</text>
+                
+                <rect x="400" y="990" width="300" height="110" rx="6" fill="white"/>
+                <text x="550" y="1012" text-anchor="middle" font-size="14" font-weight="bold" fill="#2196F3">GOOD</text>
+                <text x="420" y="1035" font-size="12" fill="#2C3E50">• Cap Rate: 7-10%</text>
+                <text x="420" y="1053" font-size="12" fill="#2C3E50">• CoC: 8-12%</text>
+                <text x="420" y="1071" font-size="12" fill="#2C3E50">• DSCR: 1.2-1.5</text>
+                <text x="420" y="1089" font-size="12" fill="#2C3E50">• 1% Rule: Close</text>
+                
+                <rect x="720" y="990" width="300" height="110" rx="6" fill="white"/>
+                <text x="870" y="1012" text-anchor="middle" font-size="14" font-weight="bold" fill="#FF6B6B">PROCEED WITH CAUTION</text>
+                <text x="740" y="1035" font-size="12" fill="#2C3E50">• Cap Rate: <5%</text>
+                <text x="740" y="1053" font-size="12" fill="#2C3E50">• CoC: Negative</text>
+                <text x="740" y="1071" font-size="12" fill="#2C3E50">• DSCR: <1.0</text>
+                <text x="740" y="1089" font-size="12" fill="#2C3E50">• Bet on appreciation</text>
+                
+                <!-- Bottom Message -->
+                <rect x="50" y="1140" width="1000" height="70" rx="10" fill="#1A2332" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="1172" text-anchor="middle" font-size="18" font-weight="bold" fill="#C9A961">🎯 Chris Burns Analyzes ALL These Metrics for Every Property!</text>
+                <text x="550" y="1198" text-anchor="middle" font-size="14" fill="white">Get comprehensive investment analysis before you buy - Make data-driven decisions</text>
+                
+                <!-- Legend -->
+                <rect x="50" y="1230" width="1000" height="100" rx="8" fill="#F8F6F1"/>
+                <text x="550" y="1258" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">💡 Investment Strategy Note</text>
+                <text x="550" y="1283" text-anchor="middle" font-size="13" fill="#2C3E50">Not all metrics need to be "excellent" - The example above shows negative cash flow BUT strong long-term returns</text>
+                <text x="550" y="1303" text-anchor="middle" font-size="13" fill="#2C3E50">through equity buildup, appreciation, and tax benefits. Your strategy depends on your goals:</text>
+                <text x="550" y="1323" text-anchor="middle" font-size="12" fill="#6C757D">Immediate income? Focus on CoC + DSCR  •  Long-term wealth? Focus on Total ROI + Appreciation</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                📊 All calculations are examples for educational purposes. Chris Burns provides customized analysis for every property based on YOUR specific situation and goals.
+            </p>
         </div>
 
         <div class="analysis-grid">
