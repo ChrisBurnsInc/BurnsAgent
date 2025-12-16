@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .property-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,170 @@
     <div class="container">
         <div class="section-intro">
             <p>Commercial real estate offers stable income and appreciation potential in Monmouth County, NJ. As your commercial property specialist serving Monmouth County, Ocean County, and Middlesex County, I help investors find office buildings, retail spaces, and industrial properties throughout New Jersey. Strategic locations near major highways in Marlboro, Manalapan, Freehold, and Holmdel provide excellent opportunities.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="commercial1.jpg" alt="Commercial Real Estate Investment - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Commercial Property Types Comparison Chart -->
+        <div class="chart-container">
+            <h3>🏢 Commercial Property Types Investment Guide</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Compare lease structures, cap rates, and investment characteristics across property types</p>
+            
+            <svg viewBox="0 0 1100 1050" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Header Row -->
+                <rect x="50" y="30" width="1000" height="60" rx="8" fill="#1A2332"/>
+                <text x="200" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Property Type</text>
+                <text x="420" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Lease Type</text>
+                <text x="620" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Cap Rate</text>
+                <text x="800" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Lease Term</text>
+                <text x="950" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="white">Risk Level</text>
+                
+                <!-- Row 1: Office Buildings -->
+                <rect x="50" y="110" width="1000" height="110" rx="6" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="70" y="145" font-size="18" font-weight="bold" fill="#1A2332">Office Buildings</text>
+                <text x="70" y="170" font-size="12" fill="#6C757D">Class A/B/C professional</text>
+                <text x="70" y="188" font-size="12" fill="#6C757D">office space in business</text>
+                <text x="70" y="206" font-size="12" fill="#6C757D">districts & suburban areas</text>
+                
+                <rect x="300" y="125" width="220" height="80" rx="6" fill="white"/>
+                <text x="410" y="155" text-anchor="middle" font-size="14" font-weight="bold" fill="#2196F3">Modified Gross</text>
+                <text x="410" y="175" text-anchor="middle" font-size="11" fill="#6C757D">Tenant pays utilities</text>
+                <text x="410" y="191" text-anchor="middle" font-size="11" fill="#6C757D">Landlord pays taxes,</text>
+                <text x="410" y="205" text-anchor="middle" font-size="11" fill="#6C757D">insurance, maintenance</text>
+                
+                <text x="620" y="170" text-anchor="middle" font-size="24" font-weight="bold" fill="#2196F3">6-8%</text>
+                
+                <text x="800" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#2196F3">5-10 yrs</text>
+                <text x="800" y="180" text-anchor="middle" font-size="11" fill="#6C757D">Professional</text>
+                <text x="800" y="195" text-anchor="middle" font-size="11" fill="#6C757D">tenants</text>
+                
+                <circle cx="950" cy="165" r="30" fill="#FDB913"/>
+                <text x="950" y="173" text-anchor="middle" font-size="16" font-weight="bold" fill="white">MED</text>
+                
+                <!-- Row 2: Retail Centers -->
+                <rect x="50" y="240" width="1000" height="110" rx="6" fill="#FFF9C4" stroke="#FDB913" stroke-width="2"/>
+                <text x="70" y="275" font-size="18" font-weight="bold" fill="#1A2332">Retail Centers</text>
+                <text x="70" y="300" font-size="12" fill="#6C757D">Strip malls, shopping</text>
+                <text x="70" y="318" font-size="12" fill="#6C757D">centers with anchor</text>
+                <text x="70" y="336" font-size="12" fill="#6C757D">tenants + satellite shops</text>
+                
+                <rect x="300" y="255" width="220" height="80" rx="6" fill="white"/>
+                <text x="410" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#F57C00">Triple Net (NNN)</text>
+                <text x="410" y="305" text-anchor="middle" font-size="11" fill="#6C757D">Tenant pays ALL:</text>
+                <text x="410" y="321" text-anchor="middle" font-size="11" fill="#6C757D">Taxes, insurance,</text>
+                <text x="410" y="335" text-anchor="middle" font-size="11" fill="#6C757D">maintenance, utilities</text>
+                
+                <text x="620" y="300" text-anchor="middle" font-size="24" font-weight="bold" fill="#F57C00">6-9%</text>
+                
+                <text x="800" y="290" text-anchor="middle" font-size="16" font-weight="bold" fill="#F57C00">10-20 yrs</text>
+                <text x="800" y="310" text-anchor="middle" font-size="11" fill="#6C757D">Long-term</text>
+                <text x="800" y="325" text-anchor="middle" font-size="11" fill="#6C757D">national chains</text>
+                
+                <circle cx="950" cy="295" r="30" fill="#228B22"/>
+                <text x="950" y="303" text-anchor="middle" font-size="16" font-weight="bold" fill="white">LOW</text>
+                
+                <!-- Row 3: Industrial/Warehouse -->
+                <rect x="50" y="370" width="1000" height="110" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="70" y="405" font-size="18" font-weight="bold" fill="#1A2332">Industrial/Warehouse</text>
+                <text x="70" y="430" font-size="12" fill="#6C757D">Distribution centers,</text>
+                <text x="70" y="448" font-size="12" fill="#6C757D">manufacturing, logistics</text>
+                <text x="70" y="466" font-size="12" fill="#6C757D">near highways & ports</text>
+                
+                <rect x="300" y="385" width="220" height="80" rx="6" fill="white"/>
+                <text x="410" y="415" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">Triple Net (NNN)</text>
+                <text x="410" y="435" text-anchor="middle" font-size="11" fill="#6C757D">Tenant responsible</text>
+                <text x="410" y="451" text-anchor="middle" font-size="11" fill="#6C757D">for all operating</text>
+                <text x="410" y="465" text-anchor="middle" font-size="11" fill="#6C757D">expenses</text>
+                
+                <text x="620" y="430" text-anchor="middle" font-size="24" font-weight="bold" fill="#228B22">7-10%</text>
+                
+                <text x="800" y="420" text-anchor="middle" font-size="16" font-weight="bold" fill="#228B22">5-15 yrs</text>
+                <text x="800" y="440" text-anchor="middle" font-size="11" fill="#6C757D">E-commerce</text>
+                <text x="800" y="455" text-anchor="middle" font-size="11" fill="#6C757D">boom demand</text>
+                
+                <circle cx="950" cy="425" r="30" fill="#228B22"/>
+                <text x="950" y="433" text-anchor="middle" font-size="16" font-weight="bold" fill="white">LOW</text>
+                
+                <!-- Row 4: Medical Office -->
+                <rect x="50" y="500" width="1000" height="110" rx="6" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+                <text x="70" y="535" font-size="18" font-weight="bold" fill="#1A2332">Medical Office</text>
+                <text x="70" y="560" font-size="12" fill="#6C757D">Healthcare providers,</text>
+                <text x="70" y="578" font-size="12" fill="#6C757D">specialist practices,</text>
+                <text x="70" y="596" font-size="12" fill="#6C757D">dental & urgent care</text>
+                
+                <rect x="300" y="515" width="220" height="80" rx="6" fill="white"/>
+                <text x="410" y="545" text-anchor="middle" font-size="14" font-weight="bold" fill="#9C27B0">Modified Gross</text>
+                <text x="410" y="565" text-anchor="middle" font-size="11" fill="#6C757D">Specialized buildout</text>
+                <text x="410" y="581" text-anchor="middle" font-size="11" fill="#6C757D">costs shared or</text>
+                <text x="410" y="595" text-anchor="middle" font-size="11" fill="#6C757D">tenant-paid</text>
+                
+                <text x="620" y="560" text-anchor="middle" font-size="24" font-weight="bold" fill="#9C27B0">5-7%</text>
+                
+                <text x="800" y="550" text-anchor="middle" font-size="16" font-weight="bold" fill="#9C27B0">7-12 yrs</text>
+                <text x="800" y="570" text-anchor="middle" font-size="11" fill="#6C757D">Very stable</text>
+                <text x="800" y="585" text-anchor="middle" font-size="11" fill="#6C757D">tenants</text>
+                
+                <circle cx="950" cy="555" r="30" fill="#228B22"/>
+                <text x="950" y="563" text-anchor="middle" font-size="16" font-weight="bold" fill="white">LOW</text>
+                
+                <!-- Row 5: Mixed-Use -->
+                <rect x="50" y="630" width="1000" height="110" rx="6" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2"/>
+                <text x="70" y="665" font-size="18" font-weight="bold" fill="#1A2332">Mixed-Use</text>
+                <text x="70" y="690" font-size="12" fill="#6C757D">Retail ground floor +</text>
+                <text x="70" y="708" font-size="12" fill="#6C757D">residential apartments</text>
+                <text x="70" y="726" font-size="12" fill="#6C757D">or office space above</text>
+                
+                <rect x="300" y="645" width="220" height="80" rx="6" fill="white"/>
+                <text x="410" y="675" text-anchor="middle" font-size="14" font-weight="bold" fill="#FF6B6B">Varies by Unit</text>
+                <text x="410" y="695" text-anchor="middle" font-size="11" fill="#6C757D">Commercial: NNN</text>
+                <text x="410" y="711" text-anchor="middle" font-size="11" fill="#6C757D">Residential: Gross</text>
+                <text x="410" y="725" text-anchor="middle" font-size="11" fill="#6C757D">lease structure</text>
+                
+                <text x="620" y="690" text-anchor="middle" font-size="24" font-weight="bold" fill="#FF6B6B">5-8%</text>
+                
+                <text x="800" y="680" text-anchor="middle" font-size="16" font-weight="bold" fill="#FF6B6B">Variable</text>
+                <text x="800" y="700" text-anchor="middle" font-size="11" fill="#6C757D">Commercial</text>
+                <text x="800" y="715" text-anchor="middle" font-size="11" fill="#6C757D">+ residential</text>
+                
+                <circle cx="950" cy="685" r="30" fill="#FDB913"/>
+                <text x="950" y="693" text-anchor="middle" font-size="16" font-weight="bold" fill="white">MED</text>
+                
+                <!-- Lease Type Legend -->
+                <rect x="50" y="760" width="1000" height="140" rx="8" fill="#F8F6F1" stroke="#C9A961" stroke-width="2"/>
+                <text x="550" y="790" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">📋 Lease Types Explained</text>
+                
+                <rect x="70" y="805" width="310" height="80" rx="6" fill="white" stroke="#2196F3" stroke-width="2"/>
+                <text x="225" y="828" text-anchor="middle" font-size="14" font-weight="bold" fill="#2196F3">GROSS LEASE</text>
+                <text x="90" y="850" font-size="12" fill="#2C3E50">Landlord pays: Taxes, insurance,</text>
+                <text x="90" y="866" font-size="12" fill="#2C3E50">maintenance, utilities</text>
+                <text x="90" y="881" font-size="11" font-style="italic" fill="#6C757D">Tenant: One simple payment</text>
+                
+                <rect x="395" y="805" width="310" height="80" rx="6" fill="white" stroke="#FDB913" stroke-width="2"/>
+                <text x="550" y="828" text-anchor="middle" font-size="14" font-weight="bold" fill="#F57C00">MODIFIED GROSS</text>
+                <text x="415" y="850" font-size="12" fill="#2C3E50">Split responsibility: Tenant pays</text>
+                <text x="415" y="866" font-size="12" fill="#2C3E50">some expenses (usually utilities)</text>
+                <text x="415" y="881" font-size="11" font-style="italic" fill="#6C757D">Most common for office space</text>
+                
+                <rect x="720" y="805" width="310" height="80" rx="6" fill="white" stroke="#228B22" stroke-width="2"/>
+                <text x="875" y="828" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">TRIPLE NET (NNN)</text>
+                <text x="740" y="850" font-size="12" fill="#2C3E50">Tenant pays: ALL expenses</text>
+                <text x="740" y="866" font-size="12" fill="#2C3E50">(taxes, insurance, maintenance)</text>
+                <text x="740" y="881" font-size="11" font-style="italic" fill="#6C757D">Landlord: Passive income only</text>
+                
+                <!-- Cap Rate Explanation -->
+                <rect x="50" y="920" width="1000" height="110" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="550" y="950" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">💡 Understanding Cap Rate (Capitalization Rate)</text>
+                <text x="550" y="978" text-anchor="middle" font-size="14" fill="#2C3E50">Cap Rate = Annual Net Operating Income ÷ Property Purchase Price</text>
+                <text x="550" y="1002" text-anchor="middle" font-size="13" fill="#6C757D">Example: $100K annual NOI ÷ $1.5M price = 6.7% cap rate</text>
+                <text x="550" y="1022" text-anchor="middle" font-size="12" font-weight="bold" fill="#2196F3">Higher cap rate = Higher return BUT higher risk  •  Lower cap rate = Safer investment BUT lower return</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                📍 Monmouth County cap rates vary by location, tenant quality, and property condition. Chris Burns provides detailed analysis for each commercial property.
+            </p>
         </div>
 
         <div class="property-grid">
