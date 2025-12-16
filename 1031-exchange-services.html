@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .exchange-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,117 @@
     <div class="container">
         <div class="section-intro">
             <p>1031 exchanges allow investors to defer capital gains taxes in Monmouth County, NJ by exchanging investment properties. As your 1031 exchange specialist serving Monmouth County, Ocean County, and Middlesex County, I coordinate seamless exchanges with qualified intermediaries throughout New Jersey. Strategic exchanges in Marlboro, Manalapan, Freehold, and Holmdel preserve wealth and grow portfolios.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="1031-exchange1.jpg" alt="1031 Exchange Tax Deferral - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- 1031 Exchange Timeline and Tax Savings Chart -->
+        <div class="chart-container">
+            <h3>⏱️ 1031 Exchange Timeline & Tax Savings</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Critical deadlines and massive tax savings with proper execution</p>
+            
+            <svg viewBox="0 0 1100 1150" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Tax Savings Comparison Header -->
+                <rect x="50" y="30" width="1000" height="180" rx="10" fill="#E8F5E9" stroke="#228B22" stroke-width="3"/>
+                <text x="550" y="65" text-anchor="middle" font-size="24" font-weight="bold" fill="#1A2332">💰 The Power of 1031 Exchange: Example Tax Savings</text>
+                
+                <!-- Left: Regular Sale -->
+                <rect x="80" y="85" width="450" height="110" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2"/>
+                <text x="305" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">❌ Regular Sale (Pay Taxes)</text>
+                <text x="100" y="135" font-size="13" fill="#2C3E50">Sale price: $700,000</text>
+                <text x="100" y="153" font-size="13" fill="#2C3E50">Original cost: $400,000</text>
+                <text x="100" y="171" font-size="13" font-weight="bold" fill="#D32F2F">Capital gains tax (20% + 6.4% NJ): $79,200</text>
+                <text x="305" y="190" text-anchor="middle" font-size="14" font-weight="bold" fill="#D32F2F">Net to reinvest: $620,800</text>
+                
+                <!-- Right: 1031 Exchange -->
+                <rect x="570" y="85" width="450" height="110" rx="8" fill="#C8E6C9" stroke="#228B22" stroke-width="3"/>
+                <text x="795" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#228B22">✓ 1031 Exchange (Defer Taxes)</text>
+                <text x="590" y="135" font-size="13" fill="#2C3E50">Sale price: $700,000</text>
+                <text x="590" y="153" font-size="13" fill="#2C3E50">Original cost: $400,000</text>
+                <text x="590" y="171" font-size="13" font-weight="bold" fill="#228B22">Capital gains tax: $0 (DEFERRED!)</text>
+                <text x="795" y="190" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">Net to reinvest: $700,000 🎉</text>
+                
+                <!-- Savings Highlight -->
+                <rect x="50" y="230" width="1000" height="50" rx="8" fill="#FFF9C4" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="262" text-anchor="middle" font-size="20" font-weight="bold" fill="#856404">🏆 You Keep $79,200 More to Invest = 11.3% More Buying Power!</text>
+                
+                <!-- Timeline Section Header -->
+                <rect x="50" y="300" width="1000" height="50" rx="8" fill="#1A2332"/>
+                <text x="550" y="332" text-anchor="middle" font-size="22" font-weight="bold" fill="white">📅 Critical 1031 Exchange Timeline - MUST Follow Exactly!</text>
+                
+                <!-- Timeline Line -->
+                <line x1="100" y1="400" x2="100" y2="1020" stroke="#C9A961" stroke-width="6"/>
+                
+                <!-- Day 0: Close on Relinquished Property -->
+                <circle cx="100" cy="400" r="30" fill="#228B22" stroke="#1A2332" stroke-width="3"/>
+                <text x="100" y="410" text-anchor="middle" font-size="18" font-weight="bold" fill="white">DAY 0</text>
+                <rect x="150" y="370" width="900" height="85" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="170" y="395" font-size="18" font-weight="bold" fill="#1A2332">🏠 CLOSE ON SALE (Relinquished Property)</text>
+                <text x="170" y="420" font-size="14" fill="#2C3E50">• Sell your current investment property</text>
+                <text x="170" y="440" font-size="14" fill="#2C3E50">• Qualified Intermediary (QI) holds ALL proceeds - you CANNOT touch the money!</text>
+                
+                <!-- Day 1-45: Identification Period -->
+                <circle cx="100" cy="520" r="30" fill="#2196F3" stroke="#1A2332" stroke-width="3"/>
+                <text x="100" y="523" text-anchor="middle" font-size="14" font-weight="bold" fill="white">DAY</text>
+                <text x="100" y="537" text-anchor="middle" font-size="14" font-weight="bold" fill="white">1-45</text>
+                <rect x="150" y="485" width="900" height="100" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="170" y="510" font-size="18" font-weight="bold" fill="#1A2332">⏰ IDENTIFICATION PERIOD (45 Days)</text>
+                <text x="170" y="535" font-size="14" font-weight="bold" fill="#D32F2F">⚠️ CRITICAL DEADLINE - NO EXTENSIONS!</text>
+                <text x="170" y="555" font-size="14" fill="#2C3E50">• Identify up to 3 replacement properties in writing to QI</text>
+                <text x="170" y="573" font-size="14" fill="#2C3E50">• Chris Burns helps you find qualified properties FAST within 45 days</text>
+                
+                <!-- Day 45 Warning -->
+                <rect x="150" y="605" width="900" height="50" rx="8" fill="#FFF3CD" stroke="#FBC02D" stroke-width="2"/>
+                <text x="600" y="635" text-anchor="middle" font-size="16" font-weight="bold" fill="#856404">💡 MISS THIS DEADLINE = Your entire exchange FAILS and you owe ALL taxes!</text>
+                
+                <!-- Day 46-180: Exchange Period -->
+                <circle cx="100" cy="720" r="30" fill="#9C27B0" stroke="#1A2332" stroke-width="3"/>
+                <text x="100" y="720" text-anchor="middle" font-size="12" font-weight="bold" fill="white">DAY</text>
+                <text x="100" y="735" text-anchor="middle" font-size="12" font-weight="bold" fill="white">46-180</text>
+                <rect x="150" y="680" width="900" height="110" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+                <text x="170" y="705" font-size="18" font-weight="bold" fill="#1A2332">🔍 DUE DILIGENCE & NEGOTIATION</text>
+                <text x="170" y="730" font-size="14" fill="#2C3E50">• Inspect identified properties</text>
+                <text x="170" y="750" font-size="14" fill="#2C3E50">• Negotiate purchase terms</text>
+                <text x="170" y="770" font-size="14" fill="#2C3E50">• Secure financing for replacement property</text>
+                
+                <!-- Day 180: Final Closing -->
+                <circle cx="100" cy="850" r="30" fill="#C9A961" stroke="#1A2332" stroke-width="3"/>
+                <text x="100" y="853" text-anchor="middle" font-size="14" font-weight="bold" fill="white">DAY</text>
+                <text x="100" y="867" text-anchor="middle" font-size="14" font-weight="bold" fill="white">180</text>
+                <rect x="150" y="815" width="900" height="100" rx="8" fill="#FFF9C4" stroke="#C9A961" stroke-width="3"/>
+                <text x="170" y="840" font-size="18" font-weight="bold" fill="#1A2332">🎯 CLOSE ON REPLACEMENT PROPERTY</text>
+                <text x="170" y="865" font-size="14" font-weight="bold" fill="#228B22">⚠️ MUST close within 180 days OR by tax return deadline (whichever is earlier)</text>
+                <text x="170" y="885" font-size="14" fill="#2C3E50">• QI transfers funds directly to purchase replacement property</text>
+                <text x="170" y="903" font-size="14" fill="#2C3E50">• Must be equal or greater value than sold property</text>
+                
+                <!-- Success Box -->
+                <rect x="150" y="935" width="900" height="85" rx="10" fill="#C8E6C9" stroke="#228B22" stroke-width="3"/>
+                <text x="600" y="967" text-anchor="middle" font-size="22" font-weight="bold" fill="#228B22">✅ SUCCESS! Taxes Deferred - Wealth Preserved!</text>
+                <text x="600" y="995" text-anchor="middle" font-size="15" fill="#2C3E50">You've successfully deferred $79,200 in taxes and can reinvest 100% of equity</text>
+                <text x="600" y="1013" text-anchor="middle" font-size="13" font-style="italic" fill="#6C757D">Repeat this process indefinitely to build massive wealth tax-free!</text>
+                
+                <!-- Key Rules Box -->
+                <rect x="50" y="1040" width="1000" height="90" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="550" y="1065" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">📋 Critical 1031 Exchange Rules</text>
+                <text x="70" y="1090" font-size="13" fill="#2C3E50">✓ Like-kind property (investment → investment)</text>
+                <text x="70" y="1108" font-size="13" fill="#2C3E50">✓ Equal or greater value</text>
+                <text x="70" y="1125" font-size="13" fill="#2C3E50">✓ Use qualified intermediary (NEVER touch funds)</text>
+                
+                <text x="430" y="1090" font-size="13" fill="#2C3E50">✓ Identify within 45 days (NO exceptions)</text>
+                <text x="430" y="1108" font-size="13" fill="#2C3E50">✓ Close within 180 days</text>
+                <text x="430" y="1125" font-size="13" fill="#2C3E50">✓ Reinvest ALL equity (avoid "boot")</text>
+                
+                <text x="770" y="1090" font-size="13" fill="#2C3E50">✓ Title must match exactly</text>
+                <text x="770" y="1108" font-size="13" fill="#2C3E50">✓ Cannot live in replacement property</text>
+                <text x="770" y="1125" font-size="13" fill="#2C3E50">✓ Chris Burns coordinates everything!</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                ⚠️ This is not tax advice. Consult with your CPA and qualified intermediary. Chris Burns coordinates with your team to execute flawlessly!
+            </p>
         </div>
 
         <div class="exchange-grid">
