@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .property-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,145 @@
     <div class="container">
         <div class="section-intro">
             <p>Rental income properties offer passive income and long-term wealth building in Monmouth County, NJ. As your investment property specialist serving Monmouth County, Ocean County, and Middlesex County, I help investors find cash-flowing properties throughout New Jersey. Strong rental markets in Marlboro, Manalapan, Freehold, and Holmdel provide excellent investment opportunities.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="rental-income1.jpg" alt="Rental Income Properties - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Rental Property ROI Analysis Chart -->
+        <div class="chart-container">
+            <h3>💰 Rental Property Investment Analysis</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Example: $400,000 Single-Family Rental in Monmouth County, NJ</p>
+            
+            <svg viewBox="0 0 1100 1000" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Property Details Header -->
+                <rect x="50" y="30" width="1000" height="60" rx="8" fill="#1A2332"/>
+                <text x="550" y="65" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Purchase Price: $400,000 | Down Payment: $80,000 (20%) | Mortgage: $320,000</text>
+                
+                <!-- MONTHLY INCOME Section -->
+                <rect x="50" y="110" width="480" height="320" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="3"/>
+                <text x="290" y="145" text-anchor="middle" font-size="22" font-weight="bold" fill="#1A2332">📈 MONTHLY INCOME</text>
+                
+                <text x="80" y="185" font-size="16" font-weight="bold" fill="#2C3E50">Gross Rental Income:</text>
+                <text x="470" y="185" text-anchor="end" font-size="22" font-weight="bold" fill="#228B22">$3,200</text>
+                
+                <line x1="70" y1="200" x2="510" y2="200" stroke="#C9A961" stroke-width="2"/>
+                
+                <text x="80" y="230" font-size="15" fill="#2C3E50">Monthly rent @ market rate</text>
+                <text x="470" y="230" text-anchor="end" font-size="16" fill="#228B22">$3,200</text>
+                
+                <rect x="70" y="250" width="440" height="160" rx="6" fill="#F0FFF0" stroke="#228B22" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="290" y="275" text-anchor="middle" font-size="14" font-weight="bold" fill="#1A2332">Annual Gross Income Breakdown</text>
+                <text x="90" y="300" font-size="13" fill="#2C3E50">Monthly rent x 12 months:</text>
+                <text x="460" y="300" text-anchor="end" font-size="13" fill="#2C3E50">$38,400/year</text>
+                <text x="90" y="325" font-size="13" fill="#2C3E50">Vacancy allowance (5%):</text>
+                <text x="460" y="325" text-anchor="end" font-size="13" fill="#D32F2F">-$1,920/year</text>
+                <line x1="90" y1="335" x2="460" y2="335" stroke="#228B22" stroke-width="2"/>
+                <text x="90" y="360" font-size="14" font-weight="bold" fill="#228B22">Effective Gross Income:</text>
+                <text x="460" y="360" text-anchor="end" font-size="16" font-weight="bold" fill="#228B22">$36,480/year</text>
+                <text x="290" y="390" text-anchor="middle" font-size="12" fill="#6C757D">($3,040 per month effective)</text>
+                
+                <!-- MONTHLY EXPENSES Section -->
+                <rect x="570" y="110" width="480" height="320" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="3"/>
+                <text x="810" y="145" text-anchor="middle" font-size="22" font-weight="bold" fill="#1A2332">📉 MONTHLY EXPENSES</text>
+                
+                <text x="600" y="185" font-size="16" fill="#2C3E50">Mortgage (P&I @ 7%):</text>
+                <text x="1020" y="185" text-anchor="end" font-size="16" fill="#D32F2F">-$2,129</text>
+                
+                <text x="600" y="215" font-size="16" fill="#2C3E50">Property Taxes:</text>
+                <text x="1020" y="215" text-anchor="end" font-size="16" fill="#D32F2F">-$833</text>
+                
+                <text x="600" y="245" font-size="16" fill="#2C3E50">Insurance:</text>
+                <text x="1020" y="245" text-anchor="end" font-size="16" fill="#D32F2F">-$167</text>
+                
+                <text x="600" y="275" font-size="16" fill="#2C3E50">Maintenance (10%):</text>
+                <text x="1020" y="275" text-anchor="end" font-size="16" fill="#D32F2F">-$320</text>
+                
+                <text x="600" y="305" font-size="16" fill="#2C3E50">Property Management (8%):</text>
+                <text x="1020" y="305" text-anchor="end" font-size="16" fill="#D32F2F">-$256</text>
+                
+                <text x="600" y="335" font-size="16" fill="#2C3E50">HOA/Utilities:</text>
+                <text x="1020" y="335" text-anchor="end" font-size="16" fill="#D32F2F">-$0</text>
+                
+                <line x1="590" y1="350" x2="1030" y2="350" stroke="#C9A961" stroke-width="2"/>
+                
+                <text x="600" y="380" font-size="18" font-weight="bold" fill="#D32F2F">Total Monthly Expenses:</text>
+                <text x="1020" y="380" text-anchor="end" font-size="20" font-weight="bold" fill="#D32F2F">-$3,705</text>
+                
+                <text x="810" y="410" text-anchor="middle" font-size="12" fill="#6C757D">Annual: $44,460</text>
+                
+                <!-- CASH FLOW Analysis -->
+                <rect x="50" y="450" width="1000" height="140" rx="8" fill="#FFF9C4" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="485" text-anchor="middle" font-size="22" font-weight="bold" fill="#1A2332">💵 MONTHLY CASH FLOW</text>
+                
+                <text x="100" y="525" font-size="18" fill="#2C3E50">Gross Rental Income:</text>
+                <text x="500" y="525" text-anchor="end" font-size="18" fill="#228B22">$3,200</text>
+                
+                <text x="100" y="555" font-size="18" fill="#2C3E50">Total Expenses:</text>
+                <text x="500" y="555" text-anchor="end" font-size="18" fill="#D32F2F">-$3,705</text>
+                
+                <line x1="100" y1="565" x2="500" y2="565" stroke="#1A2332" stroke-width="3"/>
+                
+                <text x="100" y="585" font-size="20" font-weight="bold" fill="#D32F2F">Monthly Cash Flow:</text>
+                <text x="500" y="585" text-anchor="end" font-size="24" font-weight="bold" fill="#D32F2F">-$505</text>
+                
+                <rect x="550" y="465" width="470" height="110" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="785" y="495" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">⚠️ INVESTOR INSIGHT</text>
+                <text x="785" y="520" text-anchor="middle" font-size="13" fill="#2C3E50">Negative cash flow is COMMON in early years</text>
+                <text x="785" y="540" text-anchor="middle" font-size="13" fill="#2C3E50">BUT you're building equity + appreciation</text>
+                <text x="785" y="560" text-anchor="middle" font-size="13" font-weight="bold" fill="#0288D1">+ tax benefits make this profitable!</text>
+                
+                <!-- ROI METRICS Section -->
+                <rect x="50" y="610" width="1000" height="200" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="3"/>
+                <text x="550" y="645" text-anchor="middle" font-size="22" font-weight="bold" fill="#1A2332">📊 RETURN ON INVESTMENT (ROI) ANALYSIS</text>
+                
+                <!-- Left Column -->
+                <rect x="70" y="665" width="300" height="130" rx="6" fill="white" stroke="#C9A961" stroke-width="2"/>
+                <text x="220" y="690" text-anchor="middle" font-size="14" font-weight="bold" fill="#1A2332">Annual Equity Buildup</text>
+                <text x="90" y="715" font-size="13" fill="#2C3E50">Mortgage principal paid:</text>
+                <text x="350" y="715" text-anchor="end" font-size="14" font-weight="bold" fill="#228B22">$6,480/yr</text>
+                <text x="90" y="740" font-size="13" fill="#2C3E50">Property appreciation (3%):</text>
+                <text x="350" y="740" text-anchor="end" font-size="14" font-weight="bold" fill="#228B22">+$12,000/yr</text>
+                <line x1="90" y1="750" x2="350" y2="750" stroke="#228B22" stroke-width="2"/>
+                <text x="90" y="775" font-size="14" font-weight="bold" fill="#228B22">Wealth Building:</text>
+                <text x="350" y="775" text-anchor="end" font-size="16" font-weight="bold" fill="#228B22">$18,480/yr</text>
+                
+                <!-- Middle Column -->
+                <rect x="400" y="665" width="290" height="130" rx="6" fill="white" stroke="#C9A961" stroke-width="2"/>
+                <text x="545" y="690" text-anchor="middle" font-size="14" font-weight="bold" fill="#1A2332">Tax Benefits</text>
+                <text x="420" y="715" font-size="13" fill="#2C3E50">Depreciation deduction:</text>
+                <text x="670" y="715" text-anchor="end" font-size="14" fill="#228B22">~$14,545/yr</text>
+                <text x="420" y="740" font-size="13" fill="#2C3E50">Interest deduction:</text>
+                <text x="670" y="740" text-anchor="end" font-size="14" fill="#228B22">~$21,840/yr</text>
+                <text x="420" y="765" font-size="13" fill="#2C3E50">Est. tax savings (25% bracket):</text>
+                <text x="670" y="765" text-anchor="end" font-size="14" font-weight="bold" fill="#228B22">~$9,096/yr</text>
+                
+                <!-- Right Column -->
+                <rect x="720" y="665" width="310" height="130" rx="6" fill="#C8E6C9" stroke="#228B22" stroke-width="3"/>
+                <text x="875" y="690" text-anchor="middle" font-size="14" font-weight="bold" fill="#1A2332">🎯 TRUE ANNUAL RETURN</text>
+                <text x="740" y="715" font-size="13" fill="#2C3E50">Cash flow (negative):</text>
+                <text x="1010" y="715" text-anchor="end" font-size="13" fill="#D32F2F">-$6,060</text>
+                <text x="740" y="735" font-size="13" fill="#2C3E50">Equity buildup:</text>
+                <text x="1010" y="735" text-anchor="end" font-size="13" fill="#228B22">+$18,480</text>
+                <text x="740" y="755" font-size="13" fill="#2C3E50">Tax savings:</text>
+                <text x="1010" y="755" text-anchor="end" font-size="13" fill="#228B22">+$9,096</text>
+                <line x1="740" y1="765" x2="1010" y2="765" stroke="#228B22" stroke-width="3"/>
+                <text x="740" y="790" font-size="16" font-weight="bold" fill="#228B22">Net Annual Profit:</text>
+                <text x="1010" y="790" text-anchor="end" font-size="20" font-weight="bold" fill="#228B22">+$21,516</text>
+                
+                <!-- Bottom Summary -->
+                <rect x="50" y="830" width="1000" height="140" rx="10" fill="#1A2332" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="870" text-anchor="middle" font-size="24" font-weight="bold" fill="#C9A961">🏆 YOUR REAL ROI</text>
+                <text x="550" y="905" text-anchor="middle" font-size="18" fill="white">$80,000 invested → $21,516 annual return = <tspan font-weight="bold" fill="#C9A961">26.9% ROI</tspan></text>
+                <text x="550" y="935" text-anchor="middle" font-size="15" fill="white">PLUS you own an appreciating asset! After 5 years: ~$107,500 in gains on $80K invested</text>
+                <text x="550" y="960" text-anchor="middle" font-size="13" font-style="italic" fill="#C9A961">Chris Burns helps you find cash-flowing properties with maximum ROI potential!</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                📌 Note: Numbers are examples. Actual returns vary by property, location, financing, and market conditions. Chris Burns provides detailed analysis for each investment property.
+            </p>
         </div>
 
         <div class="property-grid">
