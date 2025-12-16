@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .property-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,172 @@
     <div class="container">
         <div class="section-intro">
             <p>Multi-family properties offer superior cash flow and investment returns in Monmouth County, NJ. As your multi-family specialist serving Monmouth County, Ocean County, and Middlesex County, I help investors find duplexes, triplexes, and apartment buildings throughout New Jersey. Multiple units reduce vacancy risk in markets like Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="multi-family1.jpg" alt="Multi-Family Investment Properties - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Multi-Family Income Comparison Chart -->
+        <div class="chart-container">
+            <h3>🏢 Multi-Family vs Single-Family Income Comparison</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Same $500K investment - dramatically different returns!</p>
+            
+            <svg viewBox="0 0 1100 1100" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Header -->
+                <rect x="50" y="30" width="1000" height="60" rx="8" fill="#1A2332"/>
+                <text x="550" y="65" text-anchor="middle" font-size="20" font-weight="bold" fill="white">Investment Comparison: $500,000 Purchase Price</text>
+                
+                <!-- Column Headers -->
+                <rect x="50" y="110" width="220" height="50" rx="6" fill="#4A90E2"/>
+                <text x="160" y="142" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Property Type</text>
+                
+                <rect x="290" y="110" width="250" height="50" rx="6" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="415" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A2332">Single-Family</text>
+                <text x="415" y="150" text-anchor="middle" font-size="13" fill="#6C757D">(1 rental unit)</text>
+                
+                <rect x="560" y="110" width="240" height="50" rx="6" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2"/>
+                <text x="680" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A2332">Duplex</text>
+                <text x="680" y="150" text-anchor="middle" font-size="13" fill="#6C757D">(2 rental units)</text>
+                
+                <rect x="820" y="110" width="230" height="50" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="935" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A2332">Fourplex</text>
+                <text x="935" y="150" text-anchor="middle" font-size="13" fill="#6C757D">(4 rental units)</text>
+                
+                <!-- Row 1: Monthly Gross Income -->
+                <rect x="50" y="180" width="220" height="70" rx="6" fill="#F8F6F1"/>
+                <text x="70" y="210" font-size="15" font-weight="bold" fill="#1A2332">Monthly Gross</text>
+                <text x="70" y="230" font-size="15" font-weight="bold" fill="#1A2332">Rental Income</text>
+                
+                <rect x="290" y="180" width="250" height="70" rx="6" fill="white" stroke="#2196F3" stroke-width="1"/>
+                <text x="415" y="220" text-anchor="middle" font-size="24" font-weight="bold" fill="#2196F3">$3,200</text>
+                <text x="415" y="240" text-anchor="middle" font-size="11" fill="#6C757D">1 unit @ $3,200</text>
+                
+                <rect x="560" y="180" width="240" height="70" rx="6" fill="white" stroke="#FF6B6B" stroke-width="1"/>
+                <text x="680" y="220" text-anchor="middle" font-size="24" font-weight="bold" fill="#FF6B6B">$5,800</text>
+                <text x="680" y="240" text-anchor="middle" font-size="11" fill="#6C757D">2 units @ $2,900 each</text>
+                
+                <rect x="820" y="180" width="230" height="70" rx="6" fill="white" stroke="#228B22" stroke-width="1"/>
+                <text x="935" y="220" text-anchor="middle" font-size="24" font-weight="bold" fill="#228B22">$10,000</text>
+                <text x="935" y="240" text-anchor="middle" font-size="11" fill="#6C757D">4 units @ $2,500 each</text>
+                
+                <!-- Row 2: Monthly Expenses -->
+                <rect x="50" y="270" width="220" height="90" rx="6" fill="#F8F6F1"/>
+                <text x="70" y="305" font-size="15" font-weight="bold" fill="#1A2332">Monthly Expenses</text>
+                <text x="70" y="325" font-size="12" fill="#6C757D">(mortgage, taxes,</text>
+                <text x="70" y="340" font-size="12" fill="#6C757D">insurance, mgmt,</text>
+                <text x="70" y="355" font-size="12" fill="#6C757D">maintenance)</text>
+                
+                <rect x="290" y="270" width="250" height="90" rx="6" fill="white" stroke="#2196F3" stroke-width="1"/>
+                <text x="415" y="320" text-anchor="middle" font-size="22" font-weight="bold" fill="#D32F2F">-$3,705</text>
+                
+                <rect x="560" y="270" width="240" height="90" rx="6" fill="white" stroke="#FF6B6B" stroke-width="1"/>
+                <text x="680" y="320" text-anchor="middle" font-size="22" font-weight="bold" fill="#D32F2F">-$5,510</text>
+                
+                <rect x="820" y="270" width="230" height="90" rx="6" fill="white" stroke="#228B22" stroke-width="1"/>
+                <text x="935" y="320" text-anchor="middle" font-size="22" font-weight="bold" fill="#D32F2F">-$8,750</text>
+                
+                <!-- Row 3: Monthly Cash Flow -->
+                <rect x="50" y="380" width="220" height="70" rx="6" fill="#FFF9C4" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="410" font-size="16" font-weight="bold" fill="#1A2332">Monthly Net</text>
+                <text x="70" y="430" font-size="16" font-weight="bold" fill="#1A2332">Cash Flow</text>
+                
+                <rect x="290" y="380" width="250" height="70" rx="6" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2"/>
+                <text x="415" y="420" text-anchor="middle" font-size="26" font-weight="bold" fill="#D32F2F">-$505</text>
+                <text x="415" y="442" text-anchor="middle" font-size="11" fill="#D32F2F">NEGATIVE</text>
+                
+                <rect x="560" y="380" width="240" height="70" rx="6" fill="#FFF9C4" stroke="#FDB913" stroke-width="2"/>
+                <text x="680" y="420" text-anchor="middle" font-size="26" font-weight="bold" fill="#F57C00">+$290</text>
+                <text x="680" y="442" text-anchor="middle" font-size="11" fill="#F57C00">Positive!</text>
+                
+                <rect x="820" y="380" width="230" height="70" rx="6" fill="#C8E6C9" stroke="#228B22" stroke-width="3"/>
+                <text x="935" y="420" text-anchor="middle" font-size="26" font-weight="bold" fill="#228B22">+$1,250</text>
+                <text x="935" y="442" text-anchor="middle" font-size="11" fill="#228B22">STRONG!</text>
+                
+                <!-- Row 4: Annual Cash Flow -->
+                <rect x="50" y="470" width="220" height="70" rx="6" fill="#F8F6F1"/>
+                <text x="70" y="500" font-size="15" font-weight="bold" fill="#1A2332">Annual Cash Flow</text>
+                <text x="70" y="520" font-size="12" fill="#6C757D">(12 months)</text>
+                
+                <rect x="290" y="470" width="250" height="70" rx="6" fill="white" stroke="#2196F3" stroke-width="1"/>
+                <text x="415" y="510" text-anchor="middle" font-size="22" font-weight="bold" fill="#D32F2F">-$6,060</text>
+                
+                <rect x="560" y="470" width="240" height="70" rx="6" fill="white" stroke="#FF6B6B" stroke-width="1"/>
+                <text x="680" y="510" text-anchor="middle" font-size="22" font-weight="bold" fill="#F57C00">+$3,480</text>
+                
+                <rect x="820" y="470" width="230" height="70" rx="6" fill="white" stroke="#228B22" stroke-width="1"/>
+                <text x="935" y="510" text-anchor="middle" font-size="22" font-weight="bold" fill="#228B22">+$15,000</text>
+                
+                <!-- Row 5: Vacancy Risk -->
+                <rect x="50" y="560" width="220" height="90" rx="6" fill="#F8F6F1"/>
+                <text x="70" y="595" font-size="15" font-weight="bold" fill="#1A2332">Vacancy Risk</text>
+                <text x="70" y="615" font-size="12" fill="#6C757D">What happens if</text>
+                <text x="70" y="630" font-size="12" fill="#6C757D">one unit is vacant?</text>
+                
+                <rect x="290" y="560" width="250" height="90" rx="6" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2"/>
+                <text x="415" y="595" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">100% LOSS</text>
+                <text x="415" y="618" text-anchor="middle" font-size="12" fill="#D32F2F">Zero income when</text>
+                <text x="415" y="635" text-anchor="middle" font-size="12" fill="#D32F2F">tenant moves out</text>
+                
+                <rect x="560" y="560" width="240" height="90" rx="6" fill="#FFF9C4" stroke="#FDB913" stroke-width="2"/>
+                <text x="680" y="595" text-anchor="middle" font-size="16" font-weight="bold" fill="#F57C00">50% PROTECTED</text>
+                <text x="680" y="618" text-anchor="middle" font-size="12" fill="#F57C00">Still getting $2,900</text>
+                <text x="680" y="635" text-anchor="middle" font-size="12" fill="#F57C00">from other unit</text>
+                
+                <rect x="820" y="560" width="230" height="90" rx="6" fill="#C8E6C9" stroke="#228B22" stroke-width="2"/>
+                <text x="935" y="595" text-anchor="middle" font-size="16" font-weight="bold" fill="#228B22">75% PROTECTED</text>
+                <text x="935" y="618" text-anchor="middle" font-size="12" fill="#228B22">Still getting $7,500</text>
+                <text x="935" y="635" text-anchor="middle" font-size="12" fill="#228B22">from 3 other units</text>
+                
+                <!-- Row 6: Cash on Cash Return -->
+                <rect x="50" y="670" width="220" height="70" rx="6" fill="#F8F6F1"/>
+                <text x="70" y="700" font-size="15" font-weight="bold" fill="#1A2332">Cash-on-Cash</text>
+                <text x="70" y="720" font-size="15" font-weight="bold" fill="#1A2332">Return (CoC)</text>
+                
+                <rect x="290" y="670" width="250" height="70" rx="6" fill="white" stroke="#2196F3" stroke-width="1"/>
+                <text x="415" y="710" text-anchor="middle" font-size="22" font-weight="bold" fill="#D32F2F">-7.6%</text>
+                
+                <rect x="560" y="670" width="240" height="70" rx="6" fill="white" stroke="#FF6B6B" stroke-width="1"/>
+                <text x="680" y="710" text-anchor="middle" font-size="22" font-weight="bold" fill="#F57C00">+4.4%</text>
+                
+                <rect x="820" y="670" width="230" height="70" rx="6" fill="white" stroke="#228B22" stroke-width="1"/>
+                <text x="935" y="710" text-anchor="middle" font-size="22" font-weight="bold" fill="#228B22">+18.8%</text>
+                
+                <!-- Row 7: 5-Year Projection -->
+                <rect x="50" y="760" width="220" height="90" rx="6" fill="#FFF9C4" stroke="#C9A961" stroke-width="2"/>
+                <text x="70" y="795" font-size="15" font-weight="bold" fill="#1A2332">Total 5-Year Gain</text>
+                <text x="70" y="815" font-size="12" fill="#6C757D">(Cash flow + equity</text>
+                <text x="70" y="830" font-size="12" fill="#6C757D">+ appreciation)</text>
+                
+                <rect x="290" y="760" width="250" height="90" rx="6" fill="white" stroke="#2196F3" stroke-width="1"/>
+                <text x="415" y="805" text-anchor="middle" font-size="22" font-weight="bold" fill="#0288D1">+$62,100</text>
+                <text x="415" y="828" text-anchor="middle" font-size="11" fill="#6C757D">(mostly from equity)</text>
+                
+                <rect x="560" y="760" width="240" height="90" rx="6" fill="white" stroke="#FF6B6B" stroke-width="1"/>
+                <text x="680" y="805" text-anchor="middle" font-size="22" font-weight="bold" fill="#FF6B6B">+$79,900</text>
+                <text x="680" y="828" text-anchor="middle" font-size="11" fill="#6C757D">(equity + cash flow)</text>
+                
+                <rect x="820" y="760" width="230" height="90" rx="6" fill="white" stroke="#228B22" stroke-width="1"/>
+                <text x="935" y="805" text-anchor="middle" font-size="22" font-weight="bold" fill="#228B22">+$137,500</text>
+                <text x="935" y="828" text-anchor="middle" font-size="11" fill="#6C757D">(strong cash + equity)</text>
+                
+                <!-- Bottom Summary -->
+                <rect x="50" y="870" width="1000" height="110" rx="10" fill="#1A2332" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="905" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">🏆 THE MULTI-FAMILY ADVANTAGE</text>
+                <text x="550" y="935" text-anchor="middle" font-size="16" fill="white">Multiple income streams = Lower risk + Higher returns + Passive income NOW</text>
+                <text x="550" y="960" text-anchor="middle" font-size="14" fill="white">Fourplex earns <tspan font-weight="bold" fill="#C9A961">2X MORE</tspan> than single-family in 5 years!</text>
+                
+                <!-- Key Insight Box -->
+                <rect x="50" y="1000" width="1000" height="80" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="550" y="1030" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">💡 Live in one unit, rent the others = House Hacking Strategy!</text>
+                <text x="550" y="1055" text-anchor="middle" font-size="14" fill="#2C3E50">Your tenants pay your mortgage while you build equity. Chris Burns specializes in finding</text>
+                <text x="550" y="1073" text-anchor="middle" font-size="14" fill="#2C3E50">these cash-flowing multi-family properties in Monmouth County!</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                📊 Based on typical Monmouth County properties. Actual numbers vary by location, condition, and market. Chris Burns provides detailed analysis for each property.
+            </p>
         </div>
 
         <div class="property-grid">
