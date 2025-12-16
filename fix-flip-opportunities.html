@@ -123,6 +123,39 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .visual-section {
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .strategy-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +267,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +295,128 @@
     <div class="container">
         <div class="section-intro">
             <p>Fix and flip investing offers quick profits in Monmouth County, NJ real estate. As your house flipping specialist serving Monmouth County, Ocean County, and Middlesex County, I help investors find distressed properties with profit potential throughout New Jersey. Strong markets in Marlboro, Manalapan, Freehold, and Holmdel provide excellent flipping opportunities.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="fix-upper1.jpg" alt="Fix and Flip Properties - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- Fix and Flip Profit Calculator Chart -->
+        <div class="chart-container">
+            <h3>🔨 Fix & Flip Profit Calculator - Real Example</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Monmouth County cosmetic renovation project using the 70% Rule</p>
+            
+            <svg viewBox="0 0 1100 1050" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Header: ARV -->
+                <rect x="50" y="30" width="1000" height="70" rx="10" fill="#228B22" stroke="#1A2332" stroke-width="3"/>
+                <text x="550" y="60" text-anchor="middle" font-size="18" font-weight="bold" fill="white">🏠 AFTER REPAIR VALUE (ARV)</text>
+                <text x="550" y="88" text-anchor="middle" font-size="32" font-weight="bold" fill="white">$500,000</text>
+                
+                <!-- The 70% Rule Box -->
+                <rect x="50" y="120" width="1000" height="80" rx="8" fill="#FFF9C4" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">📐 THE 70% RULE: Maximum Purchase Price Formula</text>
+                <text x="550" y="178" text-anchor="middle" font-size="16" fill="#2C3E50">(ARV × 70%) - Renovation Costs = Maximum Offer Price</text>
+                
+                <!-- Step 1: Calculate 70% of ARV -->
+                <rect x="50" y="220" width="480" height="120" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="290" y="250" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">STEP 1: Calculate 70% of ARV</text>
+                <text x="80" y="280" font-size="15" fill="#2C3E50">$500,000 (ARV) × 70%</text>
+                <text x="500" y="280" text-anchor="end" font-size="20" font-weight="bold" fill="#2196F3">= $350,000</text>
+                <text x="290" y="310" text-anchor="middle" font-size="13" fill="#6C757D">(Maximum you can spend on purchase + renovations)</text>
+                
+                <!-- Step 2: Estimate Renovation Costs -->
+                <rect x="570" y="220" width="480" height="120" rx="8" fill="#FFE5E5" stroke="#FF6B6B" stroke-width="2"/>
+                <text x="810" y="250" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">STEP 2: Renovation Budget</text>
+                <text x="590" y="280" font-size="15" fill="#2C3E50">Estimated renovation costs:</text>
+                <text x="1020" y="280" text-anchor="end" font-size="20" font-weight="bold" fill="#FF6B6B">$60,000</text>
+                <text x="810" y="310" text-anchor="middle" font-size="13" fill="#6C757D">(Kitchen, bathrooms, flooring, paint, landscaping)</text>
+                
+                <!-- Step 3: Maximum Purchase Price -->
+                <rect x="50" y="360" width="1000" height="100" rx="8" fill="#C8E6C9" stroke="#228B22" stroke-width="3"/>
+                <text x="550" y="390" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">STEP 3: Your Maximum Offer Price</text>
+                <text x="100" y="425" font-size="17" fill="#2C3E50">$350,000 (70% of ARV) - $60,000 (Reno) =</text>
+                <text x="950" y="425" text-anchor="end" font-size="28" font-weight="bold" fill="#228B22">$290,000</text>
+                <text x="550" y="450" text-anchor="middle" font-size="13" font-style="italic" fill="#6C757D">Never pay more than this or your profit disappears!</text>
+                
+                <!-- Complete Deal Breakdown -->
+                <rect x="50" y="480" width="1000" height="60" rx="8" fill="#1A2332"/>
+                <text x="550" y="518" text-anchor="middle" font-size="22" font-weight="bold" fill="white">💰 COMPLETE DEAL BREAKDOWN</text>
+                
+                <!-- Left Column: COSTS -->
+                <rect x="50" y="560" width="480" height="360" rx="8" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+                <text x="290" y="590" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">📊 TOTAL INVESTMENT</text>
+                
+                <text x="80" y="625" font-size="15" font-weight="bold" fill="#2C3E50">Purchase Price:</text>
+                <text x="490" y="625" text-anchor="end" font-size="16" fill="#2C3E50">$290,000</text>
+                
+                <text x="80" y="655" font-size="15" font-weight="bold" fill="#2C3E50">Renovation Costs:</text>
+                <text x="490" y="655" text-anchor="end" font-size="16" fill="#2C3E50">$60,000</text>
+                
+                <text x="100" y="680" font-size="13" fill="#6C757D">• Kitchen remodel:</text>
+                <text x="490" y="680" text-anchor="end" font-size="13" fill="#6C757D">$20,000</text>
+                <text x="100" y="700" font-size="13" fill="#6C757D">• Bathroom updates:</text>
+                <text x="490" y="700" text-anchor="end" font-size="13" fill="#6C757D">$15,000</text>
+                <text x="100" y="720" font-size="13" fill="#6C757D">• Flooring & paint:</text>
+                <text x="490" y="720" text-anchor="end" font-size="13" fill="#6C757D">$12,000</text>
+                <text x="100" y="740" font-size="13" fill="#6C757D">• Landscaping/curb appeal:</text>
+                <text x="490" y="740" text-anchor="end" font-size="13" fill="#6C757D">$8,000</text>
+                <text x="100" y="760" font-size="13" fill="#6C757D">• Contingency (10%):</text>
+                <text x="490" y="760" text-anchor="end" font-size="13" fill="#6C757D">$5,000</text>
+                
+                <text x="80" y="790" font-size="15" font-weight="bold" fill="#2C3E50">Holding Costs (6 months):</text>
+                <text x="490" y="790" text-anchor="end" font-size="16" fill="#2C3E50">$18,000</text>
+                
+                <text x="100" y="815" font-size="13" fill="#6C757D">• Mortgage/insurance/taxes:</text>
+                <text x="490" y="815" text-anchor="end" font-size="13" fill="#6C757D">$3,000/mo</text>
+                
+                <text x="80" y="845" font-size="15" font-weight="bold" fill="#2C3E50">Selling Costs (7%):</text>
+                <text x="490" y="845" text-anchor="end" font-size="16" fill="#2C3E50">$35,000</text>
+                
+                <text x="100" y="870" font-size="13" fill="#6C757D">• Agent commission (6%):</text>
+                <text x="490" y="870" text-anchor="end" font-size="13" fill="#6C757D">$30,000</text>
+                <text x="100" y="890" font-size="13" fill="#6C757D">• Closing costs (1%):</text>
+                <text x="490" y="890" text-anchor="end" font-size="13" fill="#6C757D">$5,000</text>
+                
+                <line x1="70" y1="900" x2="500" y2="900" stroke="#FF9800" stroke-width="3"/>
+                <text x="80" y="925" font-size="18" font-weight="bold" fill="#FF9800">TOTAL INVESTMENT:</text>
+                <text x="490" y="925" text-anchor="end" font-size="22" font-weight="bold" fill="#FF9800">$403,000</text>
+                
+                <!-- Right Column: PROFIT -->
+                <rect x="570" y="560" width="480" height="360" rx="8" fill="#E8F5E9" stroke="#228B22" stroke-width="3"/>
+                <text x="810" y="590" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">💵 PROFIT ANALYSIS</text>
+                
+                <text x="600" y="635" font-size="17" font-weight="bold" fill="#2C3E50">Sale Price (ARV):</text>
+                <text x="1020" y="635" text-anchor="end" font-size="20" font-weight="bold" fill="#228B22">$500,000</text>
+                
+                <text x="600" y="670" font-size="17" font-weight="bold" fill="#2C3E50">Total Investment:</text>
+                <text x="1020" y="670" text-anchor="end" font-size="20" font-weight="bold" fill="#FF9800">-$403,000</text>
+                
+                <line x1="590" y1="685" x2="1030" y2="685" stroke="#228B22" stroke-width="4"/>
+                
+                <rect x="590" y="700" width="440" height="60" rx="6" fill="#C8E6C9" stroke="#228B22" stroke-width="2"/>
+                <text x="600" y="725" font-size="20" font-weight="bold" fill="#228B22">NET PROFIT:</text>
+                <text x="1020" y="735" text-anchor="end" font-size="32" font-weight="bold" fill="#228B22">$97,000</text>
+                
+                <rect x="590" y="780" width="440" height="130" rx="8" fill="#F0FFF0" stroke="#228B22" stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="810" y="810" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">📈 Return on Investment</text>
+                <text x="620" y="840" font-size="14" fill="#2C3E50">Project Duration:</text>
+                <text x="1000" y="840" text-anchor="end" font-size="14" fill="#2C3E50">6 months</text>
+                <text x="620" y="865" font-size="14" fill="#2C3E50">Profit Margin:</text>
+                <text x="1000" y="865" text-anchor="end" font-size="14" font-weight="bold" fill="#228B22">19.4%</text>
+                <text x="620" y="890" font-size="14" fill="#2C3E50">Annualized Return:</text>
+                <text x="1000" y="890" text-anchor="end" font-size="14" font-weight="bold" fill="#228B22">38.8%</text>
+                
+                <!-- Bottom Summary -->
+                <rect x="50" y="940" width="1000" height="90" rx="10" fill="#1A2332" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="975" text-anchor="middle" font-size="22" font-weight="bold" fill="#C9A961">🎯 THE BOTTOM LINE</text>
+                <text x="550" y="1005" text-anchor="middle" font-size="16" fill="white">$97,000 profit in 6 months = $16,167 per month = $194,000 annualized!</text>
+                <text x="550" y="1025" text-anchor="middle" font-size="13" font-style="italic" fill="#C9A961">Chris Burns finds off-market deals BELOW the 70% rule for even bigger profits!</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                ⚠️ Always add 10-20% contingency buffer. Unexpected costs happen! Chris Burns helps you avoid overpriced properties.
+            </p>
         </div>
 
         <div class="strategy-grid">
