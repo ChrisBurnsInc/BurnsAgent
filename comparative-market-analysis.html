@@ -123,6 +123,34 @@
             line-height: 1.8;
         }
         
+        /* Visual Content Sections */
+        .hero-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin: 60px auto;
+        }
+        
+        .chart-container h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--deep-navy);
+            margin-bottom: 30px;
+        }
+        
         .cma-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,6 +262,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 2.5rem; }
             .logo { font-size: 1.2rem; }
+            .chart-container { padding: 20px; }
         }
     </style>
 </head>
@@ -261,6 +290,177 @@
     <div class="container">
         <div class="section-intro">
             <p>Comparative Market Analysis provides accurate home valuations in Monmouth County, NJ. As your CMA specialist serving Monmouth County, Ocean County, and Middlesex County, I analyze recent sales and market trends to determine precise property values throughout New Jersey. Professional CMA reports guide pricing decisions in Marlboro, Manalapan, Freehold, and Holmdel.</p>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-container">
+            <img src="comparaive-market1.jpg" alt="Comparative Market Analysis - Chris Burns Realtor Monmouth County" style="max-width: 800px;">
+        </div>
+
+        <!-- CMA Example Chart -->
+        <div class="chart-container">
+            <h3>📊 Sample CMA Report - Marlboro Township</h3>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 40px; font-size: 1.05rem;">Example: 4BR/2.5BA Colonial • 2,400 sq ft • Built 2005</p>
+            
+            <svg viewBox="0 0 1100 1150" style="max-width: 100%; height: auto; margin: 0 auto; display: block;">
+                <!-- Subject Property Header -->
+                <rect x="50" y="30" width="1000" height="80" rx="8" fill="#C9A961" stroke="#1A2332" stroke-width="3"/>
+                <text x="550" y="60" text-anchor="middle" font-size="22" font-weight="bold" fill="white">🏠 SUBJECT PROPERTY</text>
+                <text x="550" y="85" text-anchor="middle" font-size="16" fill="white">123 Main Street, Marlboro, NJ • 4BR/2.5BA • 2,400 sq ft</text>
+                <text x="550" y="105" text-anchor="middle" font-size="14" font-style="italic" fill="white">Built 2005 • Updated Kitchen (2022) • Finished Basement</text>
+                
+                <!-- Column Headers -->
+                <rect x="50" y="130" width="1000" height="50" rx="6" fill="#1A2332"/>
+                <text x="150" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Comparable</text>
+                <text x="310" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Sale Price</text>
+                <text x="460" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Sq Ft / $/SF</text>
+                <text x="620" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Key Features</text>
+                <text x="820" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Adjustments</text>
+                <text x="970" y="160" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Adjusted</text>
+                
+                <!-- Comp 1 -->
+                <rect x="50" y="200" width="1000" height="110" rx="6" fill="#E8F5E9" stroke="#228B22" stroke-width="2"/>
+                <text x="150" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Comp #1</text>
+                <text x="150" y="250" text-anchor="middle" font-size="11" fill="#6C757D">127 Main St</text>
+                <text x="150" y="265" text-anchor="middle" font-size="10" fill="#6C757D">0.1 mi away</text>
+                <text x="150" y="280" text-anchor="middle" font-size="10" fill="#6C757D">Sold: Oct 2024</text>
+                <text x="150" y="295" text-anchor="middle" font-size="9" font-weight="bold" fill="#228B22">30 days ago</text>
+                
+                <text x="310" y="245" text-anchor="middle" font-size="20" font-weight="bold" fill="#228B22">$640,000</text>
+                <text x="310" y="265" text-anchor="middle" font-size="10" fill="#6C757D">List: $649,000</text>
+                <text x="310" y="280" text-anchor="middle" font-size="10" fill="#6C757D">8 days on market</text>
+                
+                <text x="460" y="245" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C3E50">2,350 sq ft</text>
+                <text x="460" y="265" text-anchor="middle" font-size="14" fill="#2196F3">$272/sq ft</text>
+                
+                <text x="620" y="230" text-anchor="middle" font-size="11" fill="#2C3E50">4BR/2.5BA • Built 2006</text>
+                <text x="620" y="247" text-anchor="middle" font-size="10" fill="#6C757D">Updated kitchen</text>
+                <text x="620" y="262" text-anchor="middle" font-size="10" fill="#6C757D">Unfinished basement</text>
+                <text x="620" y="277" text-anchor="middle" font-size="10" fill="#6C757D">Similar condition</text>
+                
+                <text x="820" y="235" text-anchor="middle" font-size="10" fill="#228B22">+$5,000 (smaller)</text>
+                <text x="820" y="250" text-anchor="middle" font-size="10" fill="#228B22">+$15,000 (basement)</text>
+                <text x="820" y="265" text-anchor="middle" font-size="10" fill="#D32F2F">-$2,000 (age)</text>
+                <line x1="775" y1="275" x2="865" y2="275" stroke="#1A2332" stroke-width="1"/>
+                <text x="820" y="290" text-anchor="middle" font-size="11" font-weight="bold" fill="#1A2332">Net: +$18,000</text>
+                
+                <text x="970" y="255" text-anchor="middle" font-size="18" font-weight="bold" fill="#C9A961">$658,000</text>
+                
+                <!-- Comp 2 -->
+                <rect x="50" y="330" width="1000" height="110" rx="6" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="150" y="360" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Comp #2</text>
+                <text x="150" y="380" text-anchor="middle" font-size="11" fill="#6C757D">456 Oak Ave</text>
+                <text x="150" y="395" text-anchor="middle" font-size="10" fill="#6C757D">0.3 mi away</text>
+                <text x="150" y="410" text-anchor="middle" font-size="10" fill="#6C757D">Sold: Sep 2024</text>
+                <text x="150" y="425" text-anchor="middle" font-size="9" font-weight="bold" fill="#2196F3">60 days ago</text>
+                
+                <text x="310" y="375" text-anchor="middle" font-size="20" font-weight="bold" fill="#228B22">$655,000</text>
+                <text x="310" y="395" text-anchor="middle" font-size="10" fill="#6C757D">List: $669,900</text>
+                <text x="310" y="410" text-anchor="middle" font-size="10" fill="#6C757D">22 days on market</text>
+                
+                <text x="460" y="375" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C3E50">2,450 sq ft</text>
+                <text x="460" y="395" text-anchor="middle" font-size="14" fill="#2196F3">$267/sq ft</text>
+                
+                <text x="620" y="360" text-anchor="middle" font-size="11" fill="#2C3E50">4BR/2.5BA • Built 2004</text>
+                <text x="620" y="377" text-anchor="middle" font-size="10" fill="#6C757D">Older kitchen</text>
+                <text x="620" y="392" text-anchor="middle" font-size="10" fill="#6C757D">Finished basement</text>
+                <text x="620" y="407" text-anchor="middle" font-size="10" fill="#6C757D">Good condition</text>
+                
+                <text x="820" y="365" text-anchor="middle" font-size="10" fill="#D32F2F">-$5,000 (larger)</text>
+                <text x="820" y="380" text-anchor="middle" font-size="10" fill="#228B22">+$20,000 (kitchen)</text>
+                <text x="820" y="395" text-anchor="middle" font-size="10" fill="#228B22">+$3,000 (age)</text>
+                <line x1="775" y1="405" x2="865" y2="405" stroke="#1A2332" stroke-width="1"/>
+                <text x="820" y="420" text-anchor="middle" font-size="11" font-weight="bold" fill="#1A2332">Net: +$18,000</text>
+                
+                <text x="970" y="385" text-anchor="middle" font-size="18" font-weight="bold" fill="#C9A961">$673,000</text>
+                
+                <!-- Comp 3 -->
+                <rect x="50" y="460" width="1000" height="110" rx="6" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+                <text x="150" y="490" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A2332">Comp #3</text>
+                <text x="150" y="510" text-anchor="middle" font-size="11" fill="#6C757D">789 Elm Drive</text>
+                <text x="150" y="525" text-anchor="middle" font-size="10" fill="#6C757D">0.2 mi away</text>
+                <text x="150" y="540" text-anchor="middle" font-size="10" fill="#6C757D">Sold: Nov 2024</text>
+                <text x="150" y="555" text-anchor="middle" font-size="9" font-weight="bold" fill="#FBC02D">15 days ago</text>
+                
+                <text x="310" y="505" text-anchor="middle" font-size="20" font-weight="bold" fill="#228B22">$670,000</text>
+                <text x="310" y="525" text-anchor="middle" font-size="10" fill="#6C757D">List: $679,000</text>
+                <text x="310" y="540" text-anchor="middle" font-size="10" fill="#6C757D">12 days on market</text>
+                
+                <text x="460" y="505" text-anchor="middle" font-size="16" font-weight="bold" fill="#2C3E50">2,400 sq ft</text>
+                <text x="460" y="525" text-anchor="middle" font-size="14" fill="#2196F3">$279/sq ft</text>
+                
+                <text x="620" y="490" text-anchor="middle" font-size="11" fill="#2C3E50">4BR/2.5BA • Built 2005</text>
+                <text x="620" y="507" text-anchor="middle" font-size="10" fill="#6C757D">Updated kitchen</text>
+                <text x="620" y="522" text-anchor="middle" font-size="10" fill="#6C757D">Finished basement</text>
+                <text x="620" y="537" text-anchor="middle" font-size="10" fill="#6C757D">Nearly identical!</text>
+                
+                <text x="820" y="500" text-anchor="middle" font-size="10" fill="#228B22">+$0 (same size)</text>
+                <text x="820" y="515" text-anchor="middle" font-size="10" fill="#228B22">+$0 (same features)</text>
+                <text x="820" y="530" text-anchor="middle" font-size="10" fill="#228B22">+$0 (same age)</text>
+                <line x1="775" y1="540" x2="865" y2="540" stroke="#1A2332" stroke-width="1"/>
+                <text x="820" y="555" text-anchor="middle" font-size="11" font-weight="bold" fill="#1A2332">Net: $0</text>
+                
+                <text x="970" y="515" text-anchor="middle" font-size="18" font-weight="bold" fill="#C9A961">$670,000</text>
+                
+                <!-- Summary Box -->
+                <rect x="50" y="590" width="1000" height="120" rx="8" fill="#C8E6C9" stroke="#228B22" stroke-width="3"/>
+                <text x="550" y="620" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A2332">📈 MARKET ANALYSIS SUMMARY</text>
+                
+                <text x="100" y="650" font-size="14" fill="#2C3E50">Average Adjusted Value:</text>
+                <text x="370" y="650" font-size="18" font-weight="bold" fill="#228B22">$667,000</text>
+                
+                <text x="100" y="675" font-size="14" fill="#2C3E50">Price Range:</text>
+                <text x="370" y="675" font-size="16" fill="#2C3E50">$658,000 - $673,000</text>
+                
+                <text x="100" y="700" font-size="14" fill="#2C3E50">Average $/Sq Ft:</text>
+                <text x="370" y="700" font-size="16" fill="#2196F3">$273/sq ft</text>
+                
+                <text x="600" y="650" font-size="14" fill="#2C3E50">Days on Market (Avg):</text>
+                <text x="870" y="650" font-size="16" fill="#2C3E50">14 days</text>
+                
+                <text x="600" y="675" font-size="14" fill="#2C3E50">List vs Sale Price:</text>
+                <text x="870" y="675" font-size="16" fill="#2C3E50">97.8%</text>
+                
+                <text x="600" y="700" font-size="14" fill="#2C3E50">Market Condition:</text>
+                <text x="870" y="700" font-size="16" font-weight="bold" fill="#228B22">HOT! 🔥</text>
+                
+                <!-- Recommended Price -->
+                <rect x="50" y="730" width="1000" height="100" rx="10" fill="#1A2332" stroke="#C9A961" stroke-width="4"/>
+                <text x="550" y="765" text-anchor="middle" font-size="24" font-weight="bold" fill="#C9A961">💰 RECOMMENDED LIST PRICE</text>
+                <text x="550" y="800" text-anchor="middle" font-size="38" font-weight="bold" fill="white">$669,900</text>
+                <text x="550" y="822" text-anchor="middle" font-size="13" font-style="italic" fill="#C9A961">Strategic pricing: Slightly above comps to capture market momentum</text>
+                
+                <!-- Market Insights -->
+                <rect x="50" y="850" width="1000" height="120" rx="8" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+                <text x="550" y="880" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">🎯 Chris Burns' Market Insights</text>
+                
+                <text x="100" y="910" font-size="13" fill="#2C3E50">✓ <tspan font-weight="bold">Strong Demand:</tspan> All comps sold quickly (8-22 days) with minimal price reduction</text>
+                <text x="100" y="930" font-size="13" fill="#2C3E50">✓ <tspan font-weight="bold">Premium Features:</tspan> Updated kitchen + finished basement add significant value</text>
+                <text x="100" y="950" font-size="13" fill="#2C3E50">✓ <tspan font-weight="bold">Timing Advantage:</tspan> Spring market (highest demand season) approaching</text>
+                
+                <!-- Pricing Strategy -->
+                <rect x="50" y="990" width="1000" height="140" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+                <text x="550" y="1020" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A2332">📋 Pricing Strategy Options</text>
+                
+                <rect x="80" y="1040" width="300" height="70" rx="6" fill="white" stroke="#228B22" stroke-width="2"/>
+                <text x="230" y="1062" text-anchor="middle" font-size="14" font-weight="bold" fill="#228B22">Aggressive: $679,900</text>
+                <text x="230" y="1080" text-anchor="middle" font-size="11" fill="#2C3E50">Test market ceiling</text>
+                <text x="230" y="1095" text-anchor="middle" font-size="11" fill="#2C3E50">Negotiate down if needed</text>
+                
+                <rect x="400" y="1040" width="300" height="70" rx="6" fill="white" stroke="#C9A961" stroke-width="3"/>
+                <text x="550" y="1062" text-anchor="middle" font-size="14" font-weight="bold" fill="#C9A961">Recommended: $669,900</text>
+                <text x="550" y="1080" text-anchor="middle" font-size="11" fill="#2C3E50">Balanced approach</text>
+                <text x="550" y="1095" text-anchor="middle" font-size="11" font-weight="bold" fill="#C9A961">BEST FOR QUICK SALE ✓</text>
+                
+                <rect x="720" y="1040" width="300" height="70" rx="6" fill="white" stroke="#2196F3" stroke-width="2"/>
+                <text x="870" y="1062" text-anchor="middle" font-size="14" font-weight="bold" fill="#2196F3">Conservative: $659,900</text>
+                <text x="870" y="1080" text-anchor="middle" font-size="11" fill="#2C3E50">Multiple offers likely</text>
+                <text x="870" y="1095" text-anchor="middle" font-size="11" fill="#2C3E50">May sell above ask</text>
+            </svg>
+            
+            <p style="text-align: center; color: var(--text-light); margin-top: 30px; font-size: 0.95rem; font-style: italic;">
+                📊 Every CMA is customized with the most recent comparable sales data for your specific property and neighborhood!
+            </p>
         </div>
 
         <div class="cma-grid">
