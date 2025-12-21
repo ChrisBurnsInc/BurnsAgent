@@ -19,8 +19,8 @@
       "@type": "RealEstateAgent",
       "name": "Chris Burns Realtor - Monmouth County",
       "url": "https://chrisburnsrealtornj.com",
-      "telephone": "+19739535573",
-      "email": "chrisburnshomes1@gmail.com",
+      "telephone": "+18002992129",
+
       "areaServed": ["Monmouth County", "Ocean County", "Middlesex County"]
     }
     </script>
@@ -205,6 +205,76 @@
             margin-bottom: 20px;
         }
         
+        /* FAQ */
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            transition: all 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: var(--soft-cream);
+        }
+        
+        .faq-question h3 {
+            font-size: 1.3rem;
+            color: var(--deep-navy);
+            margin: 0;
+            padding-right: 20px;
+        }
+        
+        .faq-icon {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 30px;
+            background: var(--soft-cream);
+        }
+        
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 25px 30px;
+        }
+        
+        .faq-answer p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
         /* Contact */
         #contact {
             background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
@@ -369,6 +439,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#why-choose">Why Choose Me</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -376,7 +447,7 @@
 
     <section class="hero">
         <div>
-            <img src="ChrisBurnsImage1.png" alt="Chris Burns - Monmouth County Realtor" style="width: 207px; height: 207px; border-radius: 50%; border: 5px solid var(--primary-gold); margin-bottom: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
+            <img src="ChrisBurnsImage1.png" alt="Chris Burns - Monmouth County Realtor" style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid var(--primary-gold); margin-bottom: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
             <h1>Chris Burns Realtor</h1>
             <p class="subtitle">Your Trusted Real Estate Consultant</p>
             <p class="location">📍 Serving Monmouth County, Ocean County & Middlesex County, NJ</p>
@@ -397,7 +468,7 @@
             <div class="about-content">
                 <p>Welcome! I'm Chris Burns, a dedicated real estate consultant serving Monmouth County, Ocean County, and Middlesex County, New Jersey. With years of experience helping families find homes for sale near them, I provide personalized service whether you're buying your first home, selling your current property, or building an investment portfolio.</p>
                 <p>I specialize in communities throughout Monmouth County including Marlboro, Manalapan, Freehold, Holmdel, Colts Neck, Red Bank, and the Jersey Shore towns. My local expertise means I know these neighborhoods inside and out - from the best schools to hidden gems that make each area special.</p>
-                <p>I'm always available to help you with your real estate needs. Whether you're searching for luxury homes for sale, condos for sale near you, or investment properties, I'm here to guide you every step of the way. Call me at (973) 953-5573 to get started.</p>
+                <p>I'm always available to help you with your real estate needs. Whether you're searching for luxury homes for sale, condos for sale near you, or investment properties, I'm here to guide you every step of the way. Call me at (800) 299-2129 to get started.</p>
             </div>
         </div>
     </section>
@@ -476,23 +547,122 @@
         </div>
     </section>
 
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about buying and selling in Monmouth County, NJ</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What areas of New Jersey do you serve?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I specialize in Monmouth County, Ocean County, and Middlesex County, New Jersey. This includes popular towns like Marlboro, Manalapan, Freehold, Holmdel, Colts Neck, Red Bank, and all Jersey Shore communities. I have deep local knowledge of these markets and can help you find the perfect home or sell your property for top dollar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How much does it cost to work with you as a buyer?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>In most cases, buyers don't pay anything directly. The seller typically pays both the listing agent and buyer's agent commissions, which come from the sale proceeds. You get expert representation, negotiation, and guidance throughout the entire home buying process at no out-of-pocket cost to you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How long does it take to buy a home in Monmouth County?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The typical home buying timeline in New Jersey is 30-60 days from accepted offer to closing. This includes attorney review (3 business days), home inspection (7-10 days), appraisal (1-2 weeks), and mortgage processing (3-4 weeks). However, cash buyers can close much faster, sometimes in as little as 2 weeks.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What's the difference between pre-qualification and pre-approval?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pre-qualification is a basic estimate based on self-reported financial information. Pre-approval is much stronger - the lender has verified your income, assets, and credit, and has committed to lending you a specific amount. In competitive Monmouth County markets, sellers strongly prefer buyers with pre-approval letters because they're more likely to close successfully.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do you determine what my home is worth?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I provide a comprehensive Comparative Market Analysis (CMA) that examines recent sales of similar homes in your neighborhood, current market conditions, your home's unique features and upgrades, and current buyer demand. This analysis gives you an accurate picture of your home's market value and helps us price it competitively to attract serious buyers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Should I buy or sell first?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This depends on your specific situation. In a seller's market, listing first can give you equity to purchase your next home without contingencies, making your offer stronger. In a buyer's market, you might buy first to secure a great deal. I'll analyze your financial situation, market conditions, and personal timeline to recommend the best strategy for your move.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What are closing costs and how much should I budget?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Closing costs typically range from 2-5% of the purchase price and include items like lender fees, title insurance, attorney fees, home inspection, appraisal, and recording fees. In New Jersey, buyers should budget approximately $8,000-$15,000 for closing costs on a $400,000 home. I'll provide a detailed estimate so there are no surprises at closing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do I need an attorney for a real estate transaction in New Jersey?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While not legally required, it is standard practice in New Jersey to have a real estate attorney represent you. New Jersey has a 3-day attorney review period where your lawyer reviews the contract and can make changes or cancel the deal. I work with excellent real estate attorneys and can provide recommendations based on your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How can I make my offer stand out in a competitive market?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>In competitive Monmouth County markets, strong offers include a solid pre-approval letter, flexible closing timeline, earnest money deposit of at least 3-5%, clean offer with minimal contingencies, and a personal letter to the seller. I'll help you craft a competitive offer that stands out while protecting your interests and ensuring you don't overpay.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What happens during a home inspection?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A professional home inspector examines the property's major systems and structure - roof, foundation, HVAC, plumbing, electrical, and more. The inspection typically takes 2-4 hours and you should attend. You'll receive a detailed report identifying any issues. Based on the findings, we can negotiate repairs, request credits, or in serious cases, cancel the contract during the inspection contingency period.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container" style="max-width: 1000px;">
             <h2 class="section-title" style="color: white; text-align: center;">Contact Chris Burns</h2>
             <p class="section-subtitle" style="color: rgba(255,255,255,0.8); text-align: center;">Ready to buy or sell? Let's talk about your real estate goals in Monmouth County</p>
             
-            <!-- Contact Form with Formspree -->
+            <!-- Contact Form -->
             <div class="contact-form-container">
-                <form class="contact-form" action="https://formspree.io/f/xgowknpz" method="POST">
-                    <!-- Hidden field for email destination -->
-                    <input type="hidden" name="_to" value="chrisburnshomes1@gmail.com">
-                    <!-- Formspree SMS notification (add your carrier's email-to-SMS gateway) -->
-                    <input type="hidden" name="_cc" value="9739535573@vtext.com">
-                    <!-- Redirect after submission -->
-                    <input type="hidden" name="_next" value="https://chrisburnsrealtornj.com/thank-you.html">
-                    <!-- Subject line for email -->
-                    <input type="hidden" name="_subject" value="New Contact Form Submission - ChrisBurnsRealtorNJ.com">
-                    
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
@@ -500,7 +670,7 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="_replyto" required placeholder="john@example.com">
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
                         </div>
                     </div>
                     
@@ -541,7 +711,7 @@
             <div class="contact-info" style="margin-top: 50px;">
                 <div class="contact-item">
                     <h3>📞 Call or Text</h3>
-                    <p><a href="tel:+19739535573" style="font-size: 1.3rem; font-weight: 600;">(973) 953-5573</a></p>
+                    <p><a href="tel:+18002992129" style="font-size: 1.3rem; font-weight: 600;">(800) 299-2129</a></p>
                 </div>
                 <div class="contact-item">
                     <h3>⏰ Office Hours</h3>
@@ -565,7 +735,7 @@
             </div>
             <div class="footer-section">
                 <h4>Contact Info</h4>
-                <p><strong>Phone:</strong> (973) 953-5573</p>
+                <p><strong>Phone:</strong> (800) 299-2129</p>
                 <p>Monday-Friday: 9 AM - 5 PM</p>
             </div>
         </div>
@@ -581,6 +751,24 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
+
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = element.nextElementSibling;
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            faqItem.classList.toggle('active');
+            answer.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
