@@ -1,0 +1,25 @@
+# Robots.txt for ChrisBurnsRealtorNJ.com
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://chrisburnsrealtornj.com/sitemap.xml
+
+# Crawl Delay
+Crawl-delay: 10
+
+# Block access to backup files
+Disallow: /*backup*
+Disallow: /*-backup*
+Disallow: /*updated*
+
+# Block access to PHP files (if any)
+Disallow: /*.php$
+
+# Allow all HTML pages
+Allow: /*.html$
+
+# Block specific user agents (if needed)
+# User-agent: BadBot
+# Disallow: /
