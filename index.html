@@ -93,7 +93,8 @@
         
         /* Hero */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
+            padding: 120px 20px 60px;
             background: linear-gradient(135deg, var(--deep-navy) 0%, #2C4058 100%);
             display: flex;
             align-items: center;
@@ -106,6 +107,11 @@
         .hero .subtitle { font-size: 1.5rem; margin-bottom: 15px; }
         .hero .location { font-size: 1.2rem; color: var(--primary-gold); margin-bottom: 40px; }
         
+        .hero-content {
+            max-width: 100%;
+            width: 100%;
+        }
+        
         .cta-button {
             display: inline-block;
             background: var(--primary-gold);
@@ -115,6 +121,7 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
+            margin: 10px 5px;
         }
         
         .cta-button:hover { background: var(--accent-burgundy); }
@@ -423,8 +430,80 @@
         
         @media (max-width: 768px) {
             .nav-links { display: none; }
-            .hero h1 { font-size: 2.5rem; }
             .services-grid { grid-template-columns: 1fr; }
+            
+            .hero {
+                min-height: auto;
+                padding: 100px 15px 40px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+            
+            .hero .location {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            
+            .hero img {
+                width: 120px !important;
+                height: 120px !important;
+                margin-bottom: 20px !important;
+            }
+            
+            .cta-button {
+                display: block;
+                width: 100%;
+                max-width: 320px;
+                margin: 10px auto !important;
+                padding: 15px 30px;
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+            
+            .hero .location {
+                font-size: 0.9rem;
+            }
+            
+            .hero img {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .hero img {
+                width: 150px !important;
+                height: 150px !important;
+            }
+            
+            .cta-button {
+                margin: 10px 8px;
+            }
         }
     </style>
 </head>
@@ -446,7 +525,7 @@
     </nav>
 
     <section class="hero">
-        <div>
+        <div class="hero-content">
             <img src="ChrisBurnsImage1.png" alt="Chris Burns - Monmouth County Realtor" style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid var(--primary-gold); margin-bottom: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
             <h1>Chris Burns Realtor</h1>
             <p class="subtitle">Your Trusted Real Estate Consultant</p>
@@ -458,7 +537,7 @@
             </div>
             
             <a href="#contact" class="cta-button">Find Your Dream Home</a>
-            <a href="https://calendly.com/chrisburnshomes1/30min" target="_blank" class="cta-button" style="background: var(--accent-burgundy); margin-left: 15px;">Schedule a Consultation</a>
+            <a href="https://calendly.com/chrisburnshomes1/30min" target="_blank" class="cta-button" style="background: var(--accent-burgundy);">Schedule a Consultation</a>
         </div>
     </section>
 
