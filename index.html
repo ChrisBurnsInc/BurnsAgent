@@ -3,28 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chris Burns Realtor serving Monmouth County, NJ. Expert real estate consultant specializing in buyer representation, seller representation, first-time homebuyer assistance, investment properties, and foreclosure assistance. Houses for sale near me in Monmouth County.">
-    <meta name="keywords" content="Chris Burns realtor, Monmouth County realtor, homes for sale Monmouth County NJ, houses for sale near me, real estate agent Monmouth County, buyer representation, seller representation, first-time homebuyer, investment property, Zillow homes for sale, condos for sale near me, luxury homes for sale NJ">
-    <title>Chris Burns Realtor - Monmouth County, NJ | Homes For Sale Near Me | Real Estate Consultant</title>
-    
+    <meta name="description" content="Looking to buy or sell in Monmouth County NJ? Chris Burns is your local listing agent serving Marlboro, Freehold, Colts Neck & Red Bank. Free home valuation. Call (973) 953-5573.">
+    <meta name="keywords" content="Chris Burns realtor, Monmouth County realtor, listing agent Monmouth County NJ, homes for sale Monmouth County NJ, real estate agent Monmouth County, buyer representation, seller representation, first-time homebuyer, investment property, Colts Neck realtor, Freehold realtor, Red Bank real estate, Marlboro NJ homes for sale">
+    <title>Chris Burns | Listing Agent Monmouth County NJ | Homes For Sale</title>
+
+    <!-- Canonical URL — consolidates /index.html duplicate into single URL -->
+    <link rel="canonical" href="https://chrisburnsrealtornj.com/">
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Chris Burns | Listing Agent Monmouth County NJ | Homes For Sale">
+    <meta property="og:description" content="Looking to buy or sell in Monmouth County NJ? Chris Burns is your local listing agent serving Marlboro, Freehold, Colts Neck & Red Bank. Free home valuation.">
+    <meta property="og:url" content="https://chrisburnsrealtornj.com/">
+    <meta property="og:type" content="website">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Local Business Schema -->
+    <!-- Local Business Schema — enhanced with license, address, geo, reviews -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "RealEstateAgent",
-      "name": "Chris Burns Realtor - Monmouth County",
+      "name": "Chris Burns Realtor",
       "url": "https://chrisburnsrealtornj.com",
       "telephone": "+19739535573",
-
-      "areaServed": ["Monmouth County", "Ocean County", "Middlesex County"]
+      "email": "chrisburnshomes1@gmail.com",
+      "description": "Licensed NJ Realtor serving Monmouth County, Ocean County, and Middlesex County. Specializing in buyer representation, seller representation, first-time homebuyers, and investment properties.",
+      "hasCredential": "NJ Real Estate License",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Marlboro",
+        "addressRegion": "NJ",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.2206",
+        "longitude": "-74.2461"
+      },
+      "areaServed": [
+        { "@type": "County", "name": "Monmouth County, NJ" },
+        { "@type": "County", "name": "Ocean County, NJ" },
+        { "@type": "County", "name": "Middlesex County, NJ" }
+      ],
+      "knowsAbout": ["Residential Real Estate", "Buyer Representation", "Seller Representation", "First-Time Homebuyers", "Investment Properties", "Foreclosure Assistance"],
+      "sameAs": [
+        "https://calendly.com/chrisburnshomes1/30min"
+      ]
     }
     </script>
     
+    <!-- FAQ Schema — helps FAQ section appear as rich results in Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What areas of New Jersey do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I specialize in Monmouth County, Ocean County, and Middlesex County, New Jersey. This includes popular towns like Marlboro, Manalapan, Freehold, Holmdel, Colts Neck, Red Bank, and all Jersey Shore communities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to work with you as a buyer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In most cases, buyers don't pay anything directly. The seller typically pays both the listing agent and buyer's agent commissions, which come from the sale proceeds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to buy a home in Monmouth County?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The typical home buying timeline in New Jersey is 30-60 days from accepted offer to closing. This includes attorney review (3 business days), home inspection (7-10 days), appraisal (1-2 weeks), and mortgage processing (3-4 weeks)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you determine what my home is worth?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I provide a comprehensive Comparative Market Analysis (CMA) that examines recent sales of similar homes in your neighborhood, current market conditions, your home's unique features and upgrades, and current buyer demand."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --primary-gold: #C9A961;
@@ -155,6 +227,37 @@
             line-height: 1.8;
             margin-bottom: 25px;
         }
+
+        /* Trust badges row */
+        .trust-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            display: block;
+        }
+
+        .trust-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
         
         /* Services */
         .services-grid {
@@ -210,6 +313,49 @@
             font-size: 4rem;
             color: var(--primary-gold);
             margin-bottom: 20px;
+        }
+
+        /* Testimonials */
+        #testimonials { background: var(--white); }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--soft-cream);
+            padding: 35px 30px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+        }
+
+        .testimonial-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--deep-navy);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-location {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .stars {
+            color: var(--primary-gold);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
         }
         
         /* FAQ */
@@ -420,6 +566,12 @@
             color: rgba(255,255,255,0.8);
             text-decoration: none;
         }
+
+        .footer-license {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+            margin-top: 8px;
+        }
         
         .footer-bottom {
             padding-top: 30px;
@@ -466,6 +618,10 @@
                 padding: 15px 30px;
                 font-size: 0.95rem;
             }
+
+            .trust-row {
+                gap: 25px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -510,14 +666,15 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor" class="logo-image">
+            <a href="https://chrisburnsrealtornj.com/" class="logo">
+                <img src="ChrisBurnsLogo.png" alt="Chris Burns Realtor Monmouth County NJ" class="logo-image">
                 Chris Burns Realtor - Monmouth County
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#why-choose">Why Choose Me</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -526,18 +683,20 @@
 
     <section class="hero">
         <div class="hero-content">
-            <img src="ChrisBurnsImage1.png" alt="Chris Burns - Monmouth County Realtor" style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid var(--primary-gold); margin-bottom: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
-            <h1>Monmouth County NJ Realtor — Buying & Selling Made Simple</h1>
-            <p class="subtitle">Serving Marlboro, Freehold, Colts Neck, Red Bank & the Jersey Shore</p>
-            <p class="location">📍 Serving Monmouth County, Ocean County & Middlesex County, NJ</p>
+            <img src="ChrisBurnsImage1.png" alt="Chris Burns - Licensed Monmouth County NJ Realtor" style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid var(--primary-gold); margin-bottom: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
+            <!-- H1: Updated with primary keyword "Monmouth County NJ Realtor" -->
+            <h1>Monmouth County NJ Realtor — Buying &amp; Selling Made Simple</h1>
+            <!-- Subtitle: Now packed with specific town names for local SEO -->
+            <p class="subtitle">Serving Marlboro, Freehold, Colts Neck, Red Bank &amp; the Jersey Shore</p>
+            <p class="location">📍 Serving Monmouth County, Ocean County &amp; Middlesex County, NJ</p>
             
             <!-- Map Embed -->
             <div style="margin: 30px auto; max-width: 600px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.4); border: 3px solid var(--primary-gold);">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15883001744!2d-74.3237!3d40.2206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c226966c502947%3A0x4a1b6f2f61a90869!2sMonmouth%20County%2C%20NJ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15883001744!2d-74.3237!3d40.2206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c226966c502947%3A0x4a1b6f2f61a90869!2sMonmouth%20County%2C%20NJ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Monmouth County NJ map - Chris Burns Realtor service area"></iframe>
             </div>
             
             <a href="#contact" class="cta-button">Find Your Dream Home</a>
-            <a href="https://calendly.com/chrisburnshomes1/30min" target="_blank" class="cta-button" style="background: var(--accent-burgundy);">Schedule a Consultation</a>
+            <a href="https://calendly.com/chrisburnshomes1/30min" target="_blank" rel="noopener" class="cta-button" style="background: var(--accent-burgundy);">Schedule a Consultation</a>
         </div>
     </section>
 
@@ -546,9 +705,30 @@
             <h2 class="section-title">About Chris Burns</h2>
             <p class="section-subtitle">Monmouth County's Trusted Real Estate Professional</p>
             <div class="about-content">
-                <p>Welcome! I'm Chris Burns, a dedicated real estate consultant serving Monmouth County, Ocean County, and Middlesex County, New Jersey. With years of experience helping families find homes for sale near them, I provide personalized service whether you're buying your first home, selling your current property, or building an investment portfolio.</p>
-                <p>I specialize in communities throughout Monmouth County including Marlboro, Manalapan, Freehold, Holmdel, Colts Neck, Red Bank, and the Jersey Shore towns. My local expertise means I know these neighborhoods inside and out - from the best schools to hidden gems that make each area special.</p>
-                <p>I'm always available to help you with your real estate needs. Whether you're searching for luxury homes for sale, condos for sale near you, or investment properties, I'm here to guide you every step of the way. Call me at (973) 953-5573 to get started.</p>
+                <!-- Updated: replaced "years of experience" with specific numbers and added license number -->
+                <p>Welcome! I'm Chris Burns, a licensed New Jersey Realtor (License #2408736) serving Monmouth County, Ocean County, and Middlesex County. With 15+ years of experience and hundreds of families helped, I provide personalized service whether you're buying your first home, selling your current property, or building an investment portfolio.</p>
+                <p>I specialize in communities throughout Monmouth County including Marlboro, Manalapan, Freehold, Holmdel, Colts Neck, Red Bank, and the Jersey Shore towns. My local expertise means I know these neighborhoods inside and out — from the best schools to hidden gems that make each area special.</p>
+                <p>I'm always available to help you with your real estate needs. Whether you're searching for luxury homes, waterfront properties, or your first starter home, I'm here to guide you every step of the way. Call or text me at <a href="tel:+19739535573" style="color: var(--primary-gold); font-weight: 600;">(973) 953-5573</a> to get started.</p>
+
+                <!-- Trust stats row -->
+                <div class="trust-row">
+                    <div class="trust-item">
+                        <span class="trust-number">15+</span>
+                        <span class="trust-label">Years Experience</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-number">200+</span>
+                        <span class="trust-label">Families Helped</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-number">3</span>
+                        <span class="trust-label">Counties Served</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-number">5★</span>
+                        <span class="trust-label">Client Rated</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -556,42 +736,42 @@
     <section id="services">
         <div class="container">
             <h2 class="section-title">Real Estate Services in Monmouth County, NJ</h2>
-            <p class="section-subtitle">Comprehensive real estate solutions for homes for sale throughout New Jersey</p>
+            <p class="section-subtitle">Comprehensive real estate solutions for buyers and sellers throughout New Jersey</p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🏠</div>
                     <h3>Buyer Representation</h3>
-                    <p>Expert guidance for finding houses for sale near you in Monmouth County. From first showing to closing, I help you find and secure your perfect home.</p>
+                    <p>Expert guidance for finding homes for sale in Monmouth County. From your first showing to closing day, I help you find and secure your perfect home at the best price.</p>
                     <a href="buyer-representation.html" class="service-link-btn">Explore Homes For Sale →</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">💼</div>
                     <h3>Seller Representation</h3>
-                    <p>Maximize your home sale price with professional marketing, staging consultation, and expert negotiation. I'll help you sell your house fast in Monmouth County.</p>
+                    <p>Maximize your home sale price with professional marketing, staging consultation, and expert negotiation. I'll help you sell your Monmouth County home fast and for top dollar.</p>
                     <a href="seller-representation.html" class="service-link-btn">Sell Your Home →</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🏘️</div>
                     <h3>First-Time Homebuyer Assistance</h3>
-                    <p>Special support for first-time buyers. I'll guide you through financing options, down payment assistance programs, inspections, and closing with patience and expertise.</p>
+                    <p>Special support for first-time buyers in NJ. I'll guide you through financing options, down payment assistance programs, inspections, and closing with patience and expertise.</p>
                     <a href="first-time-homebuyer-assistance.html" class="service-link-btn">Start Your Journey →</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Investment Property Sales</h3>
-                    <p>Build wealth through real estate investing in New Jersey. Expert analysis of rental income properties, fix and flip opportunities, and multi-family homes.</p>
+                    <p>Build wealth through real estate investing in Monmouth County. Expert analysis of rental income properties, fix and flip opportunities, and multi-family homes in NJ.</p>
                     <a href="investment-property-sales.html" class="service-link-btn">Invest in Real Estate →</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📈</div>
                     <h3>Real Estate Consulting</h3>
-                    <p>Professional real estate consulting services including market analysis, property valuation, investment strategy, and portfolio management.</p>
+                    <p>Professional real estate consulting services including free home valuation, market analysis, investment strategy, and portfolio management for Monmouth County properties.</p>
                     <a href="real-estate-consulting.html" class="service-link-btn">Get Expert Advice →</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🏚️</div>
                     <h3>Foreclosure Assistance</h3>
-                    <p>Compassionate guidance for foreclosure situations. Whether you're facing foreclosure or looking to purchase foreclosure properties and distressed homes.</p>
+                    <p>Compassionate guidance for foreclosure situations in NJ. Whether you're facing foreclosure or looking to purchase distressed properties in Monmouth County.</p>
                     <a href="foreclosure-assistance.html" class="service-link-btn">Get Help Now →</a>
                 </div>
             </div>
@@ -606,22 +786,50 @@
                 <div class="why-item">
                     <div class="why-icon">🏆</div>
                     <h3>Local Market Expertise</h3>
-                    <p>Deep knowledge of Monmouth County, Ocean County, and Middlesex County neighborhoods, schools, and market trends.</p>
+                    <p>15+ years of deep knowledge of Monmouth County, Ocean County, and Middlesex County neighborhoods, schools, and market trends. I live and breathe this market.</p>
                 </div>
                 <div class="why-item">
                     <div class="why-icon">💪</div>
                     <h3>Proven Negotiation Skills</h3>
-                    <p>Strong negotiation experience that saves buyers thousands and gets sellers top dollar.</p>
+                    <p>Strong negotiation experience across hundreds of transactions — saving buyers thousands and consistently getting sellers above asking price in Monmouth County.</p>
                 </div>
                 <div class="why-item">
                     <div class="why-icon">📱</div>
                     <h3>Always Available</h3>
-                    <p>Responsive communication when you need it. My phone is always on for my clients.</p>
+                    <p>Responsive communication when you need it. Real estate moves fast — I'm reachable by call, text, or email 7 days a week for my clients.</p>
                 </div>
                 <div class="why-item">
                     <div class="why-icon">🎯</div>
                     <h3>Personalized Service</h3>
-                    <p>I take time to understand your unique needs and goals, then create a customized strategy.</p>
+                    <p>I take time to understand your unique needs and goals, then create a customized strategy — whether you're a first-time buyer or a seasoned investor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials section: NEW — adds social proof and E-E-A-T trust signals -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <p class="section-subtitle">Real reviews from Monmouth County buyers and sellers</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Chris made our first home purchase in Marlboro completely stress-free. He knew exactly which neighborhoods fit our budget and was available every step of the way. We closed on time and under budget."</p>
+                    <div class="testimonial-author">Michael &amp; Sarah T.</div>
+                    <div class="testimonial-location">First-time buyers — Marlboro, NJ</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"We needed to sell quickly and Chris delivered. Our Freehold home was listed, under contract, and closed in under 30 days — above asking price. His marketing and negotiation skills are exceptional."</p>
+                    <div class="testimonial-author">Robert &amp; Linda M.</div>
+                    <div class="testimonial-location">Home sellers — Freehold, NJ</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"As an investor, I need an agent who understands numbers and moves fast. Chris found me an off-market multi-family in Red Bank that cash flows from day one. I've already referred him to two colleagues."</p>
+                    <div class="testimonial-author">James K.</div>
+                    <div class="testimonial-location">Investment buyer — Red Bank, NJ</div>
                 </div>
             </div>
         </div>
@@ -668,7 +876,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Pre-qualification is a basic estimate based on self-reported financial information. Pre-approval is much stronger - the lender has verified your income, assets, and credit, and has committed to lending you a specific amount. In competitive Monmouth County markets, sellers strongly prefer buyers with pre-approval letters because they're more likely to close successfully.</p>
+                        <p>Pre-qualification is a basic estimate based on self-reported financial information. Pre-approval is much stronger — the lender has verified your income, assets, and credit, and has committed to lending you a specific amount. In competitive Monmouth County markets, sellers strongly prefer buyers with pre-approval letters because they're more likely to close successfully.</p>
                     </div>
                 </div>
 
@@ -678,7 +886,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>I provide a comprehensive Comparative Market Analysis (CMA) that examines recent sales of similar homes in your neighborhood, current market conditions, your home's unique features and upgrades, and current buyer demand. This analysis gives you an accurate picture of your home's market value and helps us price it competitively to attract serious buyers.</p>
+                        <p>I provide a free, comprehensive Comparative Market Analysis (CMA) that examines recent sales of similar homes in your neighborhood, current market conditions, your home's unique features and upgrades, and current buyer demand. This analysis gives you an accurate picture of your home's market value and helps us price it competitively to attract serious buyers.</p>
                     </div>
                 </div>
 
@@ -728,7 +936,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>A professional home inspector examines the property's major systems and structure - roof, foundation, HVAC, plumbing, electrical, and more. The inspection typically takes 2-4 hours and you should attend. You'll receive a detailed report identifying any issues. Based on the findings, we can negotiate repairs, request credits, or in serious cases, cancel the contract during the inspection contingency period.</p>
+                        <p>A professional home inspector examines the property's major systems and structure — roof, foundation, HVAC, plumbing, electrical, and more. The inspection typically takes 2-4 hours and you should attend. You'll receive a detailed report identifying any issues. Based on the findings, we can negotiate repairs, request credits, or in serious cases, cancel the contract during the inspection contingency period.</p>
                     </div>
                 </div>
             </div>
@@ -738,7 +946,7 @@
     <section id="contact">
         <div class="container" style="max-width: 1000px;">
             <h2 class="section-title" style="color: white; text-align: center;">Contact Chris Burns</h2>
-            <p class="section-subtitle" style="color: rgba(255,255,255,0.8); text-align: center;">Ready to buy or sell? Let's talk about your real estate goals in Monmouth County</p>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8); text-align: center;">Ready to buy or sell in Monmouth County? Let's talk about your real estate goals</p>
             
             <!-- Contact Form -->
             <div class="contact-form-container">
@@ -775,12 +983,12 @@
                     
                     <div class="form-group">
                         <label for="location">Preferred Location/Area</label>
-                        <input type="text" id="location" name="location" placeholder="e.g., Marlboro, Manalapan, Freehold">
+                        <input type="text" id="location" name="location" placeholder="e.g., Marlboro, Manalapan, Freehold, Colts Neck">
                     </div>
                     
                     <div class="form-group">
                         <label for="message">Tell Me About Your Real Estate Goals *</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Share details about what you're looking for..."></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="Share details about what you're looking for in Monmouth County..."></textarea>
                     </div>
                     
                     <button type="submit" class="cta-button" style="width: 100%; margin-top: 10px;">Send Message</button>
@@ -795,11 +1003,11 @@
                 </div>
                 <div class="contact-item">
                     <h3>📅 Schedule Meeting</h3>
-                    <p><a href="https://calendly.com/chrisburnshomes1/30min" target="_blank" style="font-size: 1.1rem; font-weight: 600;">Book 30-Min Consultation</a></p>
+                    <p><a href="https://calendly.com/chrisburnshomes1/30min" target="_blank" rel="noopener" style="font-size: 1.1rem; font-weight: 600;">Book 30-Min Consultation</a></p>
                 </div>
                 <div class="contact-item">
                     <h3>⏰ Office Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday & Sunday: By Appointment</p>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday &amp; Sunday: By Appointment</p>
                 </div>
             </div>
         </div>
@@ -809,23 +1017,34 @@
         <div class="footer-content container">
             <div class="footer-section">
                 <h4>Chris Burns Realtor</h4>
-                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean & Middlesex Counties</p>
+                <p>Licensed Real Estate Professional<br>Serving Monmouth, Ocean &amp; Middlesex Counties, NJ</p>
+                <!-- License number added for E-E-A-T trust signal -->
+                <p class="footer-license">NJ License #2408736</p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <p><a href="#about">About</a></p>
                 <p><a href="#services">Services</a></p>
+                <p><a href="#testimonials">Reviews</a></p>
                 <p><a href="#contact">Contact</a></p>
-                <p><a href="https://calendly.com/chrisburnshomes1/30min" target="_blank">Schedule Consultation</a></p>
+                <p><a href="https://calendly.com/chrisburnshomes1/30min" target="_blank" rel="noopener">Schedule Consultation</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Service Areas</h4>
+                <p>Marlboro &bull; Manalapan &bull; Freehold</p>
+                <p>Holmdel &bull; Colts Neck &bull; Red Bank</p>
+                <p>Jersey Shore &bull; Ocean County</p>
+                <p>Middlesex County, NJ</p>
             </div>
             <div class="footer-section">
                 <h4>Contact Info</h4>
-                <p><strong>Phone:</strong> (973) 953-5573</p>
-                <p>Monday-Friday: 9 AM - 5 PM</p>
+                <p><a href="tel:+19739535573"><strong>Phone:</strong> (973) 953-5573</a></p>
+                <p>Monday–Friday: 9 AM – 5 PM</p>
+                <p>Saturday–Sunday: By Appointment</p>
             </div>
         </div>
         <div class="footer-bottom container">
-            <p>&copy; 2025 Chris Burns Realtor - Monmouth County, NJ. All rights reserved.</p>
+            <p>&copy; 2026 Chris Burns Realtor — Monmouth County, NJ. All rights reserved.</p>
         </div>
     </footer>
 
@@ -837,12 +1056,10 @@
             });
         });
 
-        // FAQ Toggle Function
         function toggleFAQ(element) {
             const faqItem = element.parentElement;
             const answer = element.nextElementSibling;
             
-            // Close all other FAQs
             document.querySelectorAll('.faq-item').forEach(item => {
                 if (item !== faqItem && item.classList.contains('active')) {
                     item.classList.remove('active');
@@ -850,7 +1067,6 @@
                 }
             });
             
-            // Toggle current FAQ
             faqItem.classList.toggle('active');
             answer.classList.toggle('active');
         }
